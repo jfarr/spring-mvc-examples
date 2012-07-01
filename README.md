@@ -20,6 +20,6 @@ and a RESTful web services style with Spring 3.x.
 
 The examples are based on a simple library application that can save or edit a single book.
 
-![Library State Diagram](../../raw/master/library_state_diagram.png)
+![Library State Diagram](https://github.com/jfarr/spring-mvc-examples/raw/master/library_state_diagram.png)
 
 **Library Application State Diagram**
