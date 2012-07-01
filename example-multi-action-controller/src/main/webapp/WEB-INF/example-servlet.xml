@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+  <!-- 
+    Spring-framework components
+   -->
+
+  <!-- handler mappings -->
+  <bean id="handlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+    <property name="mappings">
+      <props>
+        <prop key="/book.form">bookController</prop>
+      </props>
+    </property>
+  </bean>
+  
+  <!-- view resolvers -->
+  <bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="prefix" value="/WEB-INF/jsp/" />
+    <property name="suffix" value=".jsp" />
+    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+  </bean>
+  
+  <!-- 
+    Application-specific components
+   -->
+
+  <!-- controllers -->
+  <bean id="bookController" class="examples.controller.BookController">
+    <property name="library" ref="libraryData" />
+    <property name="methodNameResolver">
+      <bean class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+        <property name="defaultMethodName" value="addForm" />
+      </bean>
+    </property>
+  </bean>
+
+  <!-- model repository -->
+  <bean id="libraryData" class="examples.data.Library" />
+
+</beans>
