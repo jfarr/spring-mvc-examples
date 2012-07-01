@@ -27,4 +27,5 @@ The examples are based on a simple library application that can add then edit a 
 ### Testing the JSON Examples
 
 The JSON examples include sample [RESTClient](http://code.google.com/p/rest-client/) requests in the src/test/resources 
-folder that can be used to test sending JSON data to and retrieving data from the JSON web service.
+folder that can be used to test sending JSON data to and retrieving data from the JSON web service. The sample requests
+assume that the application server is running on port 8080, so may need to be modified for your development environment.
