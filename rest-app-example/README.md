@@ -16,7 +16,7 @@ The example implements the two web application interfaces using two different co
 both derive from AbstractBookController:
 
 * HtmlBookController - implements the application above by rendering HTML views and accepting HTML encoded data (form-urlencoded and multipart/form)
-* JsonBookController - implements a subset of the application states by rendering JSON views and accepting JSON data:
+* JsonBookController - implements a subset of the application states by rendering JSON views and accepting JSON encoded data:
     * list, view - renders JSON views of these application states
     * save - accepts JSON encoded data and persists the application state
  
