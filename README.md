@@ -23,3 +23,8 @@ The examples are based on a simple library application that can add then edit a 
 ![Library State Diagram](https://github.com/jfarr/spring-mvc-examples/raw/master/library_state_diagram.png)
 
 **Library Application State Diagram**
+
+### Testing the JSON Examples
+
+The JSON examples include sample [RESTClient](http://code.google.com/p/rest-client/) requests in the src/test/resources 
+folder that can be used to test sending JSON data to and retrieving data from the JSON web service.
