@@ -5,7 +5,8 @@ Simple example of a RESTful web application that exposes both HTML and JSON inte
 
 ### The Example Application
 
-This example builds on the application state machine of the previous examples by adding a list view:
+This example builds on the application state machine of the previous examples by adding a list state, so the application
+can view, add, or edit multiple books:
 
 ![Library State Diagram](https://github.com/jfarr/spring-mvc-examples/raw/master/rest-app-example/src/site/library_state_diagram.png)
 
@@ -16,8 +17,8 @@ both derive from AbstractBookController:
 
 * HtmlBookController - implements the application above by rendering HTML views and accepting HTML encoded data (form-urlencoded and multipart/form)
 * JsonBookController - implements a subset of the application states by rendering JSON views and accepting JSON data:
-** list, view - renders JSON views of these application states
-** save - accepts JSON encoded data and persists the application state
+    * list, view - renders JSON views of these application states
+    * save - accepts JSON encoded data and persists the application state
  
  AbstractBookController implements the basic book persistence (CRUD operations). The derived classes implement the application state
  changes (building the next model state and selecting the view to render).
