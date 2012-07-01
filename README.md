@@ -16,4 +16,4 @@ Examples
 * [spring3-example](spring3-example) - A modern Spring-MVC application using autowiring and MVC annotations (@Controller, @RequestMapping, etc.)
 * [spring3-json-example](spring3-json-example) - Example RESTful JSON web service using the built-in Jackson object mapping support in Spring 3.
 
-![Library State Diagram](raw/master/library_state_diagram.png)
+![Library State Diagram](../../raw/master/library_state_diagram.png)
