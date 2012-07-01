@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>examples</groupId>
-  <artifactId>spring-mvc-example2</artifactId>
+  <artifactId>spring3-json-example</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>war</packaging>
   <properties>
