@@ -10,5 +10,6 @@
     <module>example-multi-action-controller</module>
     <module>json-view-example</module>
     <module>json-binding-example</module>
+    <module>spring3-example</module>
   </modules>
 </project>
