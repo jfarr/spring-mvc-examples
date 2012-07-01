@@ -7,7 +7,7 @@
   <packaging>pom</packaging>
   <modules>
     <module>hello-spring-mvc</module>
-    <module>example-multi-action-controller</module>
+    <module>multi-action-controller-example</module>
     <module>json-view-example</module>
     <module>json-binding-example</module>
     <module>spring3-example</module>
