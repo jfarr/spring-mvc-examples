@@ -2,4 +2,5 @@
 .settings
 .classpath
 target
-src/main/webapp/META-INF
+*/META-INF
+*/MANIFEST.MF
