@@ -11,7 +11,8 @@
 </head>
 <body>
 <h2><c:out value="${title}" /></h2>
-<form action="book.form" method="POST">
+<c:url var="action" value="/library/books/"/>
+<form action="${action}" method="POST">
 <table>
 	<tr>
 		<th>Title</th>
@@ -26,9 +27,9 @@
 	</tr>
 </table>
 <c:if test="${book.bookId != null}">
-	<input type="hidden" name="bookId"
-		value="<c:out value="${book.bookId}"/>" />
-</c:if> <input type="hidden" name="action" value="save" /></form>
+	<input type="hidden" name="bookId" value="<c:out value="${book.bookId}"/>" />
+</c:if>
+</form>
 <hr>
 request:
 <c:out value="${param}" />

@@ -8,7 +8,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>example</servlet-name>
-    <url-pattern>*.form</url-pattern>
+    <url-pattern>/library/*</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>

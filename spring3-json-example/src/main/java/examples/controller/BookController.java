@@ -1,19 +1,21 @@
 package examples.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
 import examples.data.Book;
 import examples.data.Library;
 
 @Controller
-@RequestMapping("/book.form")
+@RequestMapping("/books")
 public class BookController {
 
     private Library library;
@@ -28,30 +30,50 @@ public class BookController {
         return new ModelAndView("book/edit", "book", new Book());
     }
 
-    @RequestMapping(params = "action=save")
+    @RequestMapping(value = "/", method = RequestMethod.POST)
     public ModelAndView save(@ModelAttribute("book") Book book) throws Exception {
         library.saveBook(book);
-        return new ModelAndView("redirect:book.form?action=view", "bookId", book.getBookId());
+        return new ModelAndView("redirect:book/" + book.getBookId());
     }
 
-    @RequestMapping(params = "action=save", method = RequestMethod.PUT, headers = "Content-type=application/json")
-    public ModelAndView saveJson(@RequestBody Book book) throws Exception {
+    @RequestMapping("/book/{bookId}")
+    public ModelAndView view(@PathVariable int bookId) throws NotFoundException {
+        return new ModelAndView("book/view", "book", getBook(bookId));
+    }
+
+    @RequestMapping("/book/{bookId}/editForm")
+    public ModelAndView editForm(@PathVariable int bookId) throws NotFoundException {
+        return new ModelAndView("book/edit", "book", getBook(bookId));
+    }
+
+    @RequestMapping(value = "/", method = RequestMethod.POST, headers = "Content-type=application/json")
+    public ModelAndView addJson(@RequestBody Book book) throws Exception {
         library.saveBook(book);
-        return new ModelAndView("redirect:book.form?action=view", "bookId", book.getBookId());
+        return new ModelAndView("book/view-json", "book", book);
     }
 
-    @RequestMapping(params = "action=view")
-    public ModelAndView view(@RequestParam Integer bookId) {
-        return new ModelAndView("book/view", "book", library.getBook(bookId));
+    @RequestMapping(value = "/book/{bookId}", method = RequestMethod.PUT, headers = "Content-type=application/json")
+    public ModelAndView updateJson(@PathVariable int bookId, @RequestBody Book book) throws Exception {
+        book.setBookId(bookId);
+        library.saveBook(book);
+        return new ModelAndView("book/view-json", "book", book);
     }
 
-    @RequestMapping(params = "action=view", headers = "Accept=application/json")
-    public ModelAndView viewJson(@RequestParam Integer bookId) {
-        return new ModelAndView("book/view-json", "book", library.getBook(bookId));
+    @RequestMapping(value = "/book/{bookId}", method = RequestMethod.GET, headers = "Accept=application/json")
+    public ModelAndView viewJson(@PathVariable int bookId) throws NotFoundException {
+        return new ModelAndView("book/view-json", "book", getBook(bookId));
     }
 
-    @RequestMapping(params = "action=editForm")
-    public ModelAndView editForm(@RequestParam Integer bookId) {
-        return new ModelAndView("book/edit", "book", library.getBook(bookId));
+    private Book getBook(int bookId) throws NotFoundException {
+        Book book = library.getBook(bookId);
+        if (book == null) {
+            throw new NotFoundException();
+        }
+        return book;
+    }
+    
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    @SuppressWarnings("serial")
+    public class NotFoundException extends Exception {
     }
 }

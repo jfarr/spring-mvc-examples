@@ -8,6 +8,7 @@
 <title>View Book</title>
 </head>
 <body>
+<c:url var="editUrl" value="/library/books/book/${book.bookId}/editForm" />
 <h2>View Book</h2>
 <table>
 	<tr>
@@ -19,10 +20,8 @@
 		<td><c:out value="${book.author}" /></td>
 	</tr>
 </table>
-<form action="book.form" method="POST">
-<input type="submit" name="submit" value="Edit" />
-<input type="hidden" name="bookId" value="<c:out value="${book.bookId}"/>" /> 
-<input type="hidden" name="action" value="editForm" />
+<form action="${editUrl}" method="POST">
+    <input type="submit" name="submit" value="Edit" />
 </form>
 <hr>
 request:
