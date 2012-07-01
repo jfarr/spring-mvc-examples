@@ -1,6 +1,7 @@
 .project
 .settings
 .classpath
+.springBeans
 target
 .DS_Store
 MANIFEST.MF
