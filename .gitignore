@@ -2,11 +2,5 @@
 .settings
 .classpath
 target
-<<<<<<< HEAD
-*/META-INF
-*/MANIFEST.MF
-*.DS_Store
-=======
 .DS_Store
 MANIFEST.MF
->>>>>>> update .gitignore
