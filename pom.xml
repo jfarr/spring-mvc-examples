@@ -9,5 +9,6 @@
     <module>hello-spring-mvc</module>
     <module>example-multi-action-controller</module>
     <module>json-view-example</module>
+    <module>json-binding-example</module>
   </modules>
 </project>
