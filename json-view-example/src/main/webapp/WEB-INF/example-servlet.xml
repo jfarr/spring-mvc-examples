@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+  <!-- 
+    Spring-framework components
+   -->
+
+  <!-- handler mappings -->
+  <bean id="handlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+    <property name="mappings">
+      <props>
+        <prop key="/book.form">bookController</prop>
+      </props>
+    </property>
+  </bean>
+
+  <!-- view resolvers -->
+  <bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
+    <property name="order" value="1" />
+  </bean>
+
+  <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="prefix" value="/WEB-INF/jsp/" />
+    <property name="suffix" value=".jsp" />
+    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+  </bean>
+
+  <!--
+    Jackson components 
+   -->
+
+  <bean id="jsonObjectMapper" class="org.codehaus.jackson.map.ObjectMapper" />
+  
+  <!-- 
+    Application-specific components
+   -->
+
+  <!-- controllers -->
+  <bean id="bookController" class="examples.controller.BookController">
+    <property name="library" ref="libraryData" />
+    <property name="methodNameResolver">
+      <bean class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+        <property name="defaultMethodName" value="addForm" />
+      </bean>
+    </property>
+  </bean>
+
+  <!-- views -->
+  <bean name="book/json-view" class="examples.view.JsonMarshallingView">
+    <property name="objectMapper" ref="jsonObjectMapper" />
+    <property name="modelName" value="book" />
+  </bean>
+
+  <!-- model repository -->
+  <bean id="libraryData" class="examples.data.Library" />
+
+</beans>
