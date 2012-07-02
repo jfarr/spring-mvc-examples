@@ -14,7 +14,9 @@ and a RESTful web services style with Spring 3.x.
 * [json-view-example](json-view-example) - Render JSON responses using a Jackson-based JSON marshalling view.
 * [json-binding-example](json-binding-example) - Bind HTTP POST data to model objects using a JSON HTTP request reader.
 * [spring3-example](spring3-example) - A modern Spring-MVC application using autowiring and MVC annotations (@Controller, @RequestMapping, etc.)
-* [spring3-json-example](spring3-json-example) - Example RESTful JSON web service using the built-in Jackson object mapping support in Spring 3.
+* [spring3-json-example](spring3-json-example) - Example web application and RESTful JSON web service built using the built-in Jackson object mapping support in Spring 3.
+* [rest-app-example](rest-app-example) - A more elaborate example of exposing web applications as HTML or JSON services that builds on the previous examples.
+* [json-ajax-example](json-ajax-example) - A pure Javascript / Ajax application that consumes the JSON services provided by [rest-app-example](rest-app-example).  
 
 ### The Example Application
 
