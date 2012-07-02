@@ -1,4 +1,8 @@
 
+/**************************
+ * global variables
+ */ 
+
 var libraryServiceUrl = 'http://localhost:8080/rest-app-example/library';
 
 /**************************
