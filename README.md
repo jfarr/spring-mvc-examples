@@ -24,7 +24,7 @@ The examples are based on a simple library application that can add then edit a 
 
 ![Library State Diagram](https://github.com/jfarr/spring-mvc-examples/raw/master/src/site/library_state_diagram.png)
 
-**Library Application State Diagram**
+**Figure 1: Library Application State Diagram**
 
 ### Testing the JSON Examples
 
