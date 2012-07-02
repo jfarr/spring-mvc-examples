@@ -9,14 +9,14 @@ and a RESTful web services style with Spring 3.x.
 
 ### Examples
 
-* [hello-spring-mvc](hello-spring-mvc) - Bare minimum Spring MVC application using a JSP view with JSTL support.
-* [multi-action-controller-example](multi-action-controller-example) - Simple web application using MultiActonController.
-* [json-view-example](json-view-example) - Render JSON responses using a Jackson-based JSON marshalling view.
-* [json-binding-example](json-binding-example) - Bind HTTP POST data to model objects using a JSON HTTP request reader.
-* [spring3-example](spring3-example) - A modern Spring-MVC application using autowiring and MVC annotations (@Controller, @RequestMapping, etc.)
-* [spring3-json-example](spring3-json-example) - Example web application and RESTful JSON web service built using the built-in Jackson object mapping support in Spring 3.
-* [rest-app-example](rest-app-example) - A more elaborate example of exposing web applications as HTML or JSON services that builds on the previous examples.
-* [json-ajax-example](json-ajax-example) - A pure Javascript / Ajax application that consumes the JSON services provided by [rest-app-example](rest-app-example).  
+* [hello-spring-mvc](https://github.com/jfarr/spring-mvc-examples/tree/master/hello-spring-mvc) - Bare minimum Spring MVC application using a JSP view with JSTL support.
+* [multi-action-controller-example](https://github.com/jfarr/spring-mvc-examples/tree/master/multi-action-controller-example) - Simple web application using MultiActonController.
+* [json-view-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-view-example) - Render JSON responses using a Jackson-based JSON marshalling view.
+* [json-binding-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-binding-example) - Bind HTTP POST data to model objects using a JSON HTTP request reader.
+* [spring3-example](https://github.com/jfarr/spring-mvc-examples/tree/master/spring3-example) - A modern Spring-MVC application using autowiring and MVC annotations (@Controller, @RequestMapping, etc.)
+* [spring3-json-example](https://github.com/jfarr/spring-mvc-examples/tree/master/spring3-json-example) - Example web application and RESTful JSON web service built using the built-in Jackson object mapping support in Spring 3.
+* [rest-app-example](https://github.com/jfarr/spring-mvc-examples/tree/master/rest-app-example) - A more elaborate example of exposing web applications as HTML or JSON services that builds on the previous examples.
+* [json-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-ajax-example) - A pure Javascript / Ajax application that consumes the JSON services provided by [rest-app-example](https://github.com/jfarr/spring-mvc-examples/tree/master/rest-app-example).  
 
 ### The Example Application
 
