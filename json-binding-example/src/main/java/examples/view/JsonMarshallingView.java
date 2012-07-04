@@ -11,6 +11,8 @@ import org.springframework.web.servlet.View;
 @SuppressWarnings("rawtypes")
 public class JsonMarshallingView implements View {
 
+    private static final String CONTENT_TYPE = "application/json; charset=UTF-8";
+    
     private ObjectMapper objectMapper;
     private String modelName;
     
@@ -24,6 +26,7 @@ public class JsonMarshallingView implements View {
 
     @Override
     public void render(Map model, HttpServletRequest request, HttpServletResponse response) throws Exception {
+        response.setContentType(CONTENT_TYPE);
         objectMapper.writeValue(response.getOutputStream(), model.get(modelName));
     }
 }
