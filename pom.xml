@@ -14,5 +14,6 @@
     <module>spring3-json-example</module>
     <module>rest-app-example</module>
     <module>json-ajax-example</module>
+    <module>jquery-json-example</module>
   </modules>
 </project>

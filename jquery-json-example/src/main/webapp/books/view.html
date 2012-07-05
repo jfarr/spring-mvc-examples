@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>View Book</title>
+<script src="../js/books.js" ></script>
+<script src="../js/lib/jquery.js" ></script>
+<script src="../js/lib/jquery.url.js" ></script>
+<script type="text/javascript">
+    $(document).ready(onLoadView);
+</script>
+</head>
+<body>
+<h2>View Book</h2>
+<p><a href="index.html">list</a></p>
+<table id="bookView">
+	<tr>
+		<th>Title</th>
+		<td id="title"></td>
+	</tr>
+	<tr>
+		<th>Author</th>
+		<td id="author"></td>
+	</tr>
+</table>
+<form id="editForm" action="editForm.html?bookId=" method="POST">
+    <input type="submit" name="submit" value="Edit" />
+</form>
+<hr />
+book: <span id="bookData"></span>
+</body>
+</html>

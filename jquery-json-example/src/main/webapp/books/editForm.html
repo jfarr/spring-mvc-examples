@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Edit Book</title>
+<script src="../js/books.js" ></script>
+<script src="../js/lib/jquery.js" ></script>
+<script src="../js/lib/jquery.url.js" ></script>
+<script src="../js/lib/jquery.serialize-json.js" ></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#editForm').submit(onSubmitEdit);
+    onLoadEditForm();
+});
+</script>
+</head>
+<body>
+<h2>Edit Book</h2>
+<form id="editForm">
+<div id="errors"></div>
+<table>
+	<tr>
+		<th>Title</th>
+		<td><input type="text" id="title" name="title" value="" /></td>
+	</tr>
+	<tr>
+		<th>Author</th>
+		<td><input type="text" id="author" name="author" value="" /></td>
+	</tr>
+	<tr>
+		<td rowspan="2""><input type="submit" name="submit" value="Save" /></td>
+	</tr>
+</table>
+<input type="hidden" id="bookId" name="bookId" value="" /></form>
+<hr />
+book: <span id="bookData"></span>
+</body>
+</html>
