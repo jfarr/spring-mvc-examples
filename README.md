@@ -17,6 +17,7 @@ and a RESTful web services style with Spring 3.x.
 * [spring3-json-example](https://github.com/jfarr/spring-mvc-examples/tree/master/spring3-json-example) - Example web application and RESTful JSON web service built using the built-in Jackson object mapping support in Spring 3.
 * [rest-app-example](https://github.com/jfarr/spring-mvc-examples/tree/master/rest-app-example) - A more elaborate example of exposing web applications as HTML or JSON services that builds on the previous examples.
 * [json-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-ajax-example) - A pure Javascript / Ajax application that consumes the JSON services provided by [rest-app-example](https://github.com/jfarr/spring-mvc-examples/tree/master/rest-app-example).  
+* [jquery-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/jquery-ajax-example) - Simplified version of the RESTful JSON application client from [json-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-ajax-example) using jQuery.    
 
 ### The Example Application
 
