@@ -15,5 +15,6 @@
     <module>rest-app-example</module>
     <module>json-ajax-example</module>
     <module>jquery-json-example</module>
+    <module>hibernate-example</module>
   </modules>
 </project>
