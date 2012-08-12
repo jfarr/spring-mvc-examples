@@ -8,6 +8,7 @@
   <properties>
     <spring.version>3.1.2.RELEASE</spring.version>
     <hibernate.version>3.5.5-Final</hibernate.version>
+    <hsqldb.version>1.8.0.10</hsqldb.version>
     <slf4j.version>1.6.1</slf4j.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -127,7 +128,40 @@
     <dependency>
       <groupId>org.hsqldb</groupId>
       <artifactId>hsqldb</artifactId>
-      <version>1.8.0.10</version>
+      <version>${hsqldb.version}</version>
     </dependency>
   </dependencies>
+  <profiles>
+    <profile>
+      <id>create-db</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>hibernate3-maven-plugin</artifactId>
+            <version>2.2</version>
+            <configuration>
+              <components>
+                <component>
+                  <name>hbm2ddl</name>
+                  <implementation>annotationconfiguration</implementation>
+                </component>
+              </components>
+              <componentProperties>
+                <drop>true</drop>
+                <configurationfile>/src/main/resources/hibernate.cfg.xml</configurationfile>
+              </componentProperties>
+            </configuration>
+            <dependencies>
+              <dependency>
+                <groupId>org.hsqldb</groupId>
+                <artifactId>hsqldb</artifactId>
+                <version>${hsqldb.version}</version>
+              </dependency>
+            </dependencies>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
