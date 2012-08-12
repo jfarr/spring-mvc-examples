@@ -1,0 +1,1 @@
+mvn -Pcreate-db hibernate3:hbm2ddl
