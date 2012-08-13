@@ -18,8 +18,8 @@ and a RESTful web services style with Spring 3.x.
 * [rest-app-example](https://github.com/jfarr/spring-mvc-examples/tree/master/rest-app-example) - A more elaborate example of exposing web applications as HTML or JSON services that builds on the previous examples.
 * [json-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-ajax-example) - A pure Javascript / Ajax application that consumes the JSON services provided by [rest-app-example](https://github.com/jfarr/spring-mvc-examples/tree/master/rest-app-example).  
 * [jquery-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/jquery-ajax-example) - Simplified version of the RESTful JSON application client from [json-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-ajax-example) using jQuery.    
-* [hibernate-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-example)Example HTML / JSON application with an HSQL database back-end using [Hibernate](http://www.hibernate.org/) and JPA annotations.
-* [hibernate-search-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-search-example)Example HTML / JSON application using [Hibernate Search](http://www.hibernate.org/subprojects/search.html) and [Lucene](http://lucene.apache.org/) for automatic fast full-text search and indexing.
+* [hibernate-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-example) - Example HTML / JSON application with an HSQL database back-end using [Hibernate](http://www.hibernate.org/) and JPA annotations.
+* [hibernate-search-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-search-example) - Example HTML / JSON application using [Hibernate Search](http://www.hibernate.org/subprojects/search.html) and [Lucene](http://lucene.apache.org/) for automatic fast full-text search and indexing.
 
 ### The Example Application
 
