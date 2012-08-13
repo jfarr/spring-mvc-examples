@@ -16,5 +16,6 @@
     <module>json-ajax-example</module>
     <module>jquery-json-example</module>
     <module>hibernate-example</module>
+    <module>hibernate-search-example</module>
   </modules>
 </project>
