@@ -1,0 +1,9 @@
+html {
+	font-family: Verdana, Arial, sans-serif /*{ffDefault}*/;
+	font-size: 1.1em /*{fsDefault}*/;
+}
+
+input,select,textarea,button {
+	font-family: Verdana, Arial, sans-serif /*{ffDefault}*/;
+	font-size: 1em;
+}

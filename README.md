@@ -17,9 +17,10 @@ and a RESTful web services style with Spring 3.x.
 * [spring3-json-example](https://github.com/jfarr/spring-mvc-examples/tree/master/spring3-json-example) - Example web application and RESTful JSON web service built using the built-in Jackson object mapping support in Spring 3.
 * [rest-app-example](https://github.com/jfarr/spring-mvc-examples/tree/master/rest-app-example) - A more elaborate example of exposing web applications as HTML or JSON services that builds on the previous examples.
 * [json-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-ajax-example) - A pure Javascript / Ajax application that consumes the JSON services provided by [rest-app-example](https://github.com/jfarr/spring-mvc-examples/tree/master/rest-app-example).  
-* [jquery-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/jquery-ajax-example) - Simplified version of the RESTful JSON application client from [json-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-ajax-example) using jQuery.    
+* [jquery-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/jquery-ajax-example) - Simplified version of the RESTful JSON application client from [json-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-ajax-example) using [jQuery](http://jquery.com/).    
 * [hibernate-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-example) - Example HTML / JSON application with an HSQL database back-end using [Hibernate](http://www.hibernate.org/) and JPA annotations.
 * [hibernate-search-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-search-example) - Example HTML / JSON application using [Hibernate Search](http://www.hibernate.org/subprojects/search.html) and [Lucene](http://lucene.apache.org/) for automatic fast full-text search and indexing.
+* [jquery-autocomplete-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-search-example) - Example Ajax application using [JQuery UI](http://jqueryui.com/) and the JSON services provided by the [hibernate-search-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-search-example) to implement auto-complete search functionality. 
 
 ### The Example Application
 
