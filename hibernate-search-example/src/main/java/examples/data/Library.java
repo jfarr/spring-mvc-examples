@@ -33,6 +33,13 @@ public class Library {
         return (Book) getCurrentSession().get(Book.class, bookId);
     }
 
+    public void deleteBook(int bookId) {
+        Book book = (Book) getCurrentSession().get(Book.class, bookId);
+        if (book != null) {
+            getCurrentSession().delete(book);
+        }
+    }
+
     public void saveBook(Book book) {
         getCurrentSession().saveOrUpdate(book);
     }

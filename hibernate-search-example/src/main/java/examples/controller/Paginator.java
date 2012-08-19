@@ -14,8 +14,8 @@ public class Paginator {
     }
     
     public Page getPage(Integer firstResult, Integer maxResults, long total) {
-        firstResult = getFirstResult(firstResult);
         maxResults = getMaxResults(maxResults);
+        firstResult = getFirstResult(firstResult, maxResults, total);
         return new Page(
                 firstResult,
                 maxResults,
@@ -27,8 +27,8 @@ public class Paginator {
                 );
     }
     
-    private int getFirstResult(Integer firstResult) {
-        return firstResult == null ? 0 : firstResult;
+    private int getFirstResult(Integer firstResult, int maxResults, long total) {
+        return firstResult == null ? 0 : (firstResult < total ? firstResult : firstResult - maxResults);
     }
     
     private int getMaxResults(Integer maxResults) {
@@ -50,7 +50,8 @@ public class Paginator {
     }
     
     private Integer getLastResult(int firstResult, int maxResults, long total) {
-        int lastResult = (int) (total - total % maxResults);
+        long remaining = total % maxResults;
+        int lastResult = (int) (remaining == 0 ? (total - maxResults) : (total - remaining));
         return firstResult == lastResult ? null : lastResult;
     }
 }

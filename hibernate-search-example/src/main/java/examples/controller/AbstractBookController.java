@@ -15,7 +15,7 @@ public abstract class AbstractBookController {
 
     private Library library;
     private Paginator paginator;
-    
+
     @Autowired
     public void setLibrary(Library library) {
         this.library = library;
@@ -35,7 +35,7 @@ public abstract class AbstractBookController {
         long total = library.countBooks();
         Page page = paginator.getPage(firstResult, maxResults, total);
         return buildListModel(
-                library.getBooks(page.getFirstResult(), page.getMaxResults()), 
+                library.getBooks(page.getFirstResult(), page.getMaxResults()),
                 page);
     }
 
@@ -65,11 +65,19 @@ public abstract class AbstractBookController {
         library.saveBook(book);
     }
 
+    protected Map<String, Object> deleteBook(int bookId, Integer firstResult) {
+        library.deleteBook(bookId);
+        Page page = paginator.getPage(firstResult, null, library.countBooks());
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("firstResult", page.getFirstResult());
+        return model;
+    }
+
     protected Map<String, Object> searchBooks(String title, Integer firstResult, Integer maxResults) {
         long total = library.countBooksByTitle(title);
         Page page = paginator.getPage(firstResult, maxResults, total);
         return buildListModel(
-                library.searchBooksByTitle(title, page.getFirstResult(), page.getMaxResults()), 
+                library.searchBooksByTitle(title, page.getFirstResult(), page.getMaxResults()),
                 page);
     }
 }

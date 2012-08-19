@@ -42,6 +42,12 @@ public class HtmlBookController extends AbstractBookController {
         return new ModelAndView("book/edit", "book", getBook(bookId));
     }
 
+    @RequestMapping("/book/{bookId}/delete")
+    public ModelAndView delete(@PathVariable int bookId,
+            @RequestParam(required = false) Integer firstResult) throws NotFoundException {
+        return new ModelAndView("redirect:/library/books/", deleteBook(bookId, firstResult));
+    }
+
     @RequestMapping("/searchForm")
     public ModelAndView searchForm() {
         return new ModelAndView("book/search");

@@ -61,7 +61,7 @@
 							value="${firstResult + count}" /> of <c:out value="${total}" />
 					</c:otherwise>
 				</c:choose>
-				book<c:if test="${total > 1}">s</c:if>
+                book<c:if test="${total > 1}">s</c:if>
 			</c:when>
 			<c:otherwise>
 				<c:out value="${count}" />
@@ -81,11 +81,13 @@
 				<c:url var="viewUrl" value="/library/books/book/${book.bookId}/" />
 				<c:url var="editUrl"
 					value="/library/books/book/${book.bookId}/editForm" />
+				<c:url var="deleteUrl"
+					value="/library/books/book/${book.bookId}/delete?firstResult=${firstResult == null ? '' : firstResult}" />
 				<tr>
 					<td><a href="<c:out value="${viewUrl}"/>"><c:out
 						value="${book.title}" /></a></td>
 					<td><c:out value="${book.author}" /></td>
-					<td><a href="${editUrl}">edit</a></td>
+					<td><a href="${editUrl}">edit</a>&nbsp;<a href="${deleteUrl}">delete</a></td>
 				</tr>
 			</c:forEach>
 			<c:if test="${morePages}">
