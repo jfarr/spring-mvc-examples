@@ -4,6 +4,7 @@
 
 var bookServiceUrl = 'http://localhost:8080/hibernate-search-example/library/books/';
 var maxAutoComplete = 5;
+var confirmDialog;
 
 /*******************************************************************************
  * index.html / search.html functions
@@ -212,6 +213,26 @@ function onSubmitAdd() {
  */
 
 function onLoadEditForm() {
+    $('#submitSave').click(onSubmitEdit);
+    $('#submitDelete').click(onSubmitDelete);
+
+    confirmDialog = $('<div id="dialog-confirm"></div>')
+        .html('Are you sure you want to delete the book "<span id="confirm-title"></span>"?')
+        .dialog({
+            autoOpen: false,
+            title: 'Confirm Delete',
+            resizable: false,
+            modal: true,
+            buttons: {
+                "Delete": function() {
+                    onConfirmDelete();
+                },
+                "Cancel": function() {
+                    $('#dialog-confirm').dialog('close');
+                }
+            }
+        });
+
     var bookId = $.url().param('bookId');
     if (bookId == null) {
         $('#editForm').replaceWith('<p>Missing bookId.</p>');
@@ -220,7 +241,7 @@ function onLoadEditForm() {
             $('#title').attr('value', book.title);
             $('#author').attr('value', book.author);
             $('#bookId').attr('value', book.bookId);
-            $('#bookData').replaceWith(JSON.stringify(book));
+            $('#bookData').html(JSON.stringify(book));
         });
     }
 }
@@ -240,6 +261,22 @@ function onSubmitEdit() {
     return false;
 }
 
+function onSubmitDelete() {
+    confirmDialog.find('#confirm-title').html($('#title').attr('value'));
+    confirmDialog.dialog('open');
+    return false;
+}
+
+function onConfirmDelete() {
+    $.ajax(bookServiceUrl + 'book/' + $('#bookId').attr('value'), {
+        type : 'DELETE',
+        success : function() {
+            $('#dialog-confirm').dialog('close'); 
+            window.location = 'index.html';
+        }
+    });
+}
+
 /*******************************************************************************
  * view.html functions
  */
@@ -254,7 +291,7 @@ function onLoadView() {
             $('#author').html(book.author);
             $('#editForm').attr('action',
                     $('#editForm').attr('action') + book.bookId);
-            $('#bookData').replaceWith(JSON.stringify(book));
+            $('#bookData').html(JSON.stringify(book));
         });
     }
 }

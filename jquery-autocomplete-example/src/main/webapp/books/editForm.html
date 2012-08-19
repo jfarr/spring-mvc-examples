@@ -6,34 +6,40 @@
 <link rel="stylesheet" href="../css/ui-lightness/jquery-ui-1.8.22.custom.css" type="text/css" media="all" />
 <script src="../js/books.js" ></script>
 <script src="../js/lib/jquery.js" ></script>
+<script src="../js/lib/jquery-ui.js" /></script>
 <script src="../js/lib/jquery.url.js" ></script>
 <script src="../js/lib/jquery.serialize-json.js" ></script>
 <script type="text/javascript">
-$(document).ready(function() {
-    $('#editForm').submit(onSubmitEdit);
-    onLoadEditForm();
-});
+$(document).ready(onLoadEditForm);
 </script>
 <title>Edit Book</title>
 </head>
 <body>
 <h2>Edit Book</h2>
+<a href=".">book list</a>&nbsp;<a href="search.html">search books</a>&nbsp;<a href="addForm.html">add book</a>
+<br/>
+<br/>
 <form id="editForm">
 <div id="errors"></div>
 <table>
 	<tr>
 		<th>Title</th>
-		<td><input type="text" id="title" name="title" value="" /></td>
+		<td><input type="text" id="title" name="title" value="" size="50" /></td>
 	</tr>
 	<tr>
 		<th>Author</th>
-		<td><input type="text" id="author" name="author" value="" /></td>
+		<td><input type="text" id="author" name="author" value="" size="50" /></td>
 	</tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
 	<tr>
-		<td rowspan="2""><input type="submit" name="submit" value="Save" /></td>
+		<td colspan="2">
+		    <input type="submit" id="submitSave" name="submit" value="Save" />
+		    <input type="submit" id="submitDelete" name="submit" value="Delete" />
+		</td>
 	</tr>
 </table>
-<input type="hidden" id="bookId" name="bookId" value="" /></form>
+<input type="hidden" id="bookId" name="bookId" value="" />
+</form>
 <hr />
 book: <span id="bookData"></span>
 </body>
