@@ -16,9 +16,8 @@ import org.hibernate.search.annotations.Store;
 @Indexed
 public class Book {
 
-    @Field(index=Index.TOKENIZED, store=Store.YES)
+    @Field(index=Index.UN_TOKENIZED, store=Store.YES)
     private String title;
-    @Field(index=Index.TOKENIZED, store=Store.YES)
     private String author;
 
     @Id
