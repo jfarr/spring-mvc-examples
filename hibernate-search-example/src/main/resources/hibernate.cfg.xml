@@ -10,7 +10,7 @@
     <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
     <property name="show_sql">true</property>
     <property name="hibernate.search.default.directory_provider">org.hibernate.search.store.FSDirectoryProvider</property>
-    <property name="hibernate.search.default.indexBase">/var/lucene/indexes</property>
+    <property name="hibernate.search.default.indexBase">${project.build.directory}/lucene/indexes</property>
     
     <mapping class="examples.data.Book" />
 
