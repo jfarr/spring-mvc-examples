@@ -12,13 +12,13 @@ book_pattern = re.compile(r".*?<cite>(.*?)</cite>.*?,\s+by\s+(.*?)[(,]")
 next_link_pattern = re.compile(r'-- <a href="([^"]*)">next&gt;</a>')
 
 start_url = 'http://onlinebooks.library.upenn.edu/webbin/book/browse?type=title'
-output_filename = 'authors.txt'
+output_filename = 'books.txt'
 book_count = 0
 
 def main() :
     global book_count
     verbose = len(sys.argv) > 1 and sys.argv[1] == '-v'
-    output_file = file(output_filename,'w')
+    output_file = file(output_filename,'wb')
     writer = csv.writer(output_file)
     parser = HTMLParser.HTMLParser()
     next_link = start_url
@@ -31,8 +31,8 @@ def main() :
             listitem = match.group(0)
             book_match = book_pattern.match(listitem)
             if book_match:
-                title = parser.unescape(book_match.group(1)).encode('utf8')
-                author = parser.unescape(book_match.group(2)).encode('utf8')
+                title = parser.unescape(book_match.group(1)).encode('utf8').strip()
+                author = parser.unescape(book_match.group(2)).encode('utf8').strip()
                 writer.writerow([title, author])
                 if verbose:
                     print 'title:', title
