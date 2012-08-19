@@ -10,23 +10,23 @@
 <script type="text/javascript">
     $(document).ready(function() {
         onLoadSearch();
-        $('#next a').click(onClickNextSearch);
-        $('#prev a').click(onClickPrevSearch);
+        $('#first').click(onClickFirstSearch);
+        $('#next').click(onClickNextSearch);
+        $('#prev').click(onClickPrevSearch);
+        $('#last').click(onClickLastSearch);
         $('#search').click(onClickSearch);
         searchText = $('#title').attr('value');
         setTimeout(searchTimer, 1000);
-        $('#title').autocomplete({source: autoComplete});
+        $('#title').autocomplete({
+            source : autoComplete
+        });
     });
 </script>
 <title>Search Books</title>
 </head>
 <body>
 <h2>Search Books</h2>
-<a href=".">book list</a>
-&nbsp;
-search books
-&nbsp;
-<a href="addForm.html">add book</a>
+<a href=".">book list</a>&nbsp;search books&nbsp;<a href="addForm.html">add book</a>
 <br />
 <br />
 <form id="searchForm" method="GET">
@@ -36,7 +36,7 @@ search books
 		<td class="ui-widget"><input type="text" id="title" name="title" /></td>
 	</tr>
 	<tr>
-	    <td colspan="2">&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
 	</tr>
 	<tr>
 		<td rowspan="2""><input type="submit" id="search" value="Search" /></td>
@@ -45,35 +45,38 @@ search books
 </form>
 <p id="bookCount"></p>
 <table id="bookList">
-  <thead>
-    <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>&nbsp;</th>
-    </tr>
-  </thead>
-  <tbody id="bookListContent">
-    <tr id="book_0" style="display: none;">
-        <td class="bookTitle"><a href="view.html?bookId="></a></td>
-        <td class="bookAuthor"></td>
-        <td class="editBook"><a href="editForm.html?bookId=">edit</a></td>
-    </tr>
-    <tr class="navRow">
-        <td colspan="2">&nbsp;</td>
-    </tr>
-    <tr class="navRow">
-        <td colspan="3">
-            <table width="100%">
-                <tr>
-                    <td id="prev" width="50%"><a href=""></a></td>
-                    <td id="next" width="50%" align="right"><a href=""></a></td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-  </tbody>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Author</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody id="bookListContent">
+		<tr id="book_0" style="display: none;">
+			<td class="bookTitle"><a href="view.html?bookId="></a></td>
+			<td class="bookAuthor"></td>
+			<td class="editBook"><a href="editForm.html?bookId=">edit</a></td>
+		</tr>
+		<tr class="navRow">
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr class="navRow">
+			<td colspan="3">
+			<table width="100%">
+				<tr>
+					<td id="first-prev" width="50%"><a id="first" href=""></a> <a
+						id="prev" href=""></a></td>
+					<td id="next-last" width="50%" align="right"><a id="next"
+						href=""></a> <a id="last" href=""></a></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</tbody>
 </table>
 <hr />
-book data: <span id="bookData" /></span>
+book data:
+<span id="bookData" /></span>
 </body>
 </html>

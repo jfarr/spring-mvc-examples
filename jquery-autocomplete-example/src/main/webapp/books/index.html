@@ -9,52 +9,57 @@
 <script type="text/javascript">
     $(document).ready(function() {
         onLoadList();
-        $('#next a').click(onClickNextList);
-        $('#prev a').click(onClickPrevList);
+        $('#first').click(onClickFirstList);
+        $('#next').click(onClickNextList);
+        $('#prev').click(onClickPrevList);
+        $('#last').click(onClickLastList);
     });
 </script>
 <title>Book List</title>
 </head>
 <body>
 <h2>Book List</h2>
-book list
-&nbsp;
-<a href="search.html">search books</a>
-&nbsp;
-<a href="addForm.html">add book</a>
+book list&nbsp;<a href="search.html">search books</a>&nbsp;<a href="addForm.html">add book</a>
 <br />
 <br />
 <p id="bookCount"></p>
 <table id="bookList">
-  <thead>
-	<tr>
-        <th>Title</th>
-		<th>Author</th>
-		<th>&nbsp;</th>
-	</tr>
-  </thead>
-  <tbody id="bookListContent">
-    <tr id="book_0" style="display: none;">
-        <td class="bookTitle"><a href="view.html?bookId="></a></td>
-        <td class="bookAuthor"></td>
-        <td class="editBook"><a href="editForm.html?bookId=">edit</a></td>
-    </tr>
-    <tr class="navRow">
-        <td colspan="2">&nbsp;</td>
-    </tr>
-    <tr class="navRow">
-        <td colspan="3">
-            <table width="100%">
-                <tr>
-                    <td id="prev" width="50%"><a href=""></a></td>
-                    <td id="next" width="50%" align="right"><a href=""></a></td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-  </tbody>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Author</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody id="bookListContent">
+		<tr id="book_0" style="display: none;">
+			<td class="bookTitle"><a href="view.html?bookId="></a></td>
+			<td class="bookAuthor"></td>
+			<td class="editBook"><a href="editForm.html?bookId=">edit</a></td>
+		</tr>
+		<tr class="navRow">
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr class="navRow">
+			<td colspan="3">
+			<table width="100%">
+				<tr>
+					<td id="first-prev" width="50%">
+					   <a id="first" href=""></a>
+                       <a id="prev" href=""></a>
+					</td>
+					<td id="next-last" width="50%" align="right">
+					   <a id="next" href=""></a>
+                       <a id="last" href=""></a>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</tbody>
 </table>
 <hr />
-book data: <span id="bookData" /></span>
+book data:
+<span id="bookData" /></span>
 </body>
 </html>

@@ -13,32 +13,27 @@ function onLoadList() {
     $.getJSON(bookServiceUrl, renderBookList);
 }
 
-function onLoadSearch() {
-    var title = $('#title').attr('value');
-    if (title == "") {
-        $('#bookCount').hide();
-        $('#bookList').hide();
-        $('#bookData').html("");
-    } else {
-        var searchUrl = bookServiceUrl + 'search?title=' + $('#title').attr('value');
-        $.getJSON(searchUrl, renderBookList);
-    }
-}
-
-function onClickSearch() {
-    onLoadSearch();
+function onClickFirstList() {
+    $.getJSON(bookServiceUrl + '?firstResult='
+            + $('#first').attr('idx'), renderBookList);
     return false;
 }
 
 function onClickPrevList() {
     $.getJSON(bookServiceUrl + '?firstResult='
-            + $('#prev').find('a').attr('idx'), renderBookList);
+            + $('#prev').attr('idx'), renderBookList);
     return false;
 }
 
 function onClickNextList() {
     $.getJSON(bookServiceUrl + '?firstResult='
-            + $('#next').find('a').attr('idx'), renderBookList);
+            + $('#next').attr('idx'), renderBookList);
+    return false;
+}
+
+function onClickLastList() {
+    $.getJSON(bookServiceUrl + '?firstResult='
+            + $('#last').attr('idx'), renderBookList);
     return false;
 }
 
@@ -92,21 +87,47 @@ function renderBookCount(bookList) {
 function renderNavLinks(bookList) {
     var morePages = (bookList.nextResult != null || bookList.prevResult != null);
     if (morePages) {
-        if (bookList.prevResult != null) {
-            var prevLink = $('#prev a');
-            prevLink.attr('idx', bookList.prevResult);
-            prevLink.html('Prev&nbsp;' + bookList.maxResults);
-            prevLink.show();
+        if (bookList.startResult != null || bookList.prevResult != null) {
+            var firstLink = $('#first');
+            if (bookList.startResult != null) {
+                firstLink.attr('idx', bookList.startResult);
+                firstLink.html('First&nbsp;' + bookList.maxResults);
+                firstLink.show();
+            } else {
+                firstLink.hide();
+            }
+            var prevLink = $('#prev');
+            if (bookList.prevResult != null) {
+                prevLink.attr('idx', bookList.prevResult);
+                prevLink.html('Prev&nbsp;' + bookList.maxResults);
+                prevLink.show();
+            } else {
+                prevLink.hide();
+            }
+            $('#first-prev').show();
         } else {
-            $('#prev a').hide();
+            $('#first-prev').hide();
         }
-        if (bookList.nextResult != null) {
-            var nextLink = $('#next a');
-            nextLink.attr('idx', bookList.nextResult);
-            nextLink.html('Next&nbsp;' + bookList.maxResults);
-            nextLink.show();
+        if (bookList.nextResult != null || bookList.lastResult != null) {
+            var nextLink = $('#next');
+            if (bookList.nextResult != null) {
+                nextLink.attr('idx', bookList.nextResult);
+                nextLink.html('Next&nbsp;' + bookList.maxResults);
+                nextLink.show();
+            } else {
+                nextLink.show();
+            }
+            var lastLink = $('#last');
+            if (bookList.lastResult != null) {
+                lastLink.attr('idx', bookList.lastResult);
+                lastLink.html('Last&nbsp;' + bookList.maxResults);
+                lastLink.show();
+            } else {
+                lastLink.hide();
+            }
+            $('#next-last').show();
         } else {
-            $('#next a').hide();
+            $('#next-last').hide();
         }
         $('.navRow').show();
     } else {
@@ -114,15 +135,44 @@ function renderNavLinks(bookList) {
     }
 }
 
+function onLoadSearch() {
+    var title = $('#title').attr('value');
+    if (title == "") {
+        $('#bookCount').hide();
+        $('#bookList').hide();
+        $('#bookData').html("");
+    } else {
+        var searchUrl = bookServiceUrl + 'search?title=' + $('#title').attr('value');
+        $.getJSON(searchUrl, renderBookList);
+    }
+}
+
+function onClickSearch() {
+    onLoadSearch();
+    return false;
+}
+
+function onClickFirstSearch() {
+    $.getJSON(bookServiceUrl + 'search.html?title=' + $('#title').attr('value') + '&firstResult='
+            + $('#first').attr('idx'), renderBookList);
+    return false;
+}
+
 function onClickPrevSearch() {
     $.getJSON(bookServiceUrl + 'search.html?title=' + $('#title').attr('value') + '&firstResult='
-            + $('#prev').find('a').attr('idx'), renderBookList);
+            + $('#prev').attr('idx'), renderBookList);
     return false;
 }
 
 function onClickNextSearch() {
     $.getJSON(bookServiceUrl + 'search.html?title=' + $('#title').attr('value') + '&firstResult='
-            + $('#next').find('a').attr('idx'), renderBookList);
+            + $('#next').attr('idx'), renderBookList);
+    return false;
+}
+
+function onClickLastSearch() {
+    $.getJSON(bookServiceUrl + 'search.html?title=' + $('#title').attr('value') + '&firstResult='
+            + $('#last').attr('idx'), renderBookList);
     return false;
 }
 
