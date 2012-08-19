@@ -3,6 +3,7 @@
  */
 
 var bookServiceUrl = 'http://localhost:8080/hibernate-search-example/library/books/';
+var maxAutoComplete = 5;
 
 /*******************************************************************************
  * index.html / search.html functions
@@ -17,6 +18,7 @@ function onLoadSearch() {
     if (title == "") {
         $('#bookCount').hide();
         $('#bookList').hide();
+        $('#bookData').html("");
     } else {
         var searchUrl = bookServiceUrl + 'search?title=' + $('#title').attr('value');
         $.getJSON(searchUrl, renderBookList);
@@ -134,7 +136,7 @@ function searchTimer() {
 }
 
 function autoComplete(request, response) {
-    var searchUrl = bookServiceUrl + 'search?title=' + request.term;
+    var searchUrl = bookServiceUrl + 'search?title=' + request.term + '&maxResults=' + maxAutoComplete;
     $.getJSON(searchUrl, function(bookList) {
         var results = [];
         $.each(bookList.books, function(i, book) {
