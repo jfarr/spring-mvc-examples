@@ -8,7 +8,7 @@ import csv
 import HTMLParser
 
 list_pattern = re.compile(r"<li><a href=.*?</li>")
-book_pattern = re.compile(r".*?<cite>(.*?)</cite>.*?,\s+by\s+(.*?)[(,]")
+book_pattern = re.compile(r".*?<cite>(.*?)</cite>.*?,\s+by\s+(.*?)[(,<]")
 next_link_pattern = re.compile(r'-- <a href="([^"]*)">next&gt;</a>')
 
 start_url = 'http://onlinebooks.library.upenn.edu/webbin/book/browse?type=title'
@@ -31,14 +31,17 @@ def main() :
             listitem = match.group(0)
             book_match = book_pattern.match(listitem)
             if book_match:
-                title = parser.unescape(book_match.group(1)).encode('utf8').strip()
-                author = parser.unescape(book_match.group(2)).encode('utf8').strip()
-                writer.writerow([title, author])
-                if verbose:
-                    print 'title:', title
-                    print 'author:', author
-                    print
-                book_count += 1
+                try:
+                    title = parser.unescape(book_match.group(1)).encode('utf8').strip()
+                    author = parser.unescape(book_match.group(2)).encode('utf8').strip()
+                    writer.writerow([title, author])
+                    if verbose:
+                        print 'title:', title
+                        print 'author:', author
+                        print
+                    book_count += 1
+                except UnicodeDecodeError:
+                    pass
         link_match = next_link_pattern.search(page)
         if link_match:
             next_link = link_match.group(1)

@@ -1,4 +1,5 @@
 """-- & Co.""",Jean Richard Bloch
+"The $30,000 Bequest, and Other Stories",Mark Twain
 &c.,Emmeline Stuart-Wortley
 1 is One,Tasha Tudor
 10 Bulls: A Chinese Classic,Kakuan and Nyogen Senzaki
@@ -9,6 +10,7 @@ The 10% Solution for a Healthy Life,Ray Kurzweil
 100 Years: A Centennial History of the School of Social Policy and Practice,Mark Frazier Lloyd
 100 Years of Peace Making: A History of the International Peace Bureau and Other International Peace Movement Organisations and Networks,Rainer Santi
 "100 Years of Pictorial & Descriptive History of Wisconsin Rapids, Wisconsin",Theodore Asa Taylor
+100%: The Story of a Patriot,Upton Sinclair
 "1,000 Miles in a Machilla: Travel and Sport in Nyasaland, Angoniland, and Rhodesia, With Some Account of the Resources of These Countries",Olivia Spencer-Churchill Colville
 101 Bible Secrets That Christians Do Not Know,Ernest L. Martin
 "101 Metal-Working Projects: A Guide in Shopwork for Students in Secondary, Continuation, and Vocational Schools",Louis Christian Petersen
@@ -22,6 +24,8 @@ The 10% Solution for a Healthy Life,Ray Kurzweil
 13 Bullets: A Vampire Tale,David Wellington
 The 14-Carat Roadster,Jeno Rejto
 "14 Lieder aus Des Knaben Wunderhorn, für Tiefe Stimme und Klavier (14 Songs from The Youth's Magic Horn, for Low Voice and Piano)",Gustav Mahler
+1492,Mary Johnston
+"The 14th Colony: British West Florida, 1763-1781",John Appleyard Agency
 The 15th Congress of the General Confederation of Labour (Confédération Générale du Travail),International Labour Office
 1601,Mark Twain
 1601,Mark Twain
@@ -39,6 +43,7 @@ The 15th Congress of the General Confederation of Labour (Confédération Géné
 1871: The Paris Commune,Max Shachtman
 "1872: Letters Written by a Gentleman in Boston to His Friends in Paris, Describing the Great Fire",Harold Murdock
 1879-1929: Fifty Years of Woolworth,F.W. Woolworth Company
+"1887: Pensacola, The Lumbering Era",John Appleyard Agency
 "1888-1984, Missouri Agricultural Experiment Station and Cooperative Extension Service Publications",Judy S. Pallardy
 1888 Sermons and Morning Talks,Ellen Gould Harmon White
 1903: Second Congress of the Russian Social-Democratic Labour Party,Rossiiskaia sotsial-demokraticheskaia rabochaia partiia
@@ -67,6 +72,7 @@ The 21st Century Constitution,Barry Krusch
 365 Ways to Be Your Own Life Coach,David Lawrence Preston
 38th Evac,LeGette Blythe
 3D Graphics Programming with QuickDraw 3D,Apple Computer
+40 Days to Freedom: Live the Miracle!,Tom Lomas
 40 Great Flight Simulator Adventures,Charles Gulick
 40 More Great Flight Simulator Adventures,Charles Gulick
 48 Small Poems,Marc Weber
@@ -74,6 +80,7 @@ The 21st Century Constitution,Barry Krusch
 5 Readers Reading,Norman Norwood Holland
 50 Cautionary Tales for Managers,Peter Honey
 The 51st (Highland) Division: War Sketches,Fred A. Farrell
+52 Simple Ways to Manage Your Money,Judith A. Martindale and Mary J. Moses
 54 Ways You Can Help the Homeless,Charles Kroloff
 "55 Ways to Have Fun With Google: A Cabinet of Search Engine Curiosities, Riddles, Games, and a Little Bit of Usefulness",Philipp Lenssen
 "6 Million Victims: Documented Source Material on the Human Cost of the Indochina War Under the Nixon Administration, January 1, 1969 to June 30, 1972",Indochina Peace Campaign
@@ -89,6 +96,7 @@ A 65-Meter Telescope for Millimeter Wavelengths,John Wilson Findlay and Sebastia
 82d Division: Summary of Operations in the World War,American Battle Monuments Commission
 85 Ways to Market Your Small Business,Jackie Jarvis
 88 Bis and V.I.H: Letters From Two Hospitals,Katharine Foote
+'89,Albion Winegar Tourgée
 The 8th King's Regiment: A Curiosity in its Annals,Henry Scadding
 9 Lives: An Oral History,Aaron C. Elson
 The 9/11 Commission Report: Final Report of the National Commission on Terrorist Attacks Upon the United States,National Commission on Terrorist Attacks upon the United States
@@ -104,6 +112,7 @@ AppleScript Language Guide,Apple Computer
 AppleScript Scripting Additions Guide: English Dialect,Apple Computer
 Appleton's Guide-Book to Alaska and the Northwest Coast,Eliza Ruhamah Scidmore
 Appletons' Hand-Book of American Travel: The Southern Tour,Edward H. Hall
+Application of Solar Technology to Today's Energy Needs,United States Congress Office of Technology Assessment
 The Application of the Scriptures: A Biblical Refutation of Dispensationalism,Arthur Walkington Pink
 Applications of Biotechnology to Traditional Fermented Foods,National Research Council Board on Science and Technology for International Development
 Applications of Global Analysis in Mathematical Physics,Jerrold E. Marsden
@@ -120,11 +129,14 @@ Applied Sociology: A Treatise on the Conscious Improvement of Society by Society
 Applying Significant Bilingual Instructional Features in the Classroom,William J. Tikunoff
 The Appraisal of Real Estate,American Institute of Real Estate Appraisers
 Appreciation of Loved Ones Who Made Life Rich for Many,Lilian A. Cross
+Appreciations and Criticisms of the Works of Charles Dickens,G. K. Chesterton
+"Appreciations, with an Essay on Style",Walter Pater
 Approaches to the Great Settlement,Emily Greene Balch
 "Après le Procès: Rèponse à Quelques ""Intellectuels""",Ferdinand Brunetière
 April Airs: A Book of New England Lyrics,Bliss Carman
 April Hopes,William Dean Howells
 April Twilights,Willa Cather
+April's Lady: A Novel,The Duchess
 "Apulei Apologia, Sive Pro Se De Magia Liber",Apuleius
 Apuntes para la Historia de la Caricatura,Jacinto Octavio Picón
 The Aquarian Gospel of Jesus the Christ,Levi
@@ -138,6 +150,10 @@ The Arab Human Development Report 2002: Creating Opportunities for Future Genera
 "The Arab Minority in Israel: An Analysis of the ""Future Visions"" Documents",Elie Rekhess
 "Arab Nationalism and the Palestinians, 1850-1939",Abdelaziz A. Ayyad
 Arabella,Anna T. Sadlier
+"Arabesques: Monarè, Apollyona, Domitia, Ombra",Mrs. Richard S. Greenough
+"Arabia, Egypt, India: A Narrative of Travel",Isabel Burton
+"Arabian Days and Nights: or, Rays From the East",Marguerite A. Power
+The Arabian Nights Entertainments,Andrew Lang
 The Arabian Nights Entertainments,Andrew Lang
 Arabian Wisdom: Selections and Translations From the Arabic,John Wortabet
 Arabic Thought and Its Place in History,De Lacy O'Leary
@@ -152,7 +168,7 @@ Arbitrary Justice: Trial of Guantánamo and Bagram Detainees in Afghanistan,Sahr
 Arbor Day Leaves,Nathaniel Hillyer Egleston
 An Arboreal Song of the Alameda (The Beautiful Way),Mary Hannah Bacon Field
 Arcadian Adventures with the Idle Rich,Stephen Leacock
-Arcana Coelestia,"Emanuel Swedenborg<ul><li> <a href=""http://www.theheavenlydoctrines.org/Writings%20English/Arcana%20Coelestia%20"
+Arcana Coelestia,Emanuel Swedenborg
 "The Arcane Schools: A Review of their Origin and Antiquity; With a History of Freemasonry and its Relation to the Theosophic, Scientific, and Philosophic Mysteries",John Yarker
 The Arcane Teaching,William Walker Atkinson
 Archaeologia Hibernica: A Hand-book of Irish Antiquities,William F. Wakeman
@@ -175,6 +191,7 @@ Archimedes,Thomas Little Heath
 Archimedes,Chris Rorres
 "The Architect of Socialist Society: The Ninth of a Course of Lectures on ""The History of the Victory of Socialism,"" Delivered in 1967 at the School of Interplanetary Communications on the Fiftieth Anniversary of the October Revolution",Karl Radek
 Architects of American Air Supremacy: Gen. Hap Arnold and Dr. Theodore von Kármán,Dik A. Daso
+Architecture and Democracy,Claude Fayette Bragdon
 Architecture and Memory: The Renaissance Studioli of Federico de Montefeltro,Robert Kirkbride
 An Architecture for Combinator Graph Reduction,Philip Koopman
 An Architecture for Our Time: The New Classicism,Charles Siegel
@@ -196,17 +213,20 @@ Arctic Pollution Issues: A State of the Arctic Environment Report,Arctic Monitor
 "The Arctic Prairies: A Canoe-Journey of 2,000 Miles in Search of the Caribou; Being the Account of a Voyage to the Region North of Aylmer Lake",Ernest Thompson Seton
 The Arctic Regions and Hudson's Bay Route: Report of a Lecture,John Rae
 "Arctic Researches and Life Among the Esquimaux: Being the Narrative of an Expedition in Search of Sir John Franklin, in the Years 1860, 1861 and 1862",Charles Francis Hall
+Ardath: The Story of a Dead Self,Marie Corelli
 The Ardennes: Battle of the Bulge,Hugh M. Cole
 Are Communism and the Human Society Inevitable?,Harry Waton
+Are Opinion Polls Useful?,Ralph O. Nafziger
 Are the Jews a Race?,Karl Kautsky
 Are These Cats Red? The Black Panthers,Kent Courtney
 Are They Doomed?  The Sacco-Vanzetti Case and the Grim Forces Behind It,Art Shields
 Are We a Nation? The Question as it Stood Before the War,J. M. Bundy
 Are We Cleaning Up? 10 Superfund Case Studies,United States Congress Office of Technology Assessment
 Are We Growing Toward Socialism?,Charles E. Ruthenberg
-Are Women People? A Book of Rhymes for Suffrage Times,"Alice Duer Miller<ul><li> <a href=""http://lcweb2.loc.gov/cgi-bin/query/r?ammem/nawbib:@FIELD"
+Are Women People? A Book of Rhymes for Suffrage Times,Alice Duer Miller
 Are You a Bromide?,Gelett Burgess
 Are You Ready?  An In-Depth Guide to Citizen Preparedness,United States Federal Emergency Management Agency
+Areopagitica,John Milton
 Areopagitica,John Milton
 Argentine Civil-Military Relations: From Alfonsín to Menem,Herbert C. Huser
 Argonautica,Apollonius Rhodius
@@ -224,6 +244,7 @@ Ariadne: the Story of a Dream,Ouida
 Ariadne: the Story of a Dream,Ouida
 The Arians of the Fourth Century,John Henry Newman
 Arid Zone Settlement in Australia: A Focus on Alice Springs,Don N. Parkes
+"Ariel and Caliban, With Other Poems",Christopher Pearse Cranch
 Arise! Awake! Thoughts of a Yogi,Sri Chinmoy
 Aristakes Lastivertc'i's History,Aristakes Lastivertc'i
 "Aristocratic Experience and the Origins of Modern Culture: France, 1570-1715",Jonathan Dewald
@@ -242,6 +263,7 @@ Arkansas Diet Manual,Arkansas State Board of Health and Arkansas Dietetic Associ
 The Arkansas Race Riot,Ida B. Wells-Barnett
 ARL Annual Salary Survey,Association of Research Libraries
 ARL Statistics,Association of Research Libraries
+Armadale,Wilkie Collins
 Armageddon,Joe Crews
 "Armageddon: A Tale of Love, War, and Invention",Stanley Waterloo
 Armageddon and the Day of the Lord: A Series of Bible Studies on the Coming Tribulation,M. R. DeHaan
@@ -254,7 +276,9 @@ Armed Conflict in the 21st Century: The Information Revolution and Post-Modern W
 The Armed Forces Officer,American Forces Information Service
 "Armenia and the War: An Armenian's Point of View, With an Appeal to Britain and the Coming Peace Conference",Avetoon Pesak Hacobian
 "Armenia and the War: An Armenian's Point of View, With an Appeal to Britain and the Coming Peace Conference",Avetoon Pesak Hacobian
+Armenian Atrocities: A Compilation of Views,Turkey Foreign Ministry
 Armenian Atrocities: The Murder of a Nation,Arnold Toynbee
+The Armenian File: The Myth of Innocence Exposed,Kamuran Gürün
 The Armenian Issue in Ten Questions and Answers,Foreign Policy Institute
 Armenian Legends and Poems,Zabelle C. Boyajian
 "Armenians in Ottoman Documents, 1915-1920",Turkey General Directorate of Ottoman Archives
@@ -286,6 +310,7 @@ Around the Horn in '49,Hartford Union Mining and Trading Company
 "Around the World in 80 Days, With Michael Palin",Michael Palin
 Around the World in Eighty Days,Jules Verne
 Around the World in Eighty Days,Jules Verne
+Around the World on a Bicycle,Thomas Stevens
 Around the World on Wheels for the Inter Ocean: The Travels and Adventures in Foreign lands of Mr. and Mrs. H. Darwin McIlrath,H. Darwin McIlrath
 Around the World to Persia: Letters Written While on the Journey as a Member of the American-Persian Relief Commission in 1918,Kate Jackson
 Around the Year in Rhymes for the Jewish Child,Jessie E. Sampter
@@ -296,9 +321,11 @@ The Arraignment and Conviction of Usurie,Miles Mosse
 The Arrangement of Space,Martha Collins
 Arresting Delia,S. Fowler Wright
 Arrow Music,Bryher
+The Arrow of Gold,Joseph Conrad
 Arrowsmith,Sinclair Lewis
 "Ars Recte Vivendi: Being Essays Contributed to ""The Easy Chair""",George William Curtis
 Arsenals of Democracy: Pictures and Tabloid Statistical Surveys of Fifteen Major Projects Under the National Defense Program,United States War Department
+Arsene Lupin,Edgar Jepson and Maurice Leblanc
 Arsène Lupin Versus Herlock Sholmes,Maurice Leblanc
 Arsenic,Assembly of Life Sciences
 The Art / The Veil,David Meltzer
@@ -306,6 +333,7 @@ Art and Architecture,William Walton
 Art and Play Therapy,Emery I. Gondor
 "Art and Scholasticism, and The Frontiers of Poetry",Jacques Maritain
 The Art and Science of Audio Book Production,Billy R. West
+The Art and Science of Change Ringing,William Banister
 The Art and Science of Smalltalk,Simon Lewis
 The Art and Science of Victorian History,Rosemary Jann
 Art and Socialism,William Morris
@@ -323,7 +351,9 @@ The Art of Angling,Guinad Charfy
 The Art of Archerie,Gervase Markham
 The Art of Assembly Language Programming,Randall Hyde
 The Art of Beautifying Suburban Home Grounds of Small Extent,Frank J. Scott
+The Art of Being Alive: Success Through Thought,Ella Wheeler Wilcox
 The Art of Bookbinding,Joseph William Zaehnsdorf
+"The Art of Candy Making Fully Explained, With 105 Recipes for the Home",Mrs. Sherwood P. Snyder
 The Art of Community,Jono Bacon
 The Art of Computer Game Design,Chris Crawford
 The Art of Controversy,Arthur Schopenhauer
@@ -331,8 +361,11 @@ The Art of Controversy,Arthur Schopenhauer
 The Art of Dancing Explained by Reading and Figures,Kellom Tomlinson
 "The Art of Dancing, Historically Illustrated",Edward Ferrero
 The Art of Dancing: Its Theory and Practice,F. Leslie Clendenen
+The Art of Distillation,John French
 The Art of Divine Contentment,Thomas Watson
+The Art of Electronic Publishing,Sandy Ressler
 "The Art of Extempore Speaking: Hints for the Pulpit, the Senate, and the Bar",L. Bautain
+"The Art of Fencing, or, The Use of the Small Sword",Labat
 The Art of Horsemanship,Xenophon
 The Art of Internet Dating,David L. Jones
 The Art of Inventing Characters,Georges Polti
@@ -340,9 +373,12 @@ The Art of James Branch Cabell,Hugh Walpole
 The Art of Kissing,Hugh Morris
 The Art of Lawn Tennis,William T. Tilden
 The Art of Literature,Arthur Schopenhauer
+The Art of Living in Australia: Together with Three Hundred Australian Cookery Recipes and Accessory Kitchen Information,Philip E. Muskett and Mrs. H. Wicken
+"The Art of Logical Thinking: or, The Laws of Reasoning",William Walker Atkinson
 The Art of Massage,John Harvey Kellogg
 The Art of Memory: Being a Comprehensive and Practical System of Memory Culture,Henry H. Fuller
 The Art of Millinery: A Complete Series of Practical Lessons for the Artiste and the Amateur,Anna Ben-Yûsuf
+Art of Money Getting,P. T. Barnum
 The Art of Poetry: An Epistle to the Pisos,Horace
 "The Art of Poetry: The Poetical Treatises of Horace, Vida, and Boileau, With the Translations by Howes, Pitt, and Soame",Horace
 The Art of Public Speaking,J. Berg Esenwein and Dale Carnegie
@@ -352,7 +388,9 @@ The Art of Singing,Luisa Tetrazzini and Enrico Caruso
 The Art of South and Southeast Asia: A Resource for Educators,Steven Kossak and Edith W. Watts
 "The Art of Story-Telling, With Nearly Half a Hundred Stories",Julia Darrow Cowles
 The Art of Story Writing: Facts and Information About Literary Work of Practical Value of Both Amateur and Professional Writers,Nathaniel C. Fowler
+The Art of Tatting,Katharin L. Hoare
 The Art of Teaching School,Josiah Rhinehart Sypher
+Art of the Avant-Garde in Russia: Selections From the George Costakis Collection,Margit Rowell and Angelica Zander Rudenstine
 "The Art of the Exposition: Personal Impressions of the Architecture, Sculpture, Mural Decorations, Color Scheme and Other Aesthetic Aspects of the Panama-Pacific International Exposition",Eugen Neuhaus
 The Art of the Story-Teller,Marie L. Shedlock
 The Art of Thomas Hardy,Lionel Pigot Johnson
@@ -369,10 +407,14 @@ The Art of Worldly Wisdom,Baltasar Gracián y Morales
 Art Recreations,L. B. Urbino
 Art Treasures of Belgium II: Sculpture,Marguerite Devigne
 The Art-Work of the Future,Richard Wagner
+Arte de la Lengua Pampanga,Diego Bergaño
 Arte e Fisiologia del Canto,E. Delle Sedie
+The Arte of English Poesie,George Puttenham
 The Arte of Rhetorique,Thomas Wilson
 Arte Poetica,Nicolas Boileau Despréaux
 Arteloise: A Romance of King Arthur and the Knights of the Round Table,John Dunbar Hylton
+Artemis to Actaeon and Other Verse,Edith Wharton
+Arthur,Eugène Sue
 "Arthur, a Pilgrim",Arthur Blessitt
 Arthur Machen: A Novelist of Ecstasy and Sin,Vincent Starrett
 "Arthur Mervyn: or, Memoirs of the Year 1793",Charles Brockden Brown
@@ -390,6 +432,7 @@ Artificial Insemination to Cloning: Tracing 50 Years of Research,Robert H. Foote
 Artificial Intelligence and Responsive Optimization,Mohammad Khosnevisan
 Artificial Intelligence Through Prolog,Neil C. Rowe
 The Artist: A Drama Without Words,H. L. Mencken
+An Artist in Crime,Rodrigues Ottolengui
 Artistic Cookery: A Practical System Suited for the Use of the Nobility and Gentry and for Public Entertainments,Urbain Dubois
 "The Artist's Technique of Violin Playing: A New Scientific Method for Obtaining, in the Shortest Possible Time, an Absolute Mastery of the Higher Technical Difficulties of the Left Hand and of the Bow",Demetrius Constantine Dounis
 "The Arts of Beauty, or, Secrets of a Lady's Toilet: With Hints to Gentlemen on the Art of Fascinating",Lola Montez
@@ -399,6 +442,8 @@ Art's True Mission in America,A. J. H. Duganne
 Arturius: A Quest for Camelot,David F. Carroll
 Arundel,E. F. Benson
 "The Arya Dharma of Sakya Muni, Gautama Buddha; or, The Ethics of Self Discipline",Anagarika Dharmapala
+As a Man Thinketh,James Allen
+As a Matter of Course,Annie Payson Call
 As a Thief in the Night,R. Austin Freeman
 As California Wild Flowers Grow: Suggestions to Nature Lovers,Katherine Chandler
 "As Good As a Comedy: or, The Tennesseean's Story",William Gilmore Simms
@@ -410,6 +455,7 @@ As It May Be: A Story of the Future,Bessie Story Rogers
 "As No Storm: or, The Any Port Party",Johanna Drucker
 As the Hague Ordains: Journal of a Russian Prisoner's Wife in Japan,Eliza Ruhamah Scidmore
 As the Sparks Fly Upward,Cyrus Townsend Brady
+As to Politics,Daniel De Leon
 As We Go,Charles Dudley Warner
 As We Were Saying,Charles Dudley Warner
 As You Like It,William Shakespeare
@@ -421,6 +467,7 @@ Asbestos in Buildings: Guidance for Service and Maintenance Personnel,United Sta
 The Ascent of Man,Mathilde Blind
 The Ascent of Mind: Ice Age Climates and the Evolution of Intelligence,William H. Calvin
 Ascent of Mount Carmel,Saint John of the Cross
+The Ascent to the Mount of Vision,Jane Lead
 Asceticism and Society in Crisis: John of Ephesus and The Lives of the Eastern Saints,Susan Ashbrook Harvey
 "Ashes of the Beacon; The Land Beyond the Blow; For the Ahkoond; John Smith, Liberator; Bits of Autobiography",Ambrose Bierce
 Ashes of Victory,David Weber
@@ -436,6 +483,8 @@ Aslauga's Knight,Friedrich Heinrich Karl La Motte-Fouqué
 Aspects of Christian Mysticism,W. Major Scott
 Aspects of Japanese Culture and Society: An Anthropologist's View,Ito Abito
 Aspects of the Christ,Annie Besant
+The Aspern Papers,Henry James
+The Asphalt Jungle,W. R. Burnett
 The Aspirations of Jean Servien,Anatole France
 The Assassinated President,Joseph Augustus Seiss
 "The Assassination of Abraham Lincoln: and the Attempted Assassination of William H. Seward, Secretary of State, and Frederick W. Seward, Assistant Secretary",United States Department of State
@@ -464,10 +513,11 @@ Assessing the Value of Research in the Chemical Sciences,National Research Counc
 An Assessment of Alternative Economic Stockpiling Policies,United States Congress Office of Technology Assessment
 An Assessment of Alternatives for a National Computerized Criminal History System,United States Congress Office of Technology Assessment
 An Assessment of Atlantic Bluefin Tuna,National Research Council Ocean Studies Board
-An Assessment of Community Planning for Mass Transit,"United States Congress Office of Technology Assessment<ul><li> <a href=""http://babel.hathitrust.org/cgi/pt?id=mdp.39015016503339"">Volume 1"
+An Assessment of Community Planning for Mass Transit,United States Congress Office of Technology Assessment
 An Assessment of Development and Production Potential of Federal Coal Leases,United States Congress Office of Technology Assessment
 An Assessment of Information Systems Capabilities Required To Support U.S. Materials Policy Decisions,United States Congress Office of Technology Assessment
 An Assessment of Maritime Trade and Technology,United States Congress Office of Technology Assessment
+An Assessment of Oil Shale Technologies,United States Congress Office of Technology Assessment
 Assessment of Research Needs for Wind Turbine Rotor Materials Technology,National Research Council Energy Engineering Board
 An Assessment of Techniques for Removing Offshore Structures,National Research Council Marine Board
 Assessment of Technologies Deployed to Improve Aviation Security: First Report,National Research Council Panel on Assessment of Technologies Deployed to Improve Aviation Security
@@ -487,6 +537,7 @@ The Associate Hermits,Frank Richard Stockton
 Assyrian Historiography: A Source Study,A. T. Olmstead
 Asterisk: The Future of Telephony,Jim Van Meggelen
 "Astoria: or, Anecdotes of an Enterprise Beyond the Rocky Mountains",Washington Irving
+"Astoria: or, Anecdotes of an Enterprise Beyond the Rocky Mountains",Washington Irving
 The Astral Body and Other Astral Phenomena,Arthur Edward Powell
 The Astral Light,Henry T. Edge
 "The Astral Plane: Its Scenery, Inhabitants, and Phenomena",C. W. Leadbeater
@@ -498,6 +549,7 @@ Astrological Timing: The Transition to a New Age,Dane Rudhyar
 Astrology and Judaism in Late Antiquity,Lester J. Ness
 Astrology and Religion Among the Greeks and Romans,Franz Valery Marie Cumont
 The Astrology of America's Destiny,Dane Rudhyar
+The Astrology of Relationship: A Humanistic Approach to the Practice of Synastry,Michael R. Meyer
 The Astrology of Transformation: A Multilevel Approach,Dane Rudhyar
 Astrology Theologised: The Spiritual Hermeneutics of Astrology and Holy Writ;,Valentin Weigel
 "An Astronomical Description of the Late Comet or Blazing Star, As it Appeared in New-England in the 9th, 10th, 11th, and in the Beginning of the 12th Moneth, 1664",Samuel Danforth
@@ -512,6 +564,7 @@ ASU: Now We Are 6,Irving Woliver
 Asylum of the Sisters of Charity At Quebec,Louis Proulx
 "Asymmetry and U.S. Military Strategy: Definition, Background, and Strategic Concepts",Steven Metz and Douglas V. Johnson
 At a Winter's Fire,Bernard Edward Joseph Capes
+At Aboukir and Acre: A Story of Napoleon's Invasion of Egypt,G. A. Henty
 At Agincourt,G. A. Henty
 At All Costs,David Weber
 At Any Cost,Isabella Fyvie Mayo
@@ -520,6 +573,7 @@ At Boarding School With the Tucker Twins,Emma Speed Sampson
 At His Gates,Mrs. Oliphant
 "At Home and Abroad: A Sketch-Book of Life, Scenery, and Men",Bayard Taylor
 "At Home and Abroad: or, Things and Thoughts in America and Europe",Margaret Fuller
+At Home in Fiji,C. F. Gordon Cumming
 At Large,Arthur Christopher Benson
 At Large,E. W. Hornung
 At Last,Marion Harland
@@ -527,6 +581,7 @@ At Last,Marion Harland
 At Last: A Christmas in the West Indies,Charles Kingsley
 At Love's Cost,Charles Garvice
 At Michaelmas: A Lyric,Bliss Carman
+At Midnight and Other Stories,Ada Cambridge
 "At Minas Basin, and Other Poems",Theodore Harding Rand
 The At-One-Ment Between God and Man,C. T. Russell
 At Risk Families and Schools: Becoming Partners,Lynn Balster Liontos
@@ -535,6 +590,7 @@ At Sunset,Julia Ward Howe and Laura Elizabeth Howe Richards
 At Sunwich Port,W. W. Jacobs
 "At Suvla Bay: Being the Notes and Sketches of Scenes, Characters and Adventures of the Dardanelles Campaign",John Hargrave
 "At the Back of the Black Man's Mind: or, Notes on the Kingly Office in West Africa",R. E. Dennett
+At the Back of the North Wind,George MacDonald
 At the Back of the North Wind,George MacDonald and Elizabeth Foreman Lewis
 "At the Beautiful Gate, and Other Songs of Faith",Lucy Larcom
 "At the Councillor's: or, A Nameless History",E. Marlitt
@@ -559,6 +615,7 @@ At the Villa Rose,A. E. W. Mason
 At the Window,Chester Eagle
 At Whispering Pine Lodge,Lawrence J. Leslie
 At Your Own Risk: The Case Against Chiropractic,Ralph Lee Smith
+Atalanta Fugiens,Michael Maier
 Atalanta in Calydon,Algernon Charles Swinburne
 Atari BASIC,Bob Albrecht
 "Atari BASIC, XL Edition",Bob Albrecht
@@ -569,7 +626,7 @@ Athabasca Bill: A Tale of the Far West,Bessie Marchant
 "Athaliah: A Sacred Drama, Translated From Racine; and Original Poems",Thomas Fry and Jean Racine
 "Athaliah: A Tragedy, Intended for Reading Only, Translated into English Blank Verse",Jean Racine
 Athalie,Robert W. Chambers
-The Athanasian Creed,"Emanuel Swedenborg<ul><li> <a href=""http://www.theheavenlydoctrines.org/Writings%20English/Athanasian%20Creed%20"
+The Athanasian Creed,Emanuel Swedenborg
 Athanasius: The Hero,Lynn Harold Hough
 The Atheism of Astronomy,Woolsey Teller
 An Atheist Manifesto,Joseph Lewis
@@ -589,7 +646,9 @@ Atlanta Offering: Poems,Frances Ellen Watkins Harper
 Atlantida (L'Atlantide),Pierre Benoît
 Atlantis,Gerhart Hauptmann
 Atlantis: The Antediluvian World,Ignatius Donnelly
+Atlantis: The Antediluvian World,Ignatius Donnelly
 Atlas and Cyclopedia of Ireland,P. W. Joyce and A. M. Sullivan
+Atlas of Creation,Harun Yahya
 Atlas of Global Development,World Bank
 Atlas of International Freshwater Agreements,United Nations Environment Programme
 "Atlas of Livingston County, Michigan, With Additional Maps of the North American Continent, USA & State of Michigan",F. W. Beers
@@ -601,6 +660,7 @@ Atlas of North Dakota Butterflies,Ronald A. Royer
 Atlas of the Vascular Plants of Utah,Beverly J. Albee
 Atlas of United States Mortality,Linda Williams Pickle
 Atma,Caroline Augusta Frazer
+Atom-Smashing Power of Mind,Charles Fillmore
 The Atomic Bombings of Hiroshima and Nagasaki,Manhattan Engineer District
 "Atomic, Molecular, and Optical Science: An Investment in the Future",National Research Council Board on Physics and Astronomy
 The Atomic Poems of Margaret (Lucas) Cavendish,Margaret Cavendish Newcastle
@@ -608,6 +668,7 @@ The Atomic Poems of Margaret (Lucas) Cavendish,Margaret Cavendish Newcastle
 Atoms and Ancestors,Frederick Burkewood Welbourn
 Atoms of Empire,Charles John Cutcliffe Wright Hyne
 Atopic Eczema in Children: Management of Atopic Eczema in Children from Birth up to the Age of 12 Years,National Collaborating Centre for Women's and Children's Health
+"The Attache, Or, Sam Slick in England",Thomas Chandler Haliburton
 "Attack on Mississippi is Communist-Inspired: Speech of William M. Colmer of Mississippi in the House of Representatives, Wednesday, February 16, 1966",William Meyers Colmer
 The Attack on the Corporation,William T. Poole
 Attacks on the Freedom to Learn,People for the American Way
@@ -676,6 +737,7 @@ Aunt Maggie's Will: A Comedy in Three Acts,Elizabeth Gale
 Aunt Martha's Corner Cupboard: A Story for Boys and Girls,Mary Kirby and Elizabeth Kirby
 "Aunt Martha's Corner Cupboard: or, Stories About Tea, Coffee, Sugar, Rice, etc.",Mary Kirby and Elizabeth Kirby
 Aunt Maud,Ernest Oldmeadow
+"Aunt Phillis's Cabin: or, Southern Life As It Is",Mary H. Eastman
 Aunt Rachel,David Christie Murray
 Aunt Safiyya and the Monastery: A Novel,Bahaa' Taher
 Auraria: The Story of a Georgia Gold-Mining Town,E. Merton Coulter
@@ -687,8 +749,11 @@ Aurora Leigh,Elizabeth Barrett Browning
 "Aus der Geschichte der Ungarländischen Arbeiterbewegung: Bericht zum Internationalen Sozialistischen Arbeiterkongress in Amsterdam, 1904",Magyarországi Szociáldemokrata Párt
 An Auschwitz Alphabet,Jonathan Wallace
 Auschwitz: Technique and Operation of the Gas Chambers,Jean-Claude Pressac
+Austin Friars,Mrs. J. H. Riddell
 Australasia,William Charles Wentworth
 "Australia, 1930: An Inaugural Lecture",L. F. Giblin
+Australia Felix,Henry Handel Richardson
+"Australia: Our Neighbor ""Down Under""",Herbert Heaton
 "Australia Twice Traversed: The Romance of Exploration: Being a Narrative Compiled from the Journals of Five Exploring Expeditions Into and Through Central South Australia, and Western Australia, From 1872 to 1876",Ernest Giles
 The Australian Achievement: From Bondage to Freedom,L. J. M. Cooray
 Australian Discovery,Ernest Scott
@@ -701,6 +766,7 @@ Australian Tales,Marcus Andrew Hislop Clarke
 Austria 2005: Projected Sociocultural Effects of the Microelectronic Revolution,Robert B. Textor
 The Austrian Officer at Work and at Play,Dorothea Gerard
 Austrian Philosophy: The Legacy of Franz Brentano,Barry Smith
+"Aut Diabolus aut Nihil, and Other Tales",Julian Osgood Field
 An Authentic Account of the Shaksperian Manuscripts,W. H. Ireland
 Authentic Christianity,Ray C. Stedman
 Authentic Human Destiny: The Paths of Shankara and Heidegger,Vensus A. George
@@ -720,6 +786,7 @@ Authority in the Modern State,Harold Joseph Laski
 "Authorized English Translation of the White Paper Issued by the Norwegian Government on April 14th, 1940: The German Aggression on Norway",Norway Kgl. Utenriksdepartement
 Authors and Friends,Annie Fields
 The Author's Craft,Arnold Bennett
+The Author's Daughter,Catherine Helen Spence
 Authors of Greece,T. W. Lumb
 "Authors, Publishers, and Politicians: The Quest for an Anglo-American Copyright Agreement, 1815-1854",James J. Barnes
 Auto-Biography of Lemuel Sawyer,Lemuel Sawyer
@@ -728,6 +795,9 @@ Autobiographic Sketches,Thomas De Quincey
 Autobiographical Sketch and Narrative of the War Between the States,Jubal Anderson Early
 "An Autobiographical Sketch of a Teacher's Life: Including a Residence in the Northern and Southern States, California, Cuba and Peru",C. E. Holt
 Autobiographical Sketches,Annie Besant
+Autobiography,John Stuart Mill
+Autobiography,Thomas Jefferson
+An Autobiography,Catherine Helen Spence
 An Autobiography,Anthony Trollope
 Autobiography,G. K. Chesterton
 "Autobiography and Biography of Rev. Joseph Caldwell, D.D., L.L.D., First President of the University of North Carolina",Joseph Caldwell
@@ -741,6 +811,7 @@ Autobiography of a Female Slave,Martha Griffith Browne
 The Autobiography of a Forest Monk,Ajahn Thate
 "Autobiography of a Fugitive Negro: His Anti-Slavery Labours in the United States, Canada, & England",Samuel Ringgold Ward
 Autobiography of a Pioneer,Samuel Pickard
+Autobiography of a Pocket-Handkerchief,James Fenimore Cooper
 "The Autobiography of a Quack, and The Case of George Dedlow",S. Weir Mitchell
 The Autobiography of a Slander,Edna Lyall
 "The Autobiography of a Wesleyan Methodist Missionary (Formerly a Roman Catholic): Containing an Account of His Conversion from Romanism and His Reception Into the Wesleyan Ministry; Also, Reminiscences of Nearly Twenty-Five Years' Itinerancy in the North American Provinces, &c.",Robert Cooney
@@ -750,6 +821,7 @@ The Autobiography of Alice B. Toklas,Gertrude Stein
 Autobiography of an Elderly Woman,Mary Heaton Vorse
 The Autobiography of an Ex-Colored Man,James Weldon Johnson
 Autobiography of Andrew Carnegie,Andrew Carnegie
+Autobiography of Andrew Dickson White,Andrew Dickson White
 "Autobiography of Andrew T. Still, With a History of the Discovery and Development of the Science of Osteopathy",A. T. Still
 "The Autobiography of Anne, Lady Halkett",Anne Halkett
 Autobiography of Asa Biggs,Asa Biggs
@@ -760,6 +832,7 @@ Autobiography Of Benvenuto Cellini,Benvenuto Cellini
 An Autobiography of Buffalo Bill (Colonel W. F. Cody),Buffalo Bill
 The Autobiography of Charles Darwin,Charles Darwin
 The Autobiography of Charles Peters,Charles Peters
+The Autobiography of Christopher Kirkland,E. Lynn Linton
 Autobiography of Col. Richard Malcolm Johnston,Richard Malcolm Johnston
 The Autobiography of David Ward,David Ward
 "The Autobiography of Elizabeth Davis, a Balaclava Nurse, Daughter of Dafydd Cadwaladyr",Elizabeth Davis
@@ -767,6 +840,7 @@ The Autobiography of Elizabeth M. Sewell,Elizabeth Missing Sewell
 Autobiography of Erastus O. Haven,E. O. Haven
 Autobiography of Friedrich Froebel,Friedrich Fröbel
 "The Autobiography of Guibert, Abbot of Nogentsous-Coucy",Guibert of Nogent
+Autobiography of Herbert W. Armstrong,Herbert W. Armstrong
 The Autobiography of Jack Ketch,Charles Whitehead
 "The Autobiography of Jane Fairfield, Embracing a Few Select Poems by Sumner Lincoln Fairfield",Jane Frazee Fairfield
 "The Autobiography of Johannes Butzbach, a Wandering Scholar of the Fifteenth Century",Johannes Butzbach
@@ -804,7 +878,9 @@ Automotive Fuel Economy: How Far Should We Go?,National Research Council Energy 
 Autumn Leaves,John Critchley Prince
 The Avalanche: A Mystery Story,Gertrude Franklin Horn Atherton
 "Avatar: or, The Double Transformation",Théophile Gautier
+"Avataras: Four Lectures Delivered at the Twenty-Fourth Anniversary Meeting of the Theosophical Society at Adyar Madras, December 1899",Annie Besant
 The Avatars: A Futurist Fantasy,George William Russell
+Ave Roma Immortalis: Studies From the Chronicles of Rome,F. Marion Crawford
 Avebury,Richard Berengarten
 The Avenger,E. Phillips Oppenheim
 "Avenging the Maine, A Drunken A. B., and Other Poems",James E. McGirt
@@ -815,10 +891,12 @@ Aviation Fuels and Their Effects on Engine Performance,Ethyl Corporation
 Aviation Fuels with Improved Fire Safety: A Proceedings,National Research Council National Materials Advisory Board
 Aviation Safety and Pilot Control: Understanding and Preventing Unfavorable Pilot-Vehicle Interactions,National Research Council Aeronautics and Space Engineering Board
 Aviation Weather Services: A Call for Federal Leadership and Action,National Research Council Aeronautics and Space Engineering Board
+"The Avifauna of the South Farallon Islands, California",David F. DeSante and David G. Ainley
 Avril: Being Essays on the Poetry of the French Renaissance,Hilaire Belloc
 Aw-Aw-Tam Indian Nights: Being The Myths and Legends of the Pimas of Arizona,John William Lloyd
 The Awaited Saviour,Muhammad Baqir Sadr and Murtaza Mutahhari
 Awaken the Writer Within,Cathy Birch
+The Awakening,Kate Chopin
 The Awakening (The Resurrection),Leo Tolstoy
 "The Awakening, and Selected Short Stories",Kate Chopin
 Awakening and To Let,John Galsworthy
@@ -832,6 +910,7 @@ Awakening to Prayer,Augustine Ichiro Okumura
 Awareness Itself,Fuang Jotiko
 The 'Awarifu-l-ma'arif,Umar ibn Muhammad Suhrawardi
 Away in the Wilderness,R. M. Ballantyne
+"Awful Disclosures, By Maria Monk, of the Hotel Dieu Nunnery of Montreal: Containing, Also, Many Incidents Never Before Published",Maria Monk
 "Awful Disclosures, By Maria Monk, of the Hotel Dieu Nunnery of Montreal : Revised, With an Appendix Containing, Part I. Reception of the First Editions. Part II. Sequel of Her Narrative. Part III. Review of the Case : Also, a Supplement, Giving More Particulars of the Nunnery and Grounds",Maria Monk
 "Awful Disclosures of Maria Monk, Or, The Hidden Secrets of a Nun's Life in a Convent Exposed, Illustrated With Upwards of Forty Engravings",Maria Monk
 The Awkward Age,Henry James
@@ -844,9 +923,12 @@ Ayesha: The Return of She,H. Rider Haggard
 The Ayrshire Legatees,John Galt
 Az Alsó-Meczenzéfi Német Nyelvjárás Hangtana,Gedeon Alajos
 Azerbeycan ve Inkilâbi,Efendizade Mehmet Serif
+Aztec Ruins National Monument: Administrative History of an Archeological Preserve,Robert H. Lister and Florence Cline Lister
 "Aztec Ruins National Monument, New Mexico",John Maxwell Corbett
 "The ""B. O. W. C."": A Book for Boys",James De Mille
+Bab: A Sub-Deb,Mary Roberts Rinehart
 "The ""Bab"" Ballads",W. S. Gilbert
+Babbitt,Sinclair Lewis
 "The Babe: Child of Boom and Bust in Old Chicago, Umbilicus Mundi",Alfred De Grazia
 "The Babes in the Basket, Or, Daph and Her Charge",Charlotte Elizabeth Bowen
 The Babes in the Wood,Sophia Newnham
@@ -855,6 +937,7 @@ Babes in the Wood: A Romance of the Jungles,B. M. Croker
 "Baboo Jabberjee, B.A.",F. Anstey
 The Baburnama in English (Memoirs of Babur),Emperor of Hindustan Babur
 Baby Bonanza,Maureen Child
+Baby Mine,Margaret Mayo
 Babylon: A Poem,Charles W. Everest
 "Babylonian Legal and Business Documents, From the Time of the First Dynasty of Babylon, Chiefly from Nippur",A. Poebel
 The Baby's Bouquet: A Fresh Bunch of Rhymes and Tunes,Walter Crane
@@ -870,6 +953,7 @@ A Bachelor Husband,Ruby M. Ayres
 The Bacillus of Beauty: A Romance of To-day,Harriet Stark
 Back at School With the Tucker Twins,Emma Speed Sampson
 Back Home,Eugene Wood
+"Back o' the Moon, and Other Stories",Oliver Onions
 Back to Billabong,Mary Grant Bruce
 "Back to God's Country, and Other Stories",James Oliver Curwood
 Back to Methuselah,Bernard Shaw
@@ -887,7 +971,11 @@ A Backward Glance,Edith Wharton
 A Backward Glance at Eighty,Charles A. Murdock
 The Backwoods' Bride: A Romance of Squatter Life,Metta Victoria Fuller Victor
 "The Backwoods of Canada: Being Letters From the Wife of an Emigrant Officer, Illustrative of the Domestic Economy of British America",Catherine Parr Strickland Traill
+Bacon,R. W. Church
+Bacon,Thomas Fowler
 Bacon is Shake-Speare: Together With a Reprint of Bacon's Promus of Formularies and Elegancies,Edwin Durning-Lawrence
+"Bacon, Shakespeare, and the Rosicrucians",William Francis C. Wigston
+The Bacon-Shakspere Question Answered,C. C. Stopes
 Bacon's Essays and Wisdom of the Ancients,Francis Bacon
 Bacon's Secret Disclosed in Contemporary Books,Granville C. Cuningham
 Baculovirus Molecular Biology,G. F. Rohrmann
@@ -899,6 +987,7 @@ Bad Hugh,Mary Jane Holmes
 Bad Times: An Essay on the Present Depression of Trade,Alfred Russel Wallace
 Baddeck and That Sort of Thing,Charles Dudley Warner
 Baddeck and That Sort of Thing,Charles Dudley Warner
+Badge of Infamy,Lester Del Rey
 Bag and Baggage,Bernard Edward Joseph Capes
 The Bag of Diamonds,George Manville Fenn
 A Bag of Tricks: Loopholes in the Campaign Finance System,Lisa Rosenberg
@@ -948,6 +1037,7 @@ Ballads Done Into English From the French of Francois Villon,François Villon
 "Ballads, Lyrics, and Hymns",Alice Cary
 "Ballads, Lyrics, and Hymns",Alice Cary
 Ballads of a Bohemian,Robert W. Service
+Ballads of a Cheechako,Robert W. Service
 Ballads of America and Other Poems,Henry O'Meara
 Ballads of Lost Haven: A Book of the Sea,Bliss Carman
 Ballads of New England,John Greenleaf Whittier
@@ -969,15 +1059,20 @@ The Bandbox,Louis Joseph Vance
 Bandelier National Monument: An Administrative History,Hal Rothman
 "Bandelier National Monument, New Mexico",Kittridge A. Wing
 The Bandit of Hell's Bend,Edgar Rice Burroughs
+Bang the Drum Slowly,Mark Harris
+The Banished Man,Charlotte Smith
 Banishment and Removal of the Acadians,Mme. Morel de la Durantaye
+Bank Bookkeeping and Accounts: A Concise Treatise Showing the Application of the Principles of Bookkeeping to the Record of Banking Transactions,John A. Meelboom and Charles F. Hannaford
 The Bank Charter Act: Ought the Bank of England or the People of England to Receive the Profits of the National Circulation?,Jonathan Duncan
 Bank Management and Portfolio Behavior,Donald D. Hester and James L. Pierce
+The Bank Tragedy,Mary R. P. Hatch
 The Banker and the Bear: The Story of a Corner in Lard,Henry Kitchell Webster
 The Banker's Grandchildren,Nena C. Rickeson
 Banking and Currency,Ernest Sykes
 Banking and Currency and the Money Trust,Charles A. Lindbergh
 The Bankruptcy of India: An Enquiry Into the Administration of India Under the Crown; Including a Chapter on the Silver Question,H. M. Hyndman
 The Bankruptcy of Reform,Walter H. Senior
+The Bankruptcy of the American Labor Movement,William Z. Foster
 The Banks of New-York,J. S. Gibbons
 The Banks of Wye: A Poem,Robert Bloomfield
 The Banner,Christian Reformed Church
@@ -997,6 +1092,7 @@ The Bar-20 Three,Clarence Edward Mulford
 A Bar Cross Liar: Bibliography of Eugene Manlove Rhodes Who Loved the West-That-Was When He Was Young,W. H. Hutchinson
 The Bar Sinister,Richard Harding Davis
 Bar Talk,Nessa O'Mahony
+Barabbas: A Dream of the World's Tragedy,Marie Corelli
 Barbara Blomberg,Georg Ebers
 Barbara's History,Amelia Ann Blanford Edwards
 Barbaren und Klassiker: Ein Buch von der Bildnerei Exotischer Völker,Wilhelm Hausenstein
@@ -1019,7 +1115,7 @@ Barefoot Days,Anna Maria Rose Wright
 The Barefoot Hiker,Richard Keith Frazine
 Bargaining and Markets,Martin J. Osborne and Ariel Rubinstein
 Bark: A Polemic,David Meltzer
-"The Bark Covered House, or Back in the Woods Again","William Nowlin<ul><li> <a href=""http://memory.loc.gov/cgi-bin/query/r?ammem/lhbumbib:@field"
+"The Bark Covered House, or Back in the Woods Again",William Nowlin
 "Barker's Delight: or, The Art of Angling",Thomas Barker
 Barking Spiders,C. J. Heck
 Barks and Purrs,Colette
@@ -1028,7 +1124,9 @@ Barlasch of the Guard,Henry Seton Merriman
 "Barley-Breake: or, A Warning for Wantons",W. N.
 Barn Náttúrummar: Ástarsaga,Halldór Laxness
 Barnabas and the Didache,Robert A. Kraft
+"Barnabas, Hermas and the Didache: Being the Donnellan Lectures Delivered Before the University of Dublin in 1920",J. Armitage Robinson
 Barnabetta,Helen Reimensnyder Martin
+Barnaby Rudge,Charles Dickens
 "The Barnabys in America: or, Adventures of the Widow Wedded",Frances Milton Trollope
 Barnard-Miller and Allied Families,Kenneth Duane Miller
 Barnett Newman: The Stations of the Cross: Lema Sabachthani,Solomon R. Guggenheim Museum
@@ -1041,6 +1139,7 @@ The Barons Reid-Robertson of Straloch,James Robertson
 The Baron's Sons: A Romance of the Hungarian Revolution of 1848,Mór Jókai
 The Baron's Yule Feast: A Christmas-Rhyme,Thomas Cooper
 Barrack-Room Ballads,Rudyard Kipling
+The Barrel Organ,Edwin Waugh
 The Barren Ground of Northern Canada,Warburton Pike
 The Barrier,Rex Beach
 Barrier Technologies for Environmental Management,National Research Council Board on Radioactive Waste Management
@@ -1051,8 +1150,11 @@ Bars and Shadows: The Prison Poems of Ralph Chaplin,Ralph Chaplin
 The Bars of Iron,Ethel M. Dell
 "Barshalder 1, A Cemetery in Grötlingbo and Fide parishes, Gotland, Sweden, c. AD 1-1100: Excavations and finds 1826-1971",Martin Rundkvist
 Barshalder 2: Studies of Late Iron Age Gotland,Martin Rundkvist
+Bart Ridgeley: A Story of Northern Ohio,A. G. Riddle
 Bartholomew Fair,Ben Jonson
+"Bartleby, the Scrivener",Herman Melville
 "Bartleby, the Scrivener: A Story of Wall Street",Herman Melville
+The Bartlett Mystery,Louis Tracy
 Bartók's Years in America,Vilmos Juhász
 Barty Crusoe and His Man Saturday,Frances Hodgson Burnett
 Basaltic Volcanism on the Terrestrial Planets,Basaltic Volcanism Study Project
@@ -1077,11 +1179,14 @@ Basic Writings: Proslogium; Monologium; Gaunilon's on Behalf of the Fool; Cur De
 Basics of Bible Interpretation,Bob Smith
 The Basics of MRI,Joseph P. Hornak
 Basics of Sleep Behavior,Sleep Research Society
+Basil,Wilkie Collins
 Basil the Page: A Story of the Days of Queen Elizabeth,Grace I. Whitham
 "Basilius Valentinus, a Benedictine Monk, Of Natural and Supernatural Things",Johannes Thölde
+The Basis for Artistic and Industrial Revival in India,E. B. Havell
 The Basis of Morality,Annie Besant
 A Basket of Chips: An Autobiography,James Taylor Harwood
 Basque Legends,Wentworth Webster
+"The Basque Provinces: Their Political State, Scenery, and Inhabitants, With Adventures Among the Carlists and Christinos",Edward Bell Stephens
 Basset: A Village Chronicle,Evelyn Beatrice Hall
 The Bastonnais: Tale of the American Invasion of Canada in 1775-76,John Lesperance
 "Basutoland, the Bechuanaland Protectorate and Swaziland: History of Discussions With the Union of South Africa, 1909-1939",Great Brigain Office of Commonwealth Relations
@@ -1101,6 +1206,7 @@ Battle for Egpyt: The Summer of 1942,J. L. Scoullar
 "The Battle for Libya: Killings, Disappearances and Torture",Amnesty International
 The Battle for Northern Ireland,W. Martin Smyth
 The Battle for Tarawa,James R. Stockman
+The Battle-Ground,Ellen Anderson Gholson Glasgow
 The Battle of Armageddon,C. T. Russell
 Battle of Ball's Bluff,Ted Ballard
 "The Battle of Camden, South Carolina, August 16, 1780",H. L. Landers
@@ -1131,6 +1237,7 @@ The Battlefield Treasure,F. Bayford Harrison
 Battles and Skirmishes of the American Revolution in New Jersey,David C. Munn
 "The Battles of Cape Esperance, 11 October 1942 and Santa Cruz Islands, 26 October 1942",Henry V. Poor
 "Battles of New York: Battles and Raids in the Province and State of New York, 1609-1814",John C. Devendorf
+"The Battles of Savo Island, 9 August 1942, and the Eastern Solomons, 23-25 August 1942",Winston B. Lewis and Henry A. Mustin
 "Battles with the Sea: or, Heroes of the Lifeboat and Rocket",R. M. Ballantyne
 Battlestar Galactica,Jeffrey A. Carver
 Battling for Manassas: The Fifty-Year Preservation Struggle at Manassas National Battlefield Park,Joan M. Zenzen
@@ -1167,22 +1274,26 @@ The Bear,Anton Pavlovich Chekhov
 The Bear-Hunters of the Rocky Mountains,Anne Bowman
 Bear River: A National Wildlife Refuge,Vanez T. Wilson and Rachel Carson
 "Bearing Arms in the Twenty-Seventh Massachusetts Regiment of Volunteer Infantry During the Civil War, 1861-1865",William P. Derby
+Béarn and the Pyrenees: A Legendary Tour of the Country of Henry Quatre,Louisa Stuart Costello
 "Bears and Dacoits, and Other Stories",G. A. Henty
 The Bears of Blue River,Charles Major
 Beasley's Christmas Party,Booth Tarkington
 The Beast,J. Cathcart Wason
 Beast and Man in India: A Popular Sketch of Indian Animals in Their Relations With the People,John Lockwood Kipling
+The Beast in the Jungle,Henry James
 The Beast of Revelation,Kenneth L. Gentry
 "The Beast, the Dragon, and the Woman",Joe Crews
 Beasts and Super-Beasts,Saki
 "Beasts, Men and Gods",Ferdynand Antoni Ossendowski
 Beasts of New York: A Children's Book for Grown-Ups,Jon Evans
+The Beasts of Tarzan,Edgar Rice Burroughs
 "The Beasts of the Apocalypse: A Commentary Based on Events in the Warp and Woof of Two Thousand Years of History, Bringing Into Focus the Pattern of Contemporary Movements to Establish a World Government",Olivia Marie O'Grady
 Beasts of the Field,William J. Long
 "Beaten Tracks: or, Pen and Pencil Sketches in Italy",Elizabeth Tuckett
 Beating the Property Clock,Ajay Ahuja
 The Beatitudes: An Exposition of Matthew 5:1-12,Thomas Watson
 Beatrice,H. Rider Haggard
+Beatrice,Julia Kavanagh
 "Beatrice d'Este, Duchess of Milan, 1475-1497: A Study of the Renaissance",Julia Mary Cartwright Ady
 "Beatrice of Denewood: A Sequel to ""The Lucky Sixpence""",Emilie Benson Knipe and Alden Arthur Knipe
 Beatrix,Honoré de Balzac
@@ -1191,6 +1302,7 @@ Beau Brocade,Baroness Orczy
 "The Beau Defeated: or, The Lucky Younger Brother",Mary Pix
 Beau Geste,Percival Christopher Wren
 Beau Sabreur,Percival Christopher Wren
+"Beauchampe: or, The Kentucky Tragedy",William Gilmore Simms
 Beauchamp's Career,George Meredith
 "The Beauteous Terrorist, and Other Poems",Henry Parkes
 Beauties and Achievements of the Blind,William Artman
@@ -1198,6 +1310,8 @@ Beauties and Achievements of the Blind,William Artman
 "The Beauties of Samuel Johnson, LL.D.",Samuel Johnson
 The Beauties of the Bosphorus,Miss Pardoe
 The Beautiful: An Introduction to Psychological Aesthetics,Vernon Lee
+The Beautiful and Damned,F. Scott Fitzgerald
+Beautiful Birds in Far-Off Lands: Their Haunts and Homes,Mary Kirby and Elizabeth Kirby
 The Beautiful Book of Nursery Rhymes,Frank Adams
 "Beautiful Buildings in France and Belgium, Including Many Which Have Been Destroyed During the War",Charles Harrison Townsend
 The Beautiful Eyes of Ysidria,Charles A. Gunnison
@@ -1224,6 +1338,7 @@ Beauty for Ashes,Albion Fellows Bacon
 "Beauty for Ashes, or Heart Wanderings, Their Cause and Cure",George Douglas Watson
 Beauty of Concealment and Concealment of Beauty,Zahra Rahnavard
 The Beauty Stone,Arthur Wing Pinero
+Beauty to Die For: The Cosmetic Consequence,Judi Vance
 The Beaux-Stratagem,George Farquhar
 The Beaux-Stratagem,George Farquhar
 Beaver Hills Country: A History of Land and Life,Graham A. MacDonald
@@ -1244,6 +1359,7 @@ Bede's Charity,Hesba Stretton
 Bede's Ecclesiastical History of England,the Venerable Bede
 Bedesman 4,Mary J. H. Skrine
 "Bediüzzaman Said Nursi, The Author of the Risale-i Nur",Sükran Vahide
+Bedlam Boyz,Ellen Guon
 Bedouin Tribes of the Euphrates,Anne Blunt
 "Bedouins, Wealth, and Change: A Study of Rural Development in the United Arab Emirates and the Sultanate of Oman",Rainer Cordes and Fred Scholz
 The Bedroom and Boudoir,Lady Barker
@@ -1260,6 +1376,7 @@ Beethoven and His Forerunners,Daniel Gregory Mason
 "Beethoven, the Man and the Artist, As Revealed in His Own Words",Ludwig van Beethoven
 "Beethoven's Letters (1790-1826) From the Collection of Dr. Ludwig Nohl; Also His Letters to the Archduke Rudolph, Cardinal-Archbishop of Olmütz, K. W., From the Collection of Dr. Ludwig Ritter von Köchel",Ludwig van Beethoven
 The Beetle: A Mystery,Richard Marsh
+Before Adam,Jack London
 Before and After Radical Prostate Surgery: Information and Resource Guide,Virginia Vandall-Walker
 Before Books,Caroline Pratt and Jessie Stanton
 Before Breakfast,Eugene O'Neill
@@ -1269,16 +1386,21 @@ Before Picasso; After Miró,Solomon R. Guggenheim Museum
 Before Reading: Narrative Conventions and the Politics of Interpretation,Peter J. Rabinowitz
 Before Taliban: Genealogies of the Afghan Jihad,David B. Edwards
 Before the Dawn: A Poem; With Introductory Lectures on Prophetic Symbols,Charles Rollin Burdick
+Before the Dawn: A Story of the Fall of Richmond,Joseph A. Altsheler
+Before the Dawn: A Tale of Italy,Kate Crichton
 Before the Manifesto: The Life Writings of Mary Lois Walker Morris,Mary Lois Walker Morris
 Before the Nickelodeon: Edwin S. Porter and the Edison Manufacturing Company,Charles Musser
 Before You Regret,Harun Yahya
 The Beggar Man,Ruby M. Ayres
+Beggar my Neighbour: A Novel by E. D. Gerard,E. Gerard and Dorothea Gerard
 Beggars All: A Novel,L. Dougall
+The Beggar's Opera,John Gay
 The Beggers Ape,Richard Niccols
 Begin Well: A New Year's Address to Sabbath School Children,A Teacher
 A Beginner,Rhoda Broughton
 The Beginner's Guide to Tracing Your Roots,Diane Marelli
 The Beginner's Guide to Writing a Novel,Marina Oliver
+A Beginner's History of Philosophy,Herbert Ernest Cushman
 Beginner's Latin Book,William C. Collar and M. Grant Daniell
 Beginning Active Server Pages 3.0,Chris Ullman
 Beginning Again at Ararat,Mabel Evelyn Elliott
@@ -1291,14 +1413,18 @@ The Beginnings of Art in the Public Schools,Margaret E. Mathias
 The Beginnings of Dr. Seuss: An Informal Reminiscence,Theodor Seuss Geisel
 "The Beginnings of New England: or, the Puritan Theocracy in its Relations to Civil and Religious Liberty",John Fiske
 "The Beginnings of San Francisco: From the Expedition of Anza, 1774, to the City Charter of April 15, 1850, With Biographical and Other Notes",Zoeth Skinner Eldredge
+"The Beginnings of the American Revolution, Based on Contemporary Letters, Diaries, and Other Documents",Ellen Chase
 Begone Satan!,Carl Vogl
 "Begumbagh: A Tale of the Indian Mutiny, and Other Stories",George Manville Fenn
 The Behavior of Crowds: A Psychological Study,Everett Dean Martin
+Behavioral Objectives: Evaluation in Nursing,Dorothy E. Reilly
 The Behaviour Book: A Manual for Ladies,Eliza Leslie
 Behemoth,Peter Watts
+"Behind a Mask: or, A Woman's Power",Louisa May Alcott
 Behind Bars in Brazil,Human Rights Watch
 Behind History,Ray C. Stedman
 Behind That Curtain,Earl Derr Biggers
+Behind the 8-Ball: A Guide for Families of Gamblers,Linda Berman and Mary-Ellen Siegel
 Behind the Arras: A Book of the Unseen,Bliss Carman
 "Behind the Beyond, and Other Contributions to Human Knowledge",Stephen Leacock
 Behind the Bungalow,Edward Hamilton Aitken
@@ -1307,11 +1433,14 @@ Behind the Green Door,Mildred A. Wirt
 Behind the Japanese Mask,Jonathan Rice
 Behind the Korean Revolt,Henry Braun
 Behind the Mirrors: The Psychology of Disintegration at Washington,Clinton W. Gilbert
+Behind the Moscow Trial,Max Shachtman
 Behind the Plot to Sovietize the South,Joseph P. Kamp
 Behind the Postmodern Facade: Architectural Change in Late Twentieth-Century America,Magali Sarfatti Larson
 Behind the Scenes in Candy Factories,Consumers' League of New York City
 Behind the Scenes in Peking: Being Experiences During the Seige of the Legations,Mrs. Cornelius
+Behind the Scenes in Peking: Being Experiences During the Seige of the Legations,Mrs. Cornelius
 Behind the Scenes in Washington,James Dabney McCabe
+"Behind the Scenes: or, Thirty Years a Slave and Four Years in the White House",Elizabeth Keckley
 "Behind the Scenes: Yeats, Horniman, and the Struggle for the Abbey Theatre",Adrian Frazier
 Behind the Veil,Ethel Rolt-Wheeler
 Behind the Veil: A Poem,James De Mille
@@ -1320,8 +1449,10 @@ Behind the Veil in Persia and Turkish Arabia: An Account of an Englishwoman's Ei
 Behind the Wire: An Update to Ending Secret Detentions,Deborah Pearlstein and Priti Patel
 Behind These Mountains,Mona Leeson Vanek
 Being a Boy,Charles Dudley Warner
+"Being Chinese, Becoming Chinese-American",Shehong Chen
 Being Fluent With Information Technology,National Research Council Committee on Infrormation Technology LIteracy
 "Beiträge zur Verfassungs- und Finanzgeschichte der Stadt Riga, Erster Beitrag: Erringung der Theilnahme an der Finanzverwaltung durch die Gilden und Sieg der Ständischen Verfassung",Johannes Keussler
+Beiträge zur Verwaltungsgeschichte des Römischen Kaiserreichs: Die Laufbahn der Procuratoren bis auf die Zeit Diocletians,W. Liebenam
 "Bel Ami, or, The History of a Scoundrel",Guy de Maupassant
 Bel-Ami: The History of a Heart,Guy de Maupassant
 Bel and Bub and the Baby Bird: A Book About Owning Up,Jan Pienkowski
@@ -1329,6 +1460,8 @@ Bel and Bub and the Big Brown Box: A Book About Sharing,Jan Pienkowski
 Belcaro: Being Essays on Sundry Aesthetical Questions,Vernon Lee
 Belchamber,Howard Overing Sturgis
 "Belden, the White Chief: or, Twelve Years Among the Wild Indians of the Plains",George P. Belden
+A Beleaguered City,Mrs. Oliphant
+Belforest: A Tale of English Country Life,Anne Manning
 The Belfry,May Sinclair
 Belgian Africa's Total War,Walter Ford
 The Belgian Campaign in Ethiopia,George Weller
@@ -1341,6 +1474,7 @@ The Belgian Curtain: Europe After Communism,Samuel Vaknin
 Belgian Democracy: Its Early History,Henri Pirenne
 Belgian Letters: A Short Survey of Creative Writing in the French and Dutch Languages in Belgium,Jan Albert Goris
 Belgian Music,Charles Leirens
+The Belgian Twins,Lucy Fitch Perkins
 Belgium,Joseph E. Morris
 "Belgium and Western Germany in 1833: Including Visits to Baden-Baden, Wiesbaden, Cassel, Hanover, the Harz Mountains, &c. &c.",Frances Milton Trollope
 "Belgium: The Official Account of What Happened, 1939-1940",Belgium
@@ -1364,6 +1498,7 @@ The Bell Street Murders,S. Fowler Wright
 Bella Bella Transformed,John A. Jackson
 Bella Donna,Robert Hichens
 Belle,Evelyn Whitaker
+Belle Boyd in Camp and Prison,Belle Boyd
 A Belle of the Fifties: Memoirs of Mrs. Clay of Alabama,Virginia Clay-Clopton
 "Bellis' Twin City Directory, 1892",J. R. Bellis
 The Bells,Leopold Lewis
@@ -1371,6 +1506,7 @@ The Bells of San Juan,Jackson Gregory
 "Belongings: Property, Family, and Identity in Colonial South Africa: An Exploration of Frontiers, 1725-c. 1830",Laura Jane Mitchell
 "The Beloved Disciple: His Name, His Story, His Thought",Vernard Eller
 The Beloved Traitor,Frank L. Packard
+The Belovéd Vagabond,William John Locke
 Below and On Top,Edward Dyson
 Below Stairs,Mrs. Alfred Sidgwick
 Belshazzar,H. Rider Haggard
@@ -1402,6 +1538,7 @@ A Bengali Prose Reader for Second-Year Students,Edward C. Dimock and Somdev Bhat
 "Bengough's Chalk-Talks: A Series of Platform Addresses on Various Topics, With Reproductions of the Impromptu Drawings With Which They Were Illustrated",J. W. Bengough
 Benita: An African Romance,H. Rider Haggard
 Benito Cereno,Herman Melville
+"Benjamin Franklin, Self-Revealed: A Biographical and Critical Study Based Mainly on His Own Writings",William Cabell Bruce
 "Benjamin Hawkins, Indian Agent",Merritt B. Pound
 "Bennie Ben Cree, Being the Story of his Adventure to Southward in the Year '62",Arthur Colton
 "Ben's Nugget: or, A Boy's Search for Fortune",Horatio Alger
@@ -1417,18 +1554,24 @@ Beric the Briton: A Story of the Roman Invasion,G. A. Henty
 The Bering Sea Ecosystem,National Research Council Commission on Geosciences
 The Berkeley Case: Issues in Student Academic Freedom; A Brief Critique,Roland Liebert
 "Berlin and Sans-Souci: or, Frederick the Great and His Friends",L. Mühlbach
+"The Berlin Novels of Alfred Döblin: Wadzek's Battle with the Steam Turbine, Berlin Alexanderplatz, Men without Mercy, and November, 1918",David B. Dollenmayer
+Berna Boyle: A Love Story of the County Down,Mrs. J. H. Riddell
 Bernard Shaw and the Aesthetes,Elsie Bonita Adams
+Bernice Chesler's Bed & Breakfast in New England,Bernice Chesler
+Bernice Chesler's Bed & Breakfast in the Mid-Atlantic States,Bernice Chesler
 The Berseker Throne,Fred Saberhagen
 Bert Lloyd's Boyhood,J. Macdonald Oxley
 Bertha Garlan,Arthur Schnitzler
 "Bertha, Our Little German Cousin",Mary Hazelton Blanchard Wade
 Bertram Cope's Year,Henry Blake Fuller
+The Bertrams,Anthony Trollope
 The Bertrand Bottles: A Study of 19th-century Glass and Ceramic Containers,Ronald R. Switzer
 The Berzin Archives,Alexander Berzin
 Beside the Bonnie Brier Bush,Ian Maclaren
 Beside the Fire: A Collection of Irish Gaelic Folk Stories,Douglas Hyde
 Besom Ben Stories,Edwin Waugh
 "Bessarabia, Russia and Roumania on the Black Sea",Charles Upson Clark
+Bessie,Julia Kavanagh
 Bessie Bradford's Prize,Joanna H. Mathews
 Bessie Costrell,Mrs. Humphry Ward
 Bessie's Fortune: A Novel,Mary Jane Holmes
@@ -1475,6 +1618,7 @@ Betty Gordon at Mountain Camp,Alice B. Emerson
 Betty in Canada,Etta Austin Blaisdell and Julia Dalrymple
 Betty Leicester: A Story for Girls,Sarah Orne Jewett
 Betty Leicester's Christmas,Sarah Orne Jewett
+Betty Trevor,Mrs. George de Horne Vaizey
 Betty Vivian: A Story of Haddo Court School,L. T. Meade
 "Betty Wales, Sophomore: A Story for Girls",Margaret Warde
 Betty Zane,Zane Grey
@@ -1490,18 +1634,23 @@ Between Politics and Reason: The Drug Legalization Debate,Erich Goode
 "Between Speech and Silence: Hate Speech, Pornography and the New South Africa",Jane Duncan
 Between St. Dennis and St. George: A Sketch of Three Civilisations,Ford Madox Ford
 Between the Acts,Virginia Woolf
+Between the Dark and the Daylight,Richard Marsh
 Between the Dark and the Daylight: Romances,William Dean Howells
 Between the Gates,Benjamin F. Taylor
 Between the Iron and the Pine: A Biography of a Pioneer Family and a Pioneer Town,Lewis Charles Reimann
 Between the Twilights: Being Studies of Indian Women by One of Themselves,Cornelia Sorabji
 Between War and Peace: The Issues in the Middle East Conflict,Carl Gershman
+Between Whiles,Helen Hunt Jackson
 "Between Winds and Clouds: The Making of Yunnan, Second Century BCE to Twentieth Century CE",Bin Yang
 Between Words and Reality: Studies on the Politics of Recognition and Changes of Regime in Contemporary Romania,Victor Neumann
 Beulah,Augusta J. Evans
+Beverly of Graustark,George Barr McCutcheon
+Bevis: The Story of a Boy,Richard Jefferies
 Beware of Women,Nathan O. Njoku
 Beware Yankee: The Revolution in Cuba,Fermin Peinado
 Bewick's Select Fables of Aesop and Others,Aesop
 Beyond,John Galsworthy
+Beyond Apollo,Barry N. Malzberg
 Beyond Collusion: The U.K. Security Forces and the Murder of Patrick Finucane,Fiona Doherty
 Beyond Good and Evil,Friedrich Wilhelm Nietzsche
 Beyond Good and Evil,Friedrich Wilhelm Nietzsche
@@ -1519,11 +1668,14 @@ Beyond the Farthest Star,Edgar Rice Burroughs
 Beyond the Gates,Elizabeth Stuart Phelps
 Beyond the Golden Rule: A Parent's Guide to Preventing and Responding to Prejudice,Dana A. Williams
 Beyond the Hills of Dream,Wilfred Campbell
+Beyond the Horizon,Eugene O'Neill
 Beyond the Horizon: A Novel,Fred B. Morrill
 Beyond the Limits: A Self Portrait of Myasthenia Gravis,Clete Gress
+Beyond the Marshes,Ralph Connor
 "Beyond the Palaeocrystic Sea: or, The Legend of Halfjord",A. S. Morton
 Beyond the Pale: An Appeal on Behalf of the Victims of Vivisection,Mona Caird
 Beyond the Rim,S. Fowler Wright
+Beyond the Road's End,Mary Catherine Fish
 Beyond the Rockies: A Spring Journey in California,Charles Augustus Stoddard
 Beyond the Rocks: A Love Story,Elinor Glyn
 Beyond the Stream: Islam and Society in a West African Town,Robert G. Launay
@@ -1532,6 +1684,7 @@ Beyond the West,George W. Pine
 Beyond Therapy: Biotechnology and the Pursuit of Happiness,President's Council on Bioethics
 Beyond Thirty,Edgar Rice Burroughs
 The Beyond Within: Initiation into Meditation,Alphonse Goettmann and Rachel Goettmann
+Beyond World's End,Mercedes Lackey and Rosemary Edghill
 Bhagavan Ramana,T. M. P. Mahadevan
 "The Bhikkus' Rules, A Guide for Laypeople: The Theravadin Buddhist Monk's Rules Compiled and Explained",Bhikkhu Ariyesako
 Bhotan and the Story of the Dooar War,D. F. Rennie
@@ -1577,6 +1730,9 @@ The Bibliographer's Manual of English Literature,William Thomas Lowndes and Henr
 "A Bibliographic Check-List of the Works of James Branch Cabell, 1904-1921",Merle De Vore Johnson
 Bibliography and Cartography of Hispaniola,H. Ling Roth
 A Bibliography of Afro-American and Other American Minorities Represented in Library and Library-Related Listings,Clara O. Jackson
+A Bibliography of California Ornithology,Joseph Grinnell
+A Bibliography of California Ornithology: Second Installment to End of 1923,Joseph Grinnell
+A Bibliography of California Ornithology: Third Installment to End of 1938,Joseph Grinnell
 A Bibliography of Congo Languages,Frederick Starr
 "Bibliography of Frederick Webb Hodge, 1890-1916",Florence Maude Poast
 "Bibliography of Georgia Authors, 1949-1965",John Wyatt Bonner
@@ -1589,6 +1745,7 @@ A Bibliography of the History of the Latin-American Labor and Trade Union Moveme
 A Bibliography of the History of the Latin-American Labor and Trade Union Movements,American Institute for Marxist Studies
 Bibliography of the Iroquoian Languages,James Constantine Pilling
 Bibliography of the Muskhogean Languages,James Constantine Pilling
+A Bibliography of the Personal Computer,Roy A. Allan
 Bibliography of the Salishan Languages,James Constantine Pilling
 Bibliography of the Siouan Languages,James Constantine Pilling
 Bibliography of the Summer Institute of Linguistics,Summer Institute of Linguistics
@@ -1599,10 +1756,12 @@ A Bibliography of Thomas Gray,Clark Sutherland Northup
 Bibliography on the Foundations of Probability Theory,Caslav V. Stanojevic and L. Robert Kovac
 "Bibliopegia: or, The Art of Bookbinding, in All its Branches",John Hannett
 "Bibliotheca Canadensis, or, A Manual of Canadian Literature",Henry J. Morgan
+Bibliotheca Chemica,John Ferguson
 "Bibliotheca Classica: or, A Classical Dictionary",John Lemprière
 The Bibliotheca or Myriobiblion,Saint Photius I
 Bibliotheca Osleriana: A Catalogue of Books Illustrating the History of Medicine and Science,William Osler
 "Bibliothecae Americanae Primordia: An Attempt Towards Laying the Foundation of an American Library, in Several Books, Papers, And Writings",White Kennett
+The Bickerstaff-Partridge Papers,Jonathan Swift
 A Bicycle of Cathay,Frank Richard Stockton
 Bicycle Shop Murder,Robert Burton Robinson
 The Bicyclers and Three Other Farces,John Kendrick Bangs
@@ -1613,7 +1772,7 @@ The Biddle-Johnson C. Smith University Story,Inez Moore Parker
 Big and Little Sisters: A Story of an Indian Mission School,Theodora R. Jenness
 A Big Apple for Educators: New York City's Experiment with Schoolwide Performance Bonuses: Final Evaluation Report,Julie A. Marsh
 The Big Boasting Battle,Hans Wilhelm
-The Big Bow Mystery,"Israel Zangwill<ul><li> <a href=""http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=28164"">Gutenberg text"
+The Big Bow Mystery,Israel Zangwill
 The Big Breach: From Top Secret to Maximum Security,Richard Tomlinson
 Big Brother,Annie F. Johnston
 The Big Brother: A Story of Indian War,George Cary Eggleston
@@ -1622,6 +1781,7 @@ Big Business and the American University,Bettina Aptheker
 Big Dumb Boosters: A Low-Cost Space Transportation Option?,United States Congress Office of Technology Assessment
 Big Fire Engine Book,Virginia Brody
 The Big Five Motorcycle Boys in Tennessee Wilds,Ralph Marlow
+Big Game,Mrs. George de Horne Vaizey
 The Big Little Book,Dorothy Hall Smith
 The Big Muskeg,V. R. Emanuel
 The Big Otter: A Tale of the Great Nor'west,R. M. Ballantyne
@@ -1649,13 +1809,16 @@ Bill Haywood's Book: The Autobiography of William D. Haywood,Big Bill Haywood
 Bill Mustard: Surgical Pioneer,Marilyn Dunlop
 Bill Nye's Comic History of England,Bill Nye
 Bill Nye's History of the United States,Bill Nye
+Billeder fra Bergen: Barndoms- og Ungdomsminder,John Paulsen
 "Billie Bradley and Her Inheritance: or, The Queer Homestead at Cherry Corners",Janet D. Wheeler
+The Billow and the Rock,Harriet Martineau
 "Billy: A Personal Look at Billy Graham, the World's Best-Loved Evangelist",Sherwood Eliot Wirt
 Billy Baxter's Letters,William J. Kountz
 Billy Budd,Herman Melville
 Billy Bunny and Uncle Bull Frog,David Cory
 Biltmore Oswald: The Diary of a Hapless Recruit,Thorne Smith
 Bimbi: Stories for Children,Ouida
+Bimbos of the Death Sun,Sharyn McCrumb
 "Binding Memories: Women as Makers and Tellers of History in Magude, Mozambique",Heidi Gengenbach
 The Binding of Books: An Essay in the History of Gold-Tooled Bindings,Herbert P. Horne
 Bindle: Some Chapters in the Life of Joseph Bindle,Herbert George Jenkins
@@ -1663,6 +1826,7 @@ The Bindles on the Rocks: Some Further Incidents in the Life of Mr. and Mrs. Bin
 Binney's Theological Compend,Amos Binney and Daniel Steele
 Bioconversion of Organic Residues for Rural Communities,Conference on the State of the Art of Bioconversion of Organic Residues for Rural Communities
 Biodiesel in India: Value Chain Organisation and Policy Options For Rural Development,Tilman Altenburg
+"Biographia Juridica: A Biographical Dictionary of the Judges of England, From the Conquest to the Present Time, 1066-1870",Edward Foss
 Biographia Literaria,Samuel Taylor Coleridge
 "A Biographical Dictionary of Ancient, Medieval, and Modern Freethinkers",Joseph McCabe
 Biographical Dictionary of the Comintern,Branko M. Lazic and Milorad M. Drachkovitch
@@ -1670,22 +1834,26 @@ Biographical Dictionary of Well-known British Columbians: With a Historical Sket
 "Biographical Directory of the United States Congress, 1774-2005",United States Congress
 "Biographical Directory of the United States Congress, 1774-Present",United States Congress
 Biographical Essays,Thomas De Quincey
+"Biographical Memorials of James Oglethorpe, Founder of the Colony of Georgia in North America",Thaddeus Mason Harris
 "Biographical Record of the Class of 1850, of Yale College",Yale University Class of 1850
 The Biographical Review of Prominent Men and Women of the Day,Thomas William Herringshaw
 "A Biographical Sketch of Henry A. Wise, With A History of the Political Campaign in Virginia in 1855",James P. Hambleton
 A Biographical Sketch Relative to the Missionary Labors of Emma Herdman in the Empire of Morocco,Albert Augustus Isaacs
 Biographical Sketches,Harriet Martineau
+Biographical Sketches,Nassau William Senior
 "Biographical Sketches and Interesting Anecdotes of Persons of Colour; To Which is Added, a Selection of Pieces in Poetry",Abigail Mott
 "Biographical Sketches: Being Memorials of Arthur Penrhyn Stanley, Henry Alford, Mrs. Duncan Stewart, Etc.",Augustus J. C. Hare
 "Biographical Sketches of Hon. John C. Breckinridge, Democratic Nominee for President, and General Joseph Lane, Democratic Nominee for Vice President",National Democratic Executive Committee
 The Biographical Writings and Letters of Venerable Bede,the Venerable Bede
 "Biographies of John King, M. D., Andrew Jackson Howe, A. B., M. D., and John Milton Scudder, M. D.",Harvey Wickes Felter
 Biographies of Working Men,Grant Allen
+Biographies of Working Men,Grant Allen
 Biography and Poetical Remains of the Late Margaret Miller Davidson,Margaret Miller Davidson
 The Biography of a Boy,Josephine Daskam Bacon
 The Biography of a Grizzly,Ernest Thompson Seton
 The Biography of a Grizzly and 75 Drawings,Ernest Thompson Seton
 The Biography of a Grizzly and 75 Drawings,Ernest Thompson Seton
+"Biography of a Slave: Being The Experiences Of Rev. Charles Thompson, A Preacher Of The United Brethren Church, While a Slave in the South, Together With Startling Occurrences Incidental To Slave Life",Charles Thompson
 Biography of a Spaniel: To Which is Annexed The Idiot,Mrs. Showes
 A Biography of Ezra Thompson Clark,Annie Clark Tanner
 Biography of James Patton,James Patton
@@ -1706,6 +1874,7 @@ A Biological Survey for the Nation,National Research Council Committee on the Fo
 Biologically Based Technologies for Pest Control,United States Congress Office of Technology Assessment
 "Biology, Medicine, and the Bill of Rights",United States Congress Office of Technology Assessment
 The Biology of Mental Disorders,United States Congress Office of Technology Assessment
+Biology of the Eared Grebe and Wilson's Phalarope in the Nonbreeding Season: A Study of Adaptations to Saline Lakes,Joseph R. Jehl
 "The Biology of the Elf Owl, Micrathene Whitneyi",J. David Ligon
 Biomedical Ethics in U.S. Public Policy,United States Congress Office of Technology Assessment
 Biomolecular Self-Assembling Materials: Scientific and Technological Frontiers,National Research Council Board on Physics and Astronomy
@@ -1715,9 +1884,12 @@ Bioremediation for Marine Oil Spills,United States Congress Office of Technology
 Biosafety in the Laboratory: Prudent Practices for Handling and Disposal of Infectious Materials,National Research Council Board on Chemical Sciences and Technology
 Biosolids Applied to Land: Advancing Standards and Practices,National Research Council Board on Environmental Studies and Toxicology
 Biotechnology in a Global Economy,United States Congress Office of Technology Assessment
+Biotechnology Unzipped: Promises and Realities,Eric S. Grace
 Biotronics,J. Zezulka
+"Birch Bark Legends of Niagara, Founded on Traditions Among the Iroquois or Six Nations",Owahyah
 Bird Children: The Little Playmates of the Flower Children,Elizabeth Gordon
 Bird Communities at Sea Off California: 1975 to 1983,Kenneth T. Briggs
+Bird Community Dynamics in a Ponderosa Pine Forest,Robert C. Szaro and Russell P. Balda
 Bird Flu: A Virus of Our Own Hatching,Michael Greger
 Bird Neighbors,Neltje Blanchan
 Bird Parliament,Farid al-Din Attar
@@ -1727,20 +1899,32 @@ Birds,Aristophanes
 Birds and Beasts of the Greek Anthology,Norman Douglas
 "Birds and Bees, Sharp Eyes, and Other Papers",John Burroughs
 "Birds and Poets, With Other Papers",John Burroughs
+The Birds' Christmas Carol,Kate Douglas Smith Wiggin
 A Bird's-Eye View of the Bible,Frank Nelson Palmer
 Birds From the Gulf Lowlands of Southern Mexico,Pierce Brodkorb
 Birds in Town and Village,W. H. Hudson
 Birds of America,John James Audubon
 "The Birds of Brewster County, Texas",Josselyn Van Tyne and George Miksch Sutton
 "The Birds of Buckeye Lake, Ohio",Milton Bernhard Trautman
+"Birds of Gay Plumage: Sun-Birds, etc.",Mary Kirby and Elizabeth Kirby
 "The Birds of Indiana, With Illustrations of Many of the Species",Amos W. Butler
 The Birds of Michigan,Norman Asa Wood
 The Birds of Nebraska,Paul A. Johnsgard
+The Birds of Nevada,Jean M. Linsdale
 "The Birds of Northern Petén, Guatemala",Josselyn Van Tyne
+"Birds of Nunivak Island, Alaska",Harry Schelwald Swarth
 Birds of Passage: Songs of the Orient and Occident,Mathilde Blind
+Birds of Pine-Oak Woodland in Southern Arizona and Adjacent Mexico,Joe T. Marshall
 Birds of Prey,M. E. Braddon
 Birds of the Bible,Gene Stratton-Porter
+"Birds of the Charleston Mountains, Nevada",Adriaan Joseph Van Rossem
 The Birds of the Egyptian Western Desert,Steven M. Goodman
+"Birds of the Huachuca Mountains, Arizona",Harry Schelwald Swarth
+Birds of the Islands off the Coast of Southern California,Alfred Brazier Howell
+"Birds of the Kotzebue Sound Region, Alaska",Joseph Grinnell
+Birds of the Pacific Slope of Southern California,George Willett
+"Birds of the Portland Area, Oregon",Stanley Gordon Jewett and Ira Noel Gabrielson
+Birds Recorded from the Santa Rita Mountains in Southern Arizona,Florence Merriam Bailey
 Birds That Every Child Should Know,Neltje Blanchan
 The Birdwatcher's Dictionary,Peter Weaver
 Birth,Zona Gale
@@ -1766,7 +1950,7 @@ The Bishop's Candlesticks: A Play in One Act,Norman McKinnel
 The Bishop's Jaegers,Thorne Smith
 The Bishop's Secret,Fergus Hume
 The Bishop's Shadow,Ida Treadwell Thurston
-Bismarck,"Karl Hans Strobl<ul><li> <a href=""http://archive.org/details/bismarckroman01strouoft"">Book 1"
+Bismarck,Karl Hans Strobl
 Bismarck: The Man and the Statesman,Otto Bismarck
 Bismarcks Werk im Lichte der Föderalistischen Kritik,Friedrich Wilhelm Foerster
 "Bismya: or, The Lost City of Adab",Edgar James Banks
@@ -1775,20 +1959,25 @@ A Bit of Old China,Charles Warren Stoddard
 Bits o' Broad Lancashire: Poems in the Dialect,William Baron
 Bits of Gossip,Rebecca Harding Davis
 Bits of Power: Issues in Global Access to Scientific Data,National Research Council Commission on Physical Sciences
+Bits of Talk About Home Matters,Helen Hunt Jackson
 Bits of Travel at Home,Helen Hunt Jackson
 "Bits of Wisdom: or, Daily Thoughts",William McKinley
+Bitter-Sweet: A Poem,J. G. Holland
 The Bittermeads Mystery,E. R. Punshon
 "The Bivouac and the Battlefield: or, Campaign Sketches in Virginia and Maryland",George F. Noyes
 "Bjornstjerne Bjornson, 1832-1910",William Morton Payne
 The Black,Edgar Wallace
+Black and Blue: A Smash-Mouth History of the NFL's Roughest Division,Bob Berghaus
 Black and Smokeless Powders: Technologies for Finding Bombs and the Bomb Makers,National Research Council Board on Chemical Sciences and Technology
 Black and White,Lewis Shiner
 "Black and White: A Love Story, in Three Acts",Wilkie Collins and Charles Fechter
+The Black Arrow,Robert Louis Stevenson
 The Black Avenger of the Spanish Main,Ned Buntline
 The Black Bag,Louis Joseph Vance
 The Black Bar,George Manville Fenn
 Black Bartlemy's Treasure,Jeffery Farnol
 The Black Bearded Barbarian: The Life of George Leslie Mackay of Formosa,Mary Esther Miller MacGregor
+Black Beauty,Anna Sewell
 Black Beetles in Amber,Ambrose Bierce
 The Black Box: Illustrated With Scenes From the Photo-Play,E. Phillips Oppenheim
 Black Box Voting: Ballot Tampering in the 21st Century,Bev Harris and David Allen
@@ -1801,6 +1990,7 @@ The Black Death and The Dancing Mania,J. F. C. Hecker
 Black Diamonds,Mór Jókai
 Black Dispatches: Black American Contributions to Union Intelligence During the Civil War,P. K. Rose
 The Black Douglas,S. R. Crockett
+The Black Dwarf,Walter Scott
 Black Elk Speaks: Being the Life Story of a Holy Man of the Oglala Sioux,Black Elk
 The Black Experience in America,Norman Coombs
 The Black Flame,Stanley Grauman Weinbaum
@@ -1834,6 +2024,7 @@ Black Rebellion: Five Slave Revolts,Thomas Wentworth Higginson
 Black Review,Black Community Programmes
 "The Black Riders, and Other Lines",Stephen Crane
 "The Black Riders, and Other Lines",Stephen Crane
+The Black Robe,Wilkie Collins
 Black Rock: A Tale of the Selkirks,Ralph Connor
 Black Rock: A Tale of the Selkirks,Ralph Connor
 Black Saints in a White Church: Contemporary African American Mormons,Jessie L. Embry
@@ -1842,18 +2033,21 @@ Black Samson,Levi O. Keidel
 "The Black Spaniel, and Other Stories",Robert Hichens
 Black Spirits and White: A Book of Ghost Stories,Ralph Adams Cram
 Black Spring,Elod Kincses
+The Black Star Passes,John Wood Campbell
 Black Star's Campaign: A Detective Story,Johnston McCulley
 The Black Tor,George Manville Fenn
 The Black Tulip,Alexandre Dumas
 "Black, White, and Gray",Amy Walton
 Black Wings,William J. Powell
 "Blackbeard, or, The Pirate of the Roanoke: A Tale of the Atlantic",Benjamin Barker
+"Blackfaced Sheep: Their History, Distribution, and Improvement, With Methods of Management and Treatment of Their Principal Diseases",John Scott and CHarles Scott
 The Blackfoot Sun-Dance,John MacLean
 Blacksheep! Blacksheep!,Meredith Nicholson
 "Blackstone's Commentaries, With Notes of Reference to the Constitution and Laws of the Gederal Government of the United State and of the Commonwealth of Virginia",William Blackstone
 "The Blackwater Chronicle: A Narrative of an Expedition into the Land of Canaan, in Randolph County, Virginia",Philip Pendleton Kennedy
 Blacky the Crow,Thornton W. Burgess
 Bladys of the Stewponey,S. Baring-Gould
+"Blake of the ""Rattlesnake"", or, The Man Who Saved England: A Story of Torpedo Warfare in 189-",Fred T. Jane
 "Blake: or, The Huts of America",Martin Robison Delany
 Blake's Burden,Harold Bindloss
 Blåkulla och Blåkullafärderna: En Språklig och Mythistorisk Undersökning,Jöran Sahlgren
@@ -1863,12 +2057,18 @@ Blanchette; and The Escape,Eugène Brieux
 The Blanket of the Dark,John Buchan
 The Blast Area,John E. Tranter
 Blast Furnace Calculations and Tables for Furnace Managers and Engineers,John L. Stevenson
+The Blazed Trail,Stewart Edward White
+Bleak House,Charles Dickens
 Bleak House,Charles Dickens
 Bleak Houses: Marital Violence in Victorian Fiction,Lisa A. Surridge
 The Blessed Damozel,Dante Gabriel Rossetti
 "The Blessed Dead Waiting for Us: A Sermon Preached in St. James' Church, Marietta, Georgia, on the Festival of All Saints, November 1st, 1863",Samuel Benedict
 The Blessings of Abolition: A Discourse,William Henry Furness
+The Blight of Asia: An Account of the Systematic Extermination of Christian Populations by Mohammedans and of the Culpability of Certain Great Powers; With the True Story of the Burning of Smyrna,George Horton
+"The Blind African Slave, Or Memoirs of Boyrereau Brinch, Nicknamed Jeffrey Brace",Boyrereau Brinch and Benjamin F. Prentiss
+The Blind Assassin,Margaret Atwood
 The Blind Lion of the Congo,H. L. Sayler
+Blind Love,Wilkie Collins and Walter Besant
 The Blind Man's House,Hugh Walpole
 The Blind Owl,Sadeq Hedayat
 The Blind Spot,Austin Hall and Homer Eon Flint
@@ -1876,6 +2076,7 @@ Blindfolded,Earle Ashley Walcott
 "The Blindman's World, and Other Stories",Edward Bellamy
 Blindsight,Peter Watts
 "Bliss, and Other Stories",Katherine Mansfield
+The Blithedale Romance,Nathaniel Hawthorne
 Blix,Frank Norris
 The Blockade Runners,Jules Verne
 The Blockheads,Mercy Otis Warren
@@ -1899,6 +2100,8 @@ The Blood-Tax,Dorothea Gerard
 Bloom / Blood: A Commemorative Poem in Three Parts,Joe Napora
 Bloom of Cactus,Robert Ames Bennet
 The Bloom of Monticello,Elizabeth Hatcher Sadler
+A Blot in the 'Scutcheon,Robert Browning
+The Blotting Book,E. F. Benson
 The Bloudy Tenent of Persecution for Cause of Conscience Discussed; and Mr. Cotton's Letter Examined and Answered,Roger Williams
 "A Blow at the Root: or, An Attempt to Prove, that No Time Ever Was, or Very Probably Ever Will Be, So Proper and Convenient as the Present, for Introducing a Further Reformation into our National Church, Universities, and Schools",Aaron Tozer
 "Blown to Bits, or, The Lonely Man of Rakata: A Tale of the Malay Archipelago",R. M. Ballantyne
@@ -1913,6 +2116,7 @@ The Blue-Eyed Manchu,Achmed Abdullah
 Blue Fairy Book,Andrew Lang
 The Blue Fairy Book,Andrew Lang
 The Blue Fairy Book,Andrew Lang
+The Blue Flower,Henry Van Dyke
 The Blue Germ,Martin Lutrell Swayne
 The Blue Ghost Mystery,John Blaine
 The Blue Hotel,Stephen Crane
@@ -1927,6 +2131,7 @@ Blue Smoke: A Book of Verses,Karle Wilson Baker
 Blue Suede: The Strange Case of the Lost Elvis Diaries,Barry Willis
 Blue Water: A Tale of the Deep Sea Fishermen,Frederick William Wallace
 Bluebeard,Clifton Johnson
+Bluebeard: A Musical Fantasy,Kate Douglas Smith Wiggin
 Bluebell: A Novel,Mrs. George Croft Huddleston
 "Blueprint for World Conquest, As Outlined by the Communist International",Communist International
 Blueprints for Reform,Project 2061
@@ -1939,10 +2144,12 @@ The Boarded-Up House,Augusta Huiell Seaman
 "The Boat Club: or, The Bunkers of Rippleton",Oliver Optic
 Boat Sailing in Fair Weather and Foul,Ahmed John Kenealy
 Boatman's Quarterly Review,Grand Canyon River Guides
+"The Boats of the ""Glen Carrig""",William Hope Hodgson
 "Bob Chester's Grit: or, From Ranch to Riches",Frank V. Webster
 Bob Cook and the German Spy,Paul G. Tomlinson
 Bob Hampton of Placer,Randall Parrish
 "Bob, Son of Battle",Alfred Ollivant
+Bob Strong's Holidays,John C. Hutcheson
 "Bob the Castaway: or, The Wreck of the Eagle",Frank V. Webster
 Bobbie Bubbles,E. Hugh Sherwood and Maud Gridley Budlong
 "Bobbins of Belgium: A Book of Belgian Lace, Lace-Workers, Lace-Schools and Lace-Villages",Charlotte Kellogg
@@ -1958,6 +2165,7 @@ The Bobbsey Twins in the Great West,Laura Lee Hope
 The Bobbsey Twins in Washington,Laura Lee Hope
 The Bobbsey Twins on a Houseboat,Laura Lee Hope
 The Bobbsey Twins on Blueberry Island,Laura Lee Hope
+"The Bobbsey Twins: or, Merry Days Indoors and Out",Laura Lee Hope
 Boddie and Allied Families,John Thomas Boddie and John Bennett Boddie
 Bodhinyana: A Collection of Dhamma Talks,Achaan Chah
 Bodley Booklets: The Quest of the Gilt-Edged Girl; Some Notes of a Struggling Genius; The Headswoman; Stories Toto Told Me,Richard De Lyrienne
@@ -1972,6 +2180,7 @@ BodyWise Handbook: Eating Disorders Information for Middle School Personnel,Unit
 "The Bogomils of Bulgaria and Bosnia: or, The Early Protestants of the East: An Attempt to Restore Some Lost Leaves of Protestant History",L. P. Brockett
 "Bohemian San Francisco, Its Restaurants and Their Most Famous Recipes: The Elegant Art of Dining",Clarence E. Edwords
 Bohemian Society,Lydia Leavitt
+"The Bohemians: A Study of the ""Land of the Cup and the Book""",Edith Fowler Chase
 The Bohemians of the Latin Quarter,Henri Murger
 Boi za Peterburg: Dve Rechi,Leon Trotsky and Grigory Yevseyevich Zinovyev
 The Boke Named The Governour,Thomas Elyot
@@ -1992,7 +2201,9 @@ The Bomb,Frank Harris
 Bond and Free: A Tale of the South,Grace Lintner
 The Bondage of the Will,Martin Luther
 "Bones and I: or, The Skeleton at Home",G. J. Whyte-Melville
+"""Bones"": Being Further Adventures in Mr. Commissioner Sanders' Country",Edgar Wallace
 Bones: His Anecdotes and Goaks,G. W. Moore
+Bones in London,Edgar Wallace
 "Bonesetting, Chiropractic, and Cultism",Samuel Homola
 Bonnie Prince Charlie: A Tale of Fontenoy and Culloden,G. A. Henty
 Bonny Bairns,Amy Ella Blanchard
@@ -2010,6 +2221,7 @@ Book-Keeping and Accounting for the Small Business,Peter Taylor
 A Book-Lover's Holidays in the Open,Theodore Roosevelt
 The Book Named The Governor,Thomas Elyot
 "The Book of Abraham: Its Authenticity Established as a Divine and Ancient Record, With Copious References to Ancient and Modern Authorities",George Reynolds
+The Book of Ahania,William Blake
 The Book of All-Power,Edgar Wallace
 The Book of Archery,George Agar Hansard
 The Book of Art for Young People,Agnes Ethel Conway and William Martin Conway
@@ -2033,6 +2245,7 @@ The Book of Dreams and Ghosts,Andrew Lang
 The Book of Emblems,Andrea Alciati
 A Book of Escapes and Hurried Journeys,John Buchan
 A Book of Essays,Robert Hugh Benson
+Book of Etiquette,Lillian Eichler Watson
 The Book of Fables and Folk Stories,Horace Elisha Scudder
 A Book of Folk-Lore,S. Baring-Gould
 "The Book of Games, With Directions How to Play Them",Mary White
@@ -2041,6 +2254,9 @@ The Book of God: The Apocalypse of Adam-Oannes,Edward Vaughan Kenealy
 A Book of Golden Deeds,Charlotte M. Yonge
 A Book of Golden Deeds,Charlotte M. Yonge
 The Book of Good Manners: A Guide to Polite Usage for All Social Functions,Walter Cox Green
+The Book of Hallowe'en,Ruth Edna Kelley
+The Book of Herbs,Rosalind Northcote
+The Book of Household Management,Mrs. Beeton
 The Book of Idols,Ibn al-Kalbi
 The Book of Jack London,Charmian London
 The Book of Joyous Children,James Whitcomb Riley
@@ -2052,8 +2268,11 @@ The Book of Life: Mind and Body,Upton Sinclair
 The Book of Margery Kempe,Margery Kempe
 Book of Meditations,James Allen
 A Book of Miscellaneous Lyrics,Joseph Skipsey
+Book of Monsters,David Fairchild and Marian Fairchild
 A Book of Mormons,Richard S. Van Wagoner and Steven C. Walker
 A Book of Music,Richard Watson Gilder
+The Book of Nature Myths,Florence Holbrook
+A Book of Nonsense,Edward Lear
 "The Book of Noodles: Stories of Simpletons, or, Fools and Their Follies",W. A. Clouston
 "A Book of Operas: Their Histories, Their Plots, and Their Music",Henry Edward Krehbiel
 The Book of Peace,Christine de Pisan
@@ -2072,12 +2291,15 @@ A Book of Rhyme,Augusta Webster
 The Book of Saints and Friendly Beasts,Abbie Farwell Brown
 The Book of Saints and Heroes,Mrs. Lang
 "A Book of Saints and Wonders, Put Down Here by Lady Gregory according to the Old Writings and the Memory of the People of Ireland",Lady Gregory
+A Book of Scoundrels,Charles Whibley
 The Book of Small,Emily Carr
 The Book of Snobs,William Makepeace Thackeray
 A Book of Strife in the Form of The Diary of An Old Soul,George MacDonald
 The Book of Sun-Dials,Mrs. Alfred Gatty
 A Book of Symbols for Camp Fire Girls,Charlotte V. Gulick
 "The Book of Talismans, Amulets and Zodiacal Gems",William Thomas Pavitt and Kate Pavitt
+The Book of Tea,Kakuzo Okakura
+"The Book of the Bastiles: or, The History of the Working of the New Poor Law",G. R. Wythen Baxter
 The Book of the Bee,Solomon
 A Book of the Beginnings,Gerald Massey
 The Book of the Camp Fire Girls,Camp Fire Girls
@@ -2090,6 +2312,7 @@ The Book of the Duchesse,Geoffrey Chaucer
 The Book of the Duke of True Lovers,Christine de Pisan
 The Book of the Epic: The World's Great Epics Told in Story,H. A. Guerber
 "The Book of the Fair: An Historical and Descriptive Presentation of the World's Science, Art, and Industry, As Viewed Through the Columbian Exposition at Chicago in 1893",Hubert Howe Bancroft
+"The Book of the Great Sea-Dragons, Ichthyosauri and Plesiosauri",Thomas Hawkins
 "The Book of the Hamburgs: A Brief Treatise Upon the Mating, Rearing and Management of the Different Varieties of Hamburgs",L. Frank Baum
 The Book of the Knight of La Tour-Landry,Geoffroy de La Tour Landry
 The Book of the Law,Aleister Crowley
@@ -2097,14 +2320,19 @@ The Book of the Lover and the Beloved,Ramon Llull
 The Book of the Native,Charles George Douglas Roberts
 The Book of the Ordre of Chyualry,Ramon Llull
 "The Book of the Pearl: The History, Art, Science, and Industry of the Queen of Gems",George Frederick Kunz and Charles Hugh Stevenson
+The Book of the Rifle,Thomas Francis Fremantle
 The Book of the Sacred Magic of Abramelin the Mage,Abraham ben Simeon of Worms
 The Book of the Sword,Richard Francis Burton
 The Book of the Twelve Béguines,Jan van Ruusbroec
 The Book of Thel,William Blake
+The Book of Town and Window Gardening,Frances Anne Bardswell
 The Book of Urizen,William Blake
 A Book of Verses,Edgar Lee Masters
 A Book of Verses,William Ernest Henley
+The Book of Wallace,Charles Rogers
 "The book of Webmin, or, How I learned to stop worrying and love UNIX",Joe Cooper
+The Book of Were-Wolves,S. Baring-Gould
+The Book of Wonder,Lord Dunsany
 The Book of Woodcraft and Indian Lore,Ernest Thompson Seton
 A Book of Words,Rudyard Kipling
 Book of Worship: For the Congregation and the Home,Boston Church of the Disciples
@@ -2121,9 +2349,11 @@ The Booker T. Washington Papers,Booker T. Washington
 A Booklet of Verse,Rozelle V. Myers-Funnell
 Books and Bookmen,Andrew Lang
 Books and Bookmen,Ian Maclaren
+Books and Culture,Hamilton Wright Mabie
 Books and Habits From the Lectures of Lafcadio Hearn,Lafcadio Hearn
 "Books and Persons: Being Comments on a Past Epoch, 1908-1911",Arnold Bennett
 "Books and Reading: or, What Books Shall I Read and How Shall I Read Them?",Noah Porter
+Books Condemned to be Burnt,James Anson Farrer
 Books Fatal to Their Authors,P. H. Ditchfield
 Books for Children,Charles Lamb and Mary Lamb
 Books Go to War: The Armed Services Editions in World War Two,Daniel J. Miller
@@ -2133,6 +2363,7 @@ The Books of the Chronicles,Carl Friedrich Keil
 The Books of the Kings,Carl Friedrich Keil
 "Bookwomen: Creating an Empire in Children's Book Publishing, 1919-1939",Jacalyn Eddy
 "The Booming of Acre Hill, and Other Reminiscences of Urban and Suburban Life",John Kendrick Bangs
+Boon; The Mind of the Race; The Wild Asses of the Devil; and The Last Trump,H. G. Wells
 Boon; The Mind of the Race; The Wild Asses of the Devil; and The Last Trump,H. G. Wells
 """Boots and Saddles"": or Life in Dakota with General Custer",Elizabeth Bacon Custer
 "The Borden Case: The Struggle for Negro Rights in Boston, Under the Leadership of the L.S.N.R.",League of Struggle for Negro Rights
@@ -2152,6 +2383,7 @@ Boris in Russia,Etta Austin Blaisdell
 Born Again,Alfred W. Lawson
 Born Again: A Novel,Alfred W. Lawson
 Born Among the Hills: The Sleeping Giant Story,Nancy D. Sachse
+Born In Exile,George Gissing
 "Born in Slavery: Slave Narratives from the Federal Writers' Project, 1936-1938",Federal Writers' Project
 Born of the Storm,Nikolay Ostrovsky
 Born That Way,Johnson O'Connor
@@ -2164,6 +2396,7 @@ Bosnia and Herzegovina: Some Wayside Wanderings,Maude M. Holbach
 "Bosnia-Herzgovina, All the Way Home: Safe ""Minority Returns"" as a Just Remedy and for a Secure Future",Amnesty International
 Bosnia-Herzgovina: How Can They Sleep at Night?  Arrest Now!,Amnesty International
 Bosom Friends: A Seaside Story,Angela Brazil
+The Boss and the Machine: A Chronicle of the Politicians and Party Organization,Samuel Peter Orth
 Boss Elections or the Workers Vote: Capitalist Democracy or a Workers Government,Revolutionary Workers League of the U.S.
 The Boss of Little Arcady,Harry Leon Wilson
 The Boss of Taroomba,E. W. Hornung
@@ -2177,6 +2410,7 @@ Boston Illustrated,Edwin M. Bacon
 The Bostonians,Henry James
 "Boswell's Life of Johnson, Abridged and Edited",James Boswell
 "Boswell's Life of Johnson, Including Boswell's Journal of a Tour to the Hebrides and Johnson's Diary of a Journey into North Wales",James Boswell
+"The Botanic Garden: A Poem, in Two Parts, With Philosophical Notes",Erasmus Darwin
 Botanical Dermatology: Plants and Plant Products Injurious to the Skin,John Mitchell and Arthur Rook
 "Botany Bay: or, True Tales of Early Australia",John Lang
 "Botany for Beginners: An Introduction to Mrs. Lincoln's Lectures on Botany, for the Use of Common Schools and the Younger Pupils of Higher Schools and Academies",Mrs. Lincoln Phelps
@@ -2188,6 +2422,7 @@ Both Sides the Border: A Tale of Hotspur and Glendower,G. A. Henty
 """Both Sides Told,"" or, Southern California As It Is",Mary C. Vail
 The Bottle Imp,Robert Louis Stevenson
 Bound for Sacramento,Carl Meyer
+"Bound to Rise: or, Up the Ladder",Horatio Alger
 The Boundaries of Lithuania,Jonas Zilius
 Boundary,Eric Flint and Ryk E. Spoor
 Bourgeois Socialism: Its Rise and Collapse in America,Arnold Petersen
@@ -2218,6 +2453,7 @@ The Boy Apprenticed to an Enchanter,Padraic Colum
 "The Boy Aviators' Polar Dash: or, Facing Death in the Antarctic",John Henry Goldfrap
 "The Boy Aviators' Treasure Quest: or, The Golden Galleon",John Henry Goldfrap
 "The Boy From the Ranch: or, Roy Bradner's City Experiences",Frank V. Webster
+The Boy Hunters,Mayne Reid
 The Boy Knight: A Tale of the Crusades,G. A. Henty
 "The Boy Land Boomer: or, Dick Arbuckle's Adventures in Oklahoma",Edward Stratemeyer
 "The Boy Life of Napoleon, Afterwards Emperor of the French: Adapted and Extended for American Boys and Girls",Eugénie Foa
@@ -2266,6 +2502,7 @@ The Boy Who Wasn't There: A Mystery,Hans Wilhelm
 "The Boy who Went to the East, and Other Indian Fairy Tales",Ethel C. Brill
 The Boy With Wings,Berta Ruck
 "Boycotted, and Other Stories",Talbot Baines Reed
+Boyhood in Norway,Hjalmar Hjorth Boyesen
 Boyle's Wisconsin Safe-Place Law,Howard H. Boyle
 Boys and Girls From Thackeray,Kate Dickinson Sweetser
 "The Boys' and Girls' Plutarch, Being Parts of The ""Lives"" of Plutarch Edited for Boys and Girls",Plutarch
@@ -2284,6 +2521,7 @@ The Boys of Grand Pre School,James De Mille
 Boys of the Ages: Their Dreams and Their Crafts,Laura Woolsey Lord Scales
 A Boy's Ride,Gulielma Zollinger
 A Boy's Voyage Round the World,Samuel Smiles
+A Boy's Will,Robert Frost
 Bracebridge Hall,Washington Irving
 "Bracebridge Hall: or, The Humorists",Washington Irving
 "Bradford's History ""Of Plimoth Plantation"", From the Original Manuscript, With a Report of the Proceedings Incident to the Return of the Manuscript to Masachusetts",William Bradford
@@ -2292,10 +2530,12 @@ Brahma Sutras,Swami Sivananda
 A Brain for All Seasons:  Human Evolution and Abrupt Climate Change,William H. Calvin
 The Brain of Robert Frost: A Cognitive Approach to Literature,Norman Norwood Holland
 Brain Ships,Anne McCaffrey
+Brain Wave,Poul Anderson
 "Brains Behind Barbed Wire!  Fate of Artists, Scholars, Scientists, Brain Workers Under Hitler-Fascism: A Collective Report",Bund Proletarisch-Revolutionärer Schriftsteller Deutschlands
 Braman's Information About Texas,D. E. E. Braman
 Bramble-Bees and Others,Jean-Henri Fabre
 The Bramleighs of Bishop's Folly,Charles James Lever
+Branches of the Chassidic Menorah: Biographical Stories,Joseph Isaac Schneersohn
 "The Brand of Dominic: or, Inquisition",William Harris Rule
 A Brand Plucked From the Fire: An Autobiographical Sketch,Julia A. J. Foote
 Branded,Francis Lynde
@@ -2308,6 +2548,7 @@ The Brant Family,Mrs. John Rose Holden
 The Brass Bottle,F. Anstey
 "The Brass Bottle: A Farcical Fantastic Play, in Four Acts",F. Anstey
 The Brass Bound Box,Evelyn Raymond
+The Brass Bowl,Louis Joseph Vance
 The Brass Check: A Study of American Journalism,Upton Sinclair
 "Brave and Bold: or, The Fortunes of Robert Rushton",Horatio Alger
 Brave New World: Digitisation of Content: The Opportunities for Booksellers and The Booksellers Assocation,Martyn Daniels
@@ -2356,8 +2597,11 @@ Breughel's Pig,Robert Peters
 Breve Relacion de la Destruccion de las Indias Occidentales,Bartolomé de las Casas
 Breve Relacion de la Destruccion de las Indias Occidentales,Bartolomé de las Casas
 The Brewer: A Familiar Treatise on the Art of Brewing,William Robert Loftus
+"Brewing and Liquor Interests and German Propaganda: Hearings Before a Subcommittee of the Committee on the Judiciary, United States Senate, Sixty-fifth Congress, Second and Third sessions, Pursuant to S. Res. 307",United States Senate Committee on the Judiciary
+Brewster's Millions,George Barr McCutcheon
 Brian Eno: His Music and the Vertical Color of Sound,Eric Tamm
 Bribery and Corruption (Bane of Our Society),Marius Nkwoh
+"The Brick Moon, and Other Stories",Edward Everett Hale
 Bricks Without Straw,Albion Winegar Tourgée
 The Bridal of Pennacook,John Greenleaf Whittier
 The Bride,Samuel Rowlands
@@ -2390,7 +2634,7 @@ A Brief Description of New-York,Daniel Denton
 "A Brief Description of New-York, Formerly Called New-Netherlands",Daniel Denton
 "Brief Diversions: Being Tales, Travesties and Epigrams",J. B. Priestley
 A Brief Enquiry Into the True Nature and Character of Our Federal Government,Abel Parker Upshur
-A Brief Exposition of the Doctrine of the New Church,"Emanuel Swedenborg<ul><li> <a href=""http://www.theheavenlydoctrines.org/Writings%20English/Brief%20Exposition%20"
+A Brief Exposition of the Doctrine of the New Church,Emanuel Swedenborg
 "A Brief History of Ancient, Mediaeval, and Modern Peoples",Joel Dorman Steele
 A Brief History of Beacon Press,Susan Wilson
 "A Brief History of Boys' Journals, With Interesting facts About the Writers of Boys' Stories",Ralph Rollington
@@ -2426,12 +2670,14 @@ A Brief Summary in Plain Language of the Most Important Laws Concerning Women,Ba
 A Brief Text-Book of Logic and Mental Philosophy,Charles Coppens
 A Brief Text-Book of Moral Philosophy,Charles Coppens
 "A Briefe and a Playne Introduction, Teachyng How to Pronounce the Letters in the British Tong, (now commenly called Walsh)",William Salesbury
+A Briefe and True Report of the New Found Land of Virginia,Thomas Harriot
 A Briefe Discourse Concerning the Powers of the Peeres,John Selden
 A Briefe Discourse of the New-Found-Land,John Mason
 A Briefe Discourse of the True (But Neglected) Use of Charact'ring the Degrees,Thomas Ravenscroft
 "A Briefe Historie of the Glorious Martyrdom of Twelve Reverend Priests, Father Edmund Campion and His Companions",William Allen
 "A Briefe Relation of the Persecution Lately Made Against the Catholike Christians, in the Kingdome of Iaponia, Divided into two Bookes: the First Part",Pedro Morejon
 "The Brigand, or, the Mountain Chief: A Romance",Thomas Peckett Prest
+Brigands of the Moon,Ray Cummings
 Brigham and Co's Fond du Lac City Directory and Business Advertiser for 1857-58,A. D. Brigham
 Brigham Young and His Mormon Empire,Frank J. Cannon and George L. Knapp
 Brigham Young University: A House of Faith,Gary James Bergera and Ronald Priddis
@@ -2444,6 +2690,7 @@ Bright Stars: Charting the Impact of the Arts in Rural Minnesota,Carlo M. Cuesta
 Bright With Silver,Kathrene Sutherland Gedney Pinkerton
 "Bright-Wits, Prince of Mogadore",Burren Loughlin and L. L. Flood
 Brighter Than the Sun,Rolf A. F. Witzsche
+A Brighton Tragedy,Guy Newell Boothby
 Brilliant Business Connections,Frances Kay
 The Brilliant Proof,Mirza Abu al-Fadl Gulpayagani
 The Brimming Cup,Dorothy Canfield Fisher
@@ -2459,15 +2706,19 @@ Britain at Bay,Spenser Wilkinson
 "Britain's Golden Mines Discover'd, Or, The Fishery Trade Considered",Sally Fisher
 "Britain's Place in the Great Plan: Four Lectures delivered in London, June and July 1921",Annie Besant
 Britain's Remembrancer,James Burgh
+"Britain's Title in South Africa: or, The Story of Cape Colony to the Days of the Great Trek",James Cappon
 Britannia,William Camden
 "British Airships, Past, Present and Future",George Whale
 "The British-Americans: The Loyalist Exiles in England, 1774-1789",Mary Beth Norton
+"The British Association's Visit to Montreal, 1884: Letters by Clara Lady Rayleigh",Clara Rayleigh
 The British Barbarians,Grant Allen
 The British Barbarians: A Hill-Top Novel,Grant Allen
 The British Battle Fleet: Its Inception and Growth Throughout the Centuries to the Present Day,Fred T. Jane
 "The British Case in French Congo: The Story of a Great Injustice, its Causes and its Lessons",E. D. Morel
 British Children in Canadian Homes,Ellen Agnes Bilbrough
 "The British Columbia Mission, Or, Metlahkatlah",William Duncan
+British Desperadoes at the Turn of the Millennium,Lidia Vianu
+The British Dominions in North America,Joseph Bouchette
 The British Empire,T. A. Jackson
 "The British Empire in America: Containing the History of the Discovery, Settlement, Progress and Present State of All the British Colonies on the Continent and Islands of America",Mr. Oldmixon
 "The British Empire in America: Containing the History of the Discovery, Settlement, Progress and State of the British Colonies on the Continent and Islands of America",Mr. Oldmixon
@@ -2526,9 +2777,13 @@ Brooke's Daughter: A Novel,Adeline Sergeant
 Brookes on Modern Dancing,Laurence De Garmo Brookes
 "The Brooklet Reciter, For Temperance Societies and Bands of Hope",Harriet A. Beavan
 The Brooklyn Bridge Shooting: An Independent Review and Assessment,American Jewish Committee
+The Broom-Squire,S. Baring-Gould
 "Brother Against Brother: or, The War on the Border",Oliver Optic
+Brother and Sister,Josephine Lawrence
 Brother G.M. Rose: A Temperance Story,Maria Simpson
+Brother Jacob,George Eliot
 The Brother of Daphne,Dornford Yates
+Brother of the Third Degree,Will L. Garver
 The Brotherhood of Consolation,Honoré de Balzac
 The Brotherhood of Religions,Annie Besant
 The Brotherhood of the Seven Kings,L. T. Meade and Robert Eustace
@@ -2551,6 +2806,7 @@ Brownsmith's Boy,George Manville Fenn
 Bruce,Albert Payson Terhune
 Brucellosis in the Greater Yellowstone Area,Norman F. Cheville
 "Brudder Bones' ""4-11-44"" Joker: Containing a Jolly Lot of Sable Conundrums, Ethiopian Jokes, Burnt Cork Comicalities and Darkey Dialogues",Henry J. Wehman
+"The Brunt of the War, and Where it Fell",Emily Hobhouse
 Brut,Layamon
 Brut,Layamon
 The Bryan Campaign for the American People's Money,Ignatius Donnelly
@@ -2566,6 +2822,7 @@ Bucholz and the Detectives,Allan Pinkerton
 "Buck Peters, Ranchman: Being the Story of What Happened When Buck Peters, Hopalong Cassidy, and Their Bar-20 Associates Went to Montana",Clarence Edward Mulford and John Wood Clay
 "Buck Whaley's Memoirs, Including His Journey to Jerusalem, Written by Himself in 1797 and Now First Published From the Recently Discovered Manuscript",Thomas Whaley
 Buckeye Cookery,Estelle Woods Wilcox
+Bucking the Tiger,Achmed Abdullah
 "The Buckle-My-Shoe Picture Book: Containing One, Two, Buckle My Shoe; A Gaping-Wide-Mouth-Waddling-Frog; My Mother",Walter Crane
 Bucky O'Connor: A Tale of the Unfenced Border,William MacLeod Raine
 Buddenbrooks: Verfall einer Familie,Thomas Mann
@@ -2610,6 +2867,7 @@ Building a Militant Student Movement: Program and Constitution of the National S
 Building a More Innovative Economy,Industry Canada
 Building a North American Feed Information System,National Research Council Committee on Animal Nutrition
 Building a Whiter and Brighter World,Ben Klassen
+Building a Workable Peace,Phillips Bradley
 Building Accessible Websites,Joe Clark
 Building an Effective Environmental Management Science Program: Final Assessment,National Research Council Virtual Commission on Environmental Management Science
 Building and Sustaining Digital Collections: Models for Libraries and Museums,Abby Smith
@@ -2630,11 +2888,13 @@ Building Stones,Julia P. Ballard
 Buildup of Cf-252 and Intermediate Isotopes from Cm-244 in a High Flux,Susanne E. Vandenbosch and Paul R. Fields
 "Built of Living Stones: Art, Architecture, and Worship",National Conference of Catholic Bishops
 Bulbs and Blossoms,Amy Le Feuvre
+Bulfinch's Mythology,Thomas Bulfinch
 Bulfinch's Mythology: Legends of Charlemagne,Thomas Bulfinch
 Bulfinch's Mythology: The Age of Chivalry,Thomas Bulfinch
 Bulfinch's Mythology: The Age of Fable,Thomas Bulfinch
 Bulfinch's Mythology: The Age of Fable,Thomas Bulfinch
 Bulgarian Horrors and the Question of the East,W. E. Gladstone
+Bull-Dog Drummond: The Adventures of a Demobilised Officer Who Found Peace Dull,H. C. McNeile
 Bull God,Roberta Gellis
 Bull Hunter,Max Brand
 Bulletin of the American Association of University Professors,American Association of University Professors
@@ -2663,6 +2923,7 @@ Bunny Brown and His Sister Sue on an Auto Tour,Laura Lee Hope
 Bunny Brown and His Sister Sue on Grandpa's Farm,Laura Lee Hope
 Bunny Brown and His Sister Sue Playing Circus,Laura Lee Hope
 Bunyan,James Anthony Froude
+Bunyan Characters,Alexander Whyte
 Bunyip Land: A Story of Adventure in New Guinea,George Manville Fenn
 Buoyant Billions,Bernard Shaw
 The Burden of God: Studies in Wisdom and Civilization from the Book of Ecclesiastes,Michael W. Kelley
@@ -2695,6 +2956,7 @@ Burn,James P. Kelly
 Burned Bridges,Bertrand W. Sinclair
 Burnham Breaker,Homer Greene
 Burning Bush,Karle Wilson Baker
+Burning Daylight,Jack London
 The Burning Glass,Marjorie Bowen
 The Burning Marl,J. Le Gay Brereton
 The Burning of Rome: A Story of Nero's Days,Alfred John Church
@@ -2710,6 +2972,7 @@ Burt's Illustrated Guide of the Connecticut Valley,Henry M. Burt
 "Burundi, Forced Relocation: New Patterns of Human Rights Abuses",Amnesty International
 Bush Ballads and Galloping Rhymes,Adam Lindsay Gordon
 The Bush Boys,Mayne Reid
+Bush Studies,Barbara Baynton
 "Bushido, the Soul of Japan: An Exposition of Japanese Thought",Inazo Nitobe
 "The Bushman: or, Life in a New Country",Edward Wilson Landor
 The Bushwhackers and Other Stories,Mary Noailles Murfree
@@ -2721,6 +2984,7 @@ Business Communication for Success,Scott McLean
 Business Ethics,William Frey and Jose A. Cruz-Cruz
 Business Hints for Men and Women,A. R. Calhoun
 Business Information Systems: Design an App for That,Raymond Frost
+Business Journalism in the New Information Economy,Media Studies Center
 A Business Man Looks at Communism,Fred C. Koch
 Business Mensch: Timeless Wisdom for Today's Entrepreneur,Noah Alper
 The Business of Being a Father,John D. Rockefeller
@@ -2758,6 +3022,7 @@ Buying Property In Eastern Europe,Leaonne Hall
 By an Unknown Disciple,Cecily Spencer-Smith Phillimore
 """By and By"": or, Harry Leonard",Mary Hannah Bacon Field
 By Canoe and Dog Train Among the Cree and Salteaux Indians,Egerton Ryerson Young
+By Canoe and Dog Train Among the Cree and Salteaux Indians,Egerton Ryerson Young
 By Conduct and Courage: A Story of the Days of Nelson,G. A. Henty
 By Desert Ways to Baghdad,Louisa Jebb Wilkins
 "By England's Aid: or, The Freeing of the Netherlands (1585-1604)",G. A. Henty
@@ -2777,16 +3042,20 @@ By Reef and Palm,Louis Becke
 "By Reef and Palm, and Other Stories",Louis Becke
 "By Right of Conquest: or, With Cortez in Mexico",G. A. Henty
 By Rock and Pool on an Austral Shore,Louis Becke
+"By Rock and Pool on an Austral Shore, and Other Stories",Louis Becke
 By Saturday,S. Fowler Wright
 By Sheer Pluck: A Tale of the Ashanti War,G. A. Henty
 By Shore and Sedge,Bret Harte
 By Slanderous Tongues,Mercedes Lackey and Roberta Gellis
 By Still Waters: A Story for Quiet Hours,Isabella Fyvie Mayo
+By Still Waters: Lyrical Poems Old and New,George William Russell
 "By the Aurelian Wall, and Other Elegies",Bliss Carman
 By the Equator's Snowy Peak: A Record of Medical Missionary Work and Travel in British East Africa,Emily May Crawford
 By the Great Wall: Letters From China,Isabella Riggs Williams
+By the Ionian Sea: Notes of a Ramble in Southern Italy,George Gissing
 By the King: A Proclamation for the Suppression of the Coffee-Houses,King Charles II of England
 By the Late John Brockman,John Brockman
+By the Light of the Soul,Mary Eleanor Wilkins Freeman
 By the Marshes of Minas,Charles George Douglas Roberts
 By the Neck Until Dead: A History of Hangings in Cuyahoga County,John Stark Bellamy
 By the People,Carl Malamud
@@ -2800,6 +3069,8 @@ By-Ways of Bombay,S. M. Edwardes
 By What Authority?,Robert Hugh Benson
 Bye-Ways,Robert Hichens
 "Bye-Words: A Collection of Tales, New and Old",Charlotte M. Yonge
+Bygone Beliefs: Being a Series of Excursions in the Byways of Thought,H. Stanley Redgrove
+Bygone England: Social Studies in Historic Byways and Highways,William Andrews
 Bygone Punishments,William Andrews
 Bygones Worth Remembering,George Jacob Holyoake
 Bylaws and Rules,Unitarian Universalist Association
@@ -2838,6 +3109,7 @@ Caesar Dies,Talbot Mundy
 Caesar or Nothing,Pío Baroja
 The Caesars,Thomas De Quincey
 Caesar's Column (Caesars Soile): En Beretning fra det Tyvende Aarhundrede,Ignatius Donnelly
+Caesar's Column: A Story of the Twentieth Century,Ignatius Donnelly
 Caesar's Commentaries on the Gallic and Civil Wars: with the Supplementary Books Attributed to Hirtius,Julius Caesar and Aulus Hirtius
 Caesars Klonn: En Berattelse fran Tjugonde Arhundradet,Ignatius Donnelly
 The Caged Lion,Charlotte M. Yonge
@@ -2854,16 +3126,45 @@ Calculus III,Paul Dawkins
 The Calculus of Consent: Logical Foundations of Constitutional Democracy,James M. Buchanan and Gordon Tullock
 The Calculus of Functions of Several Variables,Dan Sloughter
 Calculus Unlimited,Jerrold E. Marsden and Alan Weinstein
+Calderon,Elizabeth Julia Hasell
 "Calderon, the Courtier: A Tale",Edward Bulwer-Lytton
 Caleb Field: A Tale of the Puritans,Mrs. Oliphant
 Caleb in the Country,Jacob Abbott
 "Caleb Williams, or Things As They Are",William Godwin
 Calendar of Coercion,Congress of Racial Equality
 Calendar of Letter-Books Preserved Among the Archives of the Corporation of the City of London at the Guildhall,City of London
+A Calendar of Sonnets,Helen Hunt Jackson
 A Calendar of the Jefferson Papers of the University of Virginia,University of Virginia Library
 The Calendar of the Soul,Rudolf Steiner
 Calendario Popular Para 1885,Luis Romero y Espinosa
-"California, 1849-1913: or, The Rambling Sketches and Experiences of Sixty-four Years' Residence in That State","L. H. Woolley<ul><li> <a href=""http://lcweb2.loc.gov/cgi-bin/query/r?ammem/calbkbib:@field"
+"California, 1849-1913: or, The Rambling Sketches and Experiences of Sixty-four Years' Residence in That State",L. H. Woolley
 California '46 to '88,Jacob Wright Harlan
 California: A Pleasure Trip from Gotham to the Golden Gate,Mrs. Frank Leslie
 "California: A Trip Across the Plains, In the Spring of 1850",James Abbey
+California All the Way Back to 1828,Michael Claringbud White
+California and the Californians,David Starr Jordan
+"California and the West, 1881, and Later",Lloyd Vernon Briggs
+California As I Saw It,William S. M'Collum
+California As It Is and As It May Be,Felix Paul Wierzbicki
+California Base Closure: Lessons for DoD's Cleanup Program,David Rubenson and John R. Anderson
+California Chronicle: News From the California Historical Society,California Historical Society
+California Coast Trails: A Horseback Ride From Mexico to Oregon,J. Smeaton Chase
+California Copy,Geo. F. Weeks
+California Desert Trails,J. Smeaton Chase
+"The California Earthquake of April 18, 1906. Report of the State Earthquake Investigation Commission",California State Earthquake Investigation Commission
+The California Electricity Crisis,James L. Sweeney
+"California: For Health, Pleasure, and Residence",Charles Nordhoff
+California Gold,James Stephens Brown
+California Gold Rush Merchant,Stephen Chapin Davis
+California Illustrated,J. M. Letts
+"California, In-Doors and Out",Eliza W. Farnham
+California: Its Gold and Its Inhabitants,H. V. Huntley
+"California Joe, the Mysterious Plainsman",Prentiss Ingraham
+California Letters of Lucius Fairchild,Lucius Fairchild
+California Life Illustrated,William Taylor
+California Notes,Charles B. Turrill
+"California Revisited, 1858-1897",Thaddeus S. Kenderdine
+"California, Romantic and Resourceful: A Plea for the Collection, Preservation, and Diffusion of Information Relating to Pacific Coast History",John Francis Davis
+California Sketches,Thomas S. Chard
+California Sketches,O. P. Fitzgerald
+"California Sketches, With Recollections of the Gold Mines",Leonard Kip
