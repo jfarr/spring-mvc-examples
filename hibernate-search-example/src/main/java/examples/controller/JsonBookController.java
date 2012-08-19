@@ -34,6 +34,11 @@ public class JsonBookController extends AbstractBookController {
         return new ModelAndView("book/view-json", "book", book);
     }
 
+    @RequestMapping(value = "/book/{bookId}", method = RequestMethod.DELETE)
+    public void delete(@PathVariable int bookId) {
+        deleteBook(bookId);
+    }
+
     @RequestMapping(value = "/book/{bookId}", method = RequestMethod.GET, headers = "Accept=application/json")
     public ModelAndView view(@PathVariable int bookId) throws NotFoundException {
         return new ModelAndView("book/view-json", "book", getBook(bookId));

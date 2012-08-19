@@ -65,12 +65,8 @@ public abstract class AbstractBookController {
         library.saveBook(book);
     }
 
-    protected Map<String, Object> deleteBook(int bookId, Integer firstResult) {
+    protected void deleteBook(int bookId) {
         library.deleteBook(bookId);
-        Page page = paginator.getPage(firstResult, null, library.countBooks());
-        Map<String, Object> model = new HashMap<String, Object>();
-        model.put("firstResult", page.getFirstResult());
-        return model;
     }
 
     protected Map<String, Object> searchBooks(String title, Integer firstResult, Integer maxResults) {

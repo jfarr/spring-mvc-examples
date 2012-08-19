@@ -2,8 +2,13 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<c:set var="title"
-	value="${book.bookId == null ? 'Add Book' : 'Edit Book'}" />
+<c:set var="isEditing" value="${book.bookId != null}" />
+<c:set var="title" value="${isEditing ? 'Edit Book' : 'Add Book'}" />
+<c:url var="listAction" value="/library/books/"/>
+<c:url var="searchAction" value="/library/books/searchForm"/>
+<c:url var="addAction" value="/library/books/addForm"/>
+<c:url var="editAction" value="/library/books/"/>
+<c:url var="deleteAction" value="/library/books/book/${book.bookId}"/>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -11,31 +16,38 @@
 </head>
 <body>
 <h2><c:out value="${title}" /></h2>
-<a href="<c:url value="."/>">book list</a>
+<a href="${listAction}">book list</a>
 &nbsp;
-<a href="<c:url value="searchForm"/>">search books</a>
+<a href="${searchAction}">search books</a>
 &nbsp;
-<a href="<c:url value="addForm"/>">add book</a>
-<c:url var="action" value="/library/books/"/>
+<a href="${addAction}">add book</a>
 <br/><br/>
-<form action="${action}" method="POST">
+<form action="${editAction}" method="POST">
 <table>
 	<tr>
 		<th>Title</th>
-		<td><input type="text" name="title" value="${book.title}" /></td>
+		<td><input type="text" name="title" value="<c:out value='${book.title}' />" /></td>
 	</tr>
 	<tr>
 		<th>Author</th>
-		<td><input type="text" name="author" value="${book.author}" /></td>
+		<td><input type="text" name="author" value="<c:out value='${book.author}' />" /></td>
 	</tr>
+	<tr><td colspan="2">&nbsp;</td></tr>
 	<tr>
-		<td rowspan="2""><input type="submit" name="submit" value="Save" /></td>
+		<td colspan="2""><input type="submit" name="submit" value="Save" /></td>
 	</tr>
 </table>
-<c:if test="${book.bookId != null}">
+<c:if test="${isEditing}">
 	<input type="hidden" name="bookId" value="<c:out value="${book.bookId}"/>" />
 </c:if>
 </form>
+<c:if test="${isEditing}">
+<form action="${deleteAction}" method="POST">
+    <input type="submit" name="submit" value="Delete" />
+    <input type="hidden" name="action" value="confirmDelete" />
+    <input type="hidden" name="bookId" value="<c:out value="${book.bookId}"/>" />
+</form>
+</c:if>
 <hr>
 request:
 <c:out value="${param}" />
