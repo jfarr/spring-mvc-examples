@@ -13,14 +13,17 @@ import examples.data.Library;
 
 public abstract class AbstractBookController {
 
-    private static final int DEFAULT_FIRST_RESULT = 0;
-    private static final int DEFAULT_MAX_RESULTS = 5;
-
     private Library library;
-
+    private Paginator paginator;
+    
     @Autowired
     public void setLibrary(Library library) {
         this.library = library;
+    }
+
+    @Autowired
+    public void setPaginator(Paginator paginator) {
+        this.paginator = paginator;
     }
 
     @ResponseStatus(HttpStatus.NOT_FOUND)
@@ -28,34 +31,27 @@ public abstract class AbstractBookController {
     public class NotFoundException extends Exception {
     }
 
-    protected Map<String, Object> getBooks(Integer firstResult) {
-        firstResult = calculateFirstResult(firstResult);
-        int maxResults = calculateMaxResults();
-        List<Book> books = library.getBooks(firstResult, maxResults);
-        long count = library.countBooks();
-        return buildListModel(books, firstResult, maxResults, count);
+    protected Map<String, Object> getBooks(Integer firstResult, Integer maxResults) {
+        firstResult = paginator.getFirstResult(firstResult);
+        maxResults = paginator.getMaxResults(maxResults);
+        return buildListModel(
+                library.getBooks(firstResult, maxResults), 
+                firstResult, 
+                maxResults, 
+                library.countBooks());
     }
 
-    protected int calculateFirstResult(Integer firstResult) {
-        return (firstResult == null ? DEFAULT_FIRST_RESULT : firstResult);
-    }
-
-    protected int calculateMaxResults() {
-        return DEFAULT_MAX_RESULTS;
-    }
-
-    private Map<String, Object> buildListModel(List<Book> books, Integer firstResult, int maxResults, long count) {
-        Integer nextResult = ((firstResult + maxResults < count) ? firstResult + maxResults : null);
-        Integer prevResult = ((firstResult - maxResults >= 0) ? firstResult - maxResults : null);
-        
+    private Map<String, Object> buildListModel(List<Book> books, Integer firstResult, int maxResults, long total) {
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("books", books);
-        model.put("total", count);
+        model.put("total", total);
         model.put("count", books.size());
         model.put("firstResult", firstResult);
-        model.put("nextResult", nextResult);
-        model.put("prevResult", prevResult);
         model.put("maxResults", maxResults);
+        model.put("nextResult", paginator.getNextResult(firstResult, maxResults, total));
+        model.put("prevResult", paginator.getPreviousResult(firstResult, maxResults));
+        model.put("startResult", paginator.getStartResult(firstResult));
+        model.put("lastResult", paginator.getLastResult(firstResult, maxResults, total));
         return model;
     }
 
@@ -71,11 +67,13 @@ public abstract class AbstractBookController {
         library.saveBook(book);
     }
 
-    protected Map<String, Object> searchBooks(String title, Integer firstResult) {
-        firstResult = calculateFirstResult(firstResult);
-        int maxResults = calculateMaxResults();
-        List<Book> books = library.searchBooksByTitle(title, firstResult, maxResults);
-        long count = library.countBooksByTitle(title);
-        return buildListModel(books, firstResult, maxResults, count);
+    protected Map<String, Object> searchBooks(String title, Integer firstResult, Integer maxResults) {
+        firstResult = paginator.getFirstResult(firstResult);
+        maxResults = paginator.getMaxResults(maxResults);
+        return buildListModel(
+                library.searchBooksByTitle(title, firstResult, maxResults), 
+                firstResult, 
+                maxResults, 
+                library.countBooksByTitle(title));
     }
 }

@@ -15,8 +15,10 @@ import examples.data.Book;
 public class JsonBookController extends AbstractBookController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET, headers = "Accept=application/json")
-    public ModelAndView list(@RequestParam(required = false) Integer firstResult) {
-        return new ModelAndView("book/list-json", getBooks(firstResult));
+    public ModelAndView list(
+            @RequestParam(required = false) Integer firstResult,
+            @RequestParam(required = false) Integer maxResults) {
+        return new ModelAndView("book/list-json", getBooks(firstResult, maxResults));
     }
 
     @RequestMapping(value = "/", method = RequestMethod.POST, headers = "Content-type=application/json")
@@ -38,7 +40,10 @@ public class JsonBookController extends AbstractBookController {
     }
 
     @RequestMapping(value = "/search", headers = "Accept=application/json")
-    public ModelAndView search(@RequestParam String title, @RequestParam(required = false) Integer firstResult) {
-        return new ModelAndView("book/list-json", searchBooks(title, firstResult));
+    public ModelAndView search(
+            @RequestParam String title, 
+            @RequestParam(required = false) Integer firstResult,
+            @RequestParam(required = false) Integer maxResults) {
+        return new ModelAndView("book/list-json", searchBooks(title, firstResult, maxResults));
     }
 }

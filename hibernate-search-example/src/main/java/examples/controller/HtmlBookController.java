@@ -15,8 +15,10 @@ import examples.data.Book;
 public class HtmlBookController extends AbstractBookController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView list(@RequestParam(required = false) Integer firstResult) {
-        return new ModelAndView("book/list", getBooks(firstResult));
+    public ModelAndView list(
+            @RequestParam(required = false) Integer firstResult, 
+            @RequestParam(required = false) Integer maxResults) {
+        return new ModelAndView("book/list", getBooks(firstResult, maxResults));
     }
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
@@ -46,7 +48,10 @@ public class HtmlBookController extends AbstractBookController {
     }
 
     @RequestMapping("/search")
-    public ModelAndView search(@RequestParam String title, @RequestParam(required = false) Integer firstResult) {
-        return new ModelAndView("book/list", searchBooks(title, firstResult));
+    public ModelAndView search(
+            @RequestParam String title, 
+            @RequestParam(required = false) Integer firstResult, 
+            @RequestParam(required = false) Integer maxResults) {
+        return new ModelAndView("book/list", searchBooks(title, firstResult, maxResults));
     }
 }
