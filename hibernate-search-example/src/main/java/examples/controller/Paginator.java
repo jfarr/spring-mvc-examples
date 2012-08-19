@@ -13,29 +13,43 @@ public class Paginator {
         this.maxResults = maxResults;
     }
     
-    public int getFirstResult(Integer firstResult) {
+    public Page getPage(Integer firstResult, Integer maxResults, long total) {
+        firstResult = getFirstResult(firstResult);
+        maxResults = getMaxResults(maxResults);
+        return new Page(
+                firstResult,
+                maxResults,
+                total,
+                getNextResult(firstResult, maxResults, total),
+                getPreviousResult(firstResult, maxResults),
+                getStartResult(firstResult),
+                getLastResult(firstResult, maxResults, total)
+                );
+    }
+    
+    private int getFirstResult(Integer firstResult) {
         return firstResult == null ? 0 : firstResult;
     }
     
-    public int getMaxResults(Integer maxResults) {
-        return (maxResults == null) ? this.maxResults : Math.min(maxResults, this.maxResults);
+    private int getMaxResults(Integer maxResults) {
+        return maxResults == null ? this.maxResults : Math.min(maxResults, this.maxResults);
     }
     
-    public Integer getNextResult(int firstResult, int maxResults, long total) {
+    private Integer getNextResult(int firstResult, int maxResults, long total) {
         int nextResult = firstResult + maxResults;
         return nextResult < total ? nextResult : null;
     }
     
-    public Integer getPreviousResult(int firstResult, int maxResults) {
+    private Integer getPreviousResult(int firstResult, int maxResults) {
         int previousResult = firstResult - maxResults;
         return previousResult >= 0 ? previousResult : null;
     }
     
-    public Integer getStartResult(long firstResult) {
+    private Integer getStartResult(long firstResult) {
         return firstResult == 0 ? null : 0;
     }
     
-    public Integer getLastResult(int firstResult, int maxResults, long total) {
+    private Integer getLastResult(int firstResult, int maxResults, long total) {
         int lastResult = (int) (total - total % maxResults);
         return firstResult == lastResult ? null : lastResult;
     }
