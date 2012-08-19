@@ -97,20 +97,33 @@
 						</tr>
 						<tr>
 							<c:choose>
-								<c:when test="${prevResult != null}">
-									<td width="50%"><a
-										href="?<c:if test="${isSearchPage}">title=<c:out value="${param.title}"/>&</c:if>firstResult=<c:out value="${prevResult}" />">previous&nbsp;<c:out
-										value="${maxResults}" /></a></td>
+								<c:when test="${prevResult != null || startResult != null}">
+									<td width="50%"><c:if test="${prevResult != null}">
+										<a
+											href="?<c:if test="${isSearchPage}">title=<c:out value="${param.title}"/>&</c:if>firstResult=<c:out value="${startResult}" />">first&nbsp;<c:out
+											value="${maxResults}" /></a>
+									</c:if><c:if test="${prevResult != null}">
+										<a
+											href="?<c:if test="${isSearchPage}">title=<c:out value="${param.title}"/>&</c:if>firstResult=<c:out value="${prevResult}" />">previous&nbsp;<c:out
+											value="${maxResults}" /></a>
+									</c:if></td>
 								</c:when>
 								<c:otherwise>
 									<td width="50%">&nbsp;</td>
 								</c:otherwise>
 							</c:choose>
 							<c:choose>
-								<c:when test="${nextResult != null}">
-									<td width="50%" align="right"><a
-										href="?<c:if test="${isSearchPage}">title=<c:out value="${param.title}"/>&</c:if>firstResult=<c:out value="${nextResult}" />">next&nbsp;<c:out
-										value="${maxResults}" /></a></td>
+								<c:when test="${nextResult != null || lastResult != null}">
+									<td width="50%" align="right"><c:if
+										test="${nextResult != null}">
+										<a
+											href="?<c:if test="${isSearchPage}">title=<c:out value="${param.title}"/>&</c:if>firstResult=<c:out value="${nextResult}" />">next&nbsp;<c:out
+											value="${maxResults}" /></a>
+									</c:if><c:if test="${lastResult != null}">
+										<a
+											href="?<c:if test="${isSearchPage}">title=<c:out value="${param.title}"/>&</c:if>firstResult=<c:out value="${lastResult}" />">last&nbsp;<c:out
+											value="${maxResults}" /></a>
+									</c:if></td>
 								</c:when>
 								<c:otherwise>
 									<td width="50%" align="right">&nbsp;</td>
