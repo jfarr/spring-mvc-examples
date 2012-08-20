@@ -24,7 +24,7 @@
 	<c:when test="${empty(books)}">
 		<c:choose>
 			<c:when test="${isSearchPage}">
-				<p>Library has no books starting with '<c:out
+				<p>Library has no books containing '<c:out
 					value="${param.title}" />'.</p>
 			</c:when>
 			<c:otherwise>
@@ -68,7 +68,7 @@
 				<c:if test="${total > 1}"> of <c:out value="${total}" />
 				</c:if> book<c:if test="${total > 1}">s</c:if>
 			</c:otherwise>
-		</c:choose> <c:if test="${isSearchPage}"> starting with '<c:out
+		</c:choose> <c:if test="${isSearchPage}"> containing '<c:out
 				value="${param.title}" />'</c:if></p>
 		<p />
 		<table>

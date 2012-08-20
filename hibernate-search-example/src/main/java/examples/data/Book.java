@@ -16,7 +16,7 @@ import org.hibernate.search.annotations.Store;
 @Indexed
 public class Book {
 
-    @Field(index=Index.UN_TOKENIZED, store=Store.YES)
+    @Field(index=Index.TOKENIZED, store=Store.YES)
     private String title;
     private String author;
 
@@ -28,6 +28,11 @@ public class Book {
         return title;
     }
 
+    @Field(name="title_fulltext", index=Index.UN_TOKENIZED, store=Store.YES)
+    public String getLowerCaseTitle() {
+        return title.toLowerCase();
+    }
+    
     public void setTitle(String title) {
         this.title = title;
     }

@@ -77,6 +77,6 @@ public class HtmlBookController extends AbstractBookController {
             @RequestParam String title,
             @RequestParam(required = false) Integer firstResult,
             @RequestParam(required = false) Integer maxResults) {
-        return new ModelAndView("book/list", searchBooks(title, firstResult, maxResults));
+        return new ModelAndView("book/list", searchBooksByTitle(title, firstResult, maxResults));
     }
 }

@@ -1,7 +1,9 @@
 package examples.data;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.search.PrefixQuery;
 import org.apache.lucene.search.Query;
@@ -12,6 +14,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Projections;
+import org.hibernate.search.FullTextQuery;
 import org.hibernate.search.FullTextSession;
 import org.hibernate.search.Search;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +24,9 @@ import org.springframework.transaction.annotation.Transactional;
 @Repository
 @Transactional
 public class Library {
+
+    private static final String TITLE_INDEX = "title";
+    private static final String TITLE_FULLTEXT_INDEX = "title_fulltext";
 
     private SessionFactory sessionFactory;
 
@@ -66,10 +72,12 @@ public class Library {
     }
 
     public long countBooksByTitle(String title) {
+        if (StringUtils.isEmpty(title)) {
+            return 0L;
+        }
         try {
-            Query query = new PrefixQuery(new Term("title", title));
             return getFullTextSession()
-                .createFullTextQuery(query, Book.class)
+                .createFullTextQuery(buildPhraseQuery(TITLE_INDEX, title), Book.class)
                 .getResultSize();
         } catch (HibernateException e) {
             throw new RuntimeException(e);
@@ -78,18 +86,73 @@ public class Library {
     
     @SuppressWarnings("unchecked")
     public List<Book> searchBooksByTitle(String title, int firstResult, int maxResults) {
+        if (StringUtils.isEmpty(title)) {
+            return new ArrayList<Book>();
+        }
         try {
-            Query query = new PrefixQuery(new Term("title", title));
-            Sort sort = new Sort(new SortField("title", SortField.STRING));
-            return getFullTextSession()
-                .createFullTextQuery(query, Book.class)
-                .setSort(sort)
-                .setFirstResult(firstResult)
-                .setMaxResults(maxResults)
-                .list();
+            return buildFullTextQuery(
+                    buildPhraseQuery(TITLE_INDEX, title),
+                    TITLE_INDEX,
+                    firstResult,
+                    maxResults)
+                    .list();
         } catch (HibernateException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private FullTextQuery buildFullTextQuery(Query query, String index, int firstResult, int maxResults) {
+        return getFullTextSession()
+            .createFullTextQuery(query, Book.class)
+            .setSort(new Sort(new SortField(index, SortField.STRING)))
+            .setFirstResult(firstResult)
+            .setMaxResults(maxResults);
+    }
+
+    private Query buildPhraseQuery(String field, String value) {
+        return getFullTextSession()
+                .getSearchFactory()
+                .buildQueryBuilder()
+                .forEntity(Book.class)
+                .get()
+                .phrase()
+                .onField(field)
+                .sentence(value)
+                .createQuery();
+    }
+
+    public long countBooksByTitlePrefix(String title) {
+        if (StringUtils.isEmpty(title)) {
+            return 0L;
+        }
+        try {
+            return getFullTextSession()
+                .createFullTextQuery(buildPrefixQuery(TITLE_FULLTEXT_INDEX, title), Book.class)
+                .getResultSize();
+        } catch (HibernateException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    
+    @SuppressWarnings("unchecked")
+    public List<Book> searchBooksByTitlePrefix(String title, int firstResult, int maxResults) {
+        if (StringUtils.isEmpty(title)) {
+            return new ArrayList<Book>();
+        }
+        try {
+            return buildFullTextQuery(
+                    buildPrefixQuery(TITLE_FULLTEXT_INDEX, title.toLowerCase()), 
+                    TITLE_FULLTEXT_INDEX, 
+                    firstResult, 
+                    maxResults)
+                    .list();
+        } catch (HibernateException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private Query buildPrefixQuery(String fieldName, String value) {
+        return new PrefixQuery(new Term(fieldName, value));
     }
     
     private Session getCurrentSession() {
