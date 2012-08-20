@@ -3,6 +3,7 @@
  */
 
 var bookServiceUrl = 'http://localhost:8080/hibernate-search-example/library/books/';
+var searchText = '';
 var maxAutoComplete = 5;
 var confirmDialog;
 
@@ -11,6 +12,10 @@ var confirmDialog;
  */
 
 function onLoadList() {
+    $('#first').click(onClickFirstList);
+    $('#next').click(onClickNextList);
+    $('#prev').click(onClickPrevList);
+    $('#last').click(onClickLastList);
     $.getJSON(bookServiceUrl, renderBookList);
 }
 
@@ -133,19 +138,35 @@ function renderNavLinks(bookList) {
 }
 
 function onLoadSearch() {
+    searchText = $('#title').attr('value');
+    setTimeout(searchTimer, 1000);
+    $('#title').autocomplete({
+        source : autoComplete
+    });
+    
+    $('#first').click(onClickFirstSearch);
+    $('#next').click(onClickNextSearch);
+    $('#prev').click(onClickPrevSearch);
+    $('#last').click(onClickLastSearch);
+    $('#search').click(onClickSearch);
+    
+    renderSearchPage();
+}
+
+function renderSearchPage() {
     var title = $('#title').attr('value');
     if (title == "") {
         $('#bookCount').hide();
         $('#bookList').hide();
         $('#bookData').html("");
     } else {
-        var searchUrl = bookServiceUrl + 'search?contains=' + $('#title').attr('value');
+        var searchUrl = bookServiceUrl + 'search?contains=' + title;
         $.getJSON(searchUrl, renderBookList);
     }
 }
 
 function onClickSearch() {
-    onLoadSearch();
+    renderSearchPage();
     return false;
 }
 
@@ -177,7 +198,7 @@ function searchTimer() {
     var currentText = $('#title').attr('value');
     if (currentText != searchText) {
         searchText = currentText;
-        onLoadSearch();
+        renderSearchPage();
     }
     setTimeout(searchTimer, 1000);
 }
