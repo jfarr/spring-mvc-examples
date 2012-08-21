@@ -268,7 +268,7 @@ insert into book (title, author) values ('Armageddon', 'Joe Crews');
 insert into book (title, author) values ('Armageddon: A Tale of Love, War, and Invention', 'Stanley Waterloo');
 insert into book (title, author) values ('Armageddon and the Day of the Lord: A Series of Bible Studies on the Coming Tribulation', 'M. R. DeHaan');
 insert into book (title, author) values ('Armageddon Now!  The Premillenarian Response to Russia and Israel Since 1917', 'Dwight Wilson');
-insert into book (title, author) values ('Armageddon: or, The Overthrow of Romanism and Monarchy; The Existence of the United States Foretold in the Bible; Its Future Greatness; Invasion by Allied Europe; Annihilation of Monarchy; Expansion into the Millennial Republic, and its Dominion over the Whole World', 'Samuel Davies Baldwin');
+--insert into book (title, author) values ('Armageddon: or, The Overthrow of Romanism and Monarchy; The Existence of the United States Foretold in the Bible; Its Future Greatness; Invasion by Allied Europe; Annihilation of Monarchy; Expansion into the Millennial Republic, and its Dominion over the Whole World', 'Samuel Davies Baldwin');
 insert into book (title, author) values ('Armance', 'Stendhal');
 insert into book (title, author) values ('Armand Durand, or, A Promise Fulfilled', 'Rosanna Eleanor Mullins Leprohon');
 insert into book (title, author) values ('Armazindy', 'James Whitcomb Riley');
@@ -814,7 +814,7 @@ insert into book (title, author) values ('Autobiography of a Pioneer', 'Samuel P
 insert into book (title, author) values ('Autobiography of a Pocket-Handkerchief', 'James Fenimore Cooper');
 insert into book (title, author) values ('The Autobiography of a Quack, and The Case of George Dedlow', 'S. Weir Mitchell');
 insert into book (title, author) values ('The Autobiography of a Slander', 'Edna Lyall');
-insert into book (title, author) values ('The Autobiography of a Wesleyan Methodist Missionary (Formerly a Roman Catholic): Containing an Account of His Conversion from Romanism and His Reception Into the Wesleyan Ministry; Also, Reminiscences of Nearly Twenty-Five Years'' Itinerancy in the North American Provinces, &c.', 'Robert Cooney');
+--insert into book (title, author) values ('The Autobiography of a Wesleyan Methodist Missionary (Formerly a Roman Catholic): Containing an Account of His Conversion from Romanism and His Reception Into the Wesleyan Ministry; Also, Reminiscences of Nearly Twenty-Five Years'' Itinerancy in the North American Provinces, &c.', 'Robert Cooney');
 insert into book (title, author) values ('Autobiography of a Yogi', 'Paramahansa Yogananda');
 insert into book (title, author) values ('Autobiography of a Yogi', 'Paramahansa Yogananda');
 insert into book (title, author) values ('The Autobiography of Alice B. Toklas', 'Gertrude Stein');
@@ -910,8 +910,8 @@ insert into book (title, author) values ('Awakening to Prayer', 'Augustine Ichir
 insert into book (title, author) values ('Awareness Itself', 'Fuang Jotiko');
 insert into book (title, author) values ('The ''Awarifu-l-ma''arif', 'Umar ibn Muhammad Suhrawardi');
 insert into book (title, author) values ('Away in the Wilderness', 'R. M. Ballantyne');
-insert into book (title, author) values ('Awful Disclosures, By Maria Monk, of the Hotel Dieu Nunnery of Montreal: Containing, Also, Many Incidents Never Before Published', 'Maria Monk');
-insert into book (title, author) values ('Awful Disclosures, By Maria Monk, of the Hotel Dieu Nunnery of Montreal : Revised, With an Appendix Containing, Part I. Reception of the First Editions. Part II. Sequel of Her Narrative. Part III. Review of the Case : Also, a Supplement, Giving More Particulars of the Nunnery and Grounds', 'Maria Monk');
+--insert into book (title, author) values ('Awful Disclosures, By Maria Monk, of the Hotel Dieu Nunnery of Montreal: Containing, Also, Many Incidents Never Before Published', 'Maria Monk');
+--insert into book (title, author) values ('Awful Disclosures, By Maria Monk, of the Hotel Dieu Nunnery of Montreal : Revised, With an Appendix Containing, Part I. Reception of the First Editions. Part II. Sequel of Her Narrative. Part III. Review of the Case : Also, a Supplement, Giving More Particulars of the Nunnery and Grounds', 'Maria Monk');
 insert into book (title, author) values ('Awful Disclosures of Maria Monk, Or, The Hidden Secrets of a Nun''s Life in a Convent Exposed, Illustrated With Upwards of Forty Engravings', 'Maria Monk');
 insert into book (title, author) values ('The Awkward Age', 'Henry James');
 insert into book (title, author) values ('The Awkward Age', 'Henry James');
@@ -1348,7 +1348,7 @@ insert into book (title, author) values ('Bébée: or, Two Little Wooden Shoes',
 insert into book (title, author) values ('Bébée: or, Two Little Wooden Shoes', 'Ouida');
 insert into book (title, author) values ('Because I Stutter', 'Wendell Johnson');
 insert into book (title, author) values ('"Because of These Things..."', 'Marjorie Bowen');
-insert into book (title, author) values ('Bechinath Happeruschim: hoc est, Examinis Commentationum Rabbinicarum in Mosen Prodromus vel Sectio Prima, Complectens Generalem Protheriam, de 1. Textu Hebraico, 2. Targum Chaldaico, 3. Versione Graeca, 4. Masóreth, 5. Kábbalah, 6. Peruschim, cum Indicibus Locorum Scripturae, Rerumq.; Memorabilium', 'Wilhelm Schickard');
+--insert into book (title, author) values ('Bechinath Happeruschim: hoc est, Examinis Commentationum Rabbinicarum in Mosen Prodromus vel Sectio Prima, Complectens Generalem Protheriam, de 1. Textu Hebraico, 2. Targum Chaldaico, 3. Versione Graeca, 4. Masóreth, 5. Kábbalah, 6. Peruschim, cum Indicibus Locorum Scripturae, Rerumq.; Memorabilium', 'Wilhelm Schickard');
 insert into book (title, author) values ('Bechuanaland: Pan-African Outpost or Bantu Homeland?', 'Edwin S. Munger');
 insert into book (title, author) values ('Becket and Other Plays', 'Alfred Lord Tennyson');
 insert into book (title, author) values ('Beckoning Roads', 'Jeanne Judson');
@@ -2632,7 +2632,7 @@ insert into book (title, author) values ('A Brief Account of the Proceedings of 
 insert into book (title, author) values ('A Brief and True Report of the New Found Land of Virginia', 'Thomas Harriot');
 insert into book (title, author) values ('A Brief Bibliography of Denmark and Greenland', 'Friends of Denmark');
 insert into book (title, author) values ('Brief Biographies', 'Samuel Smiles');
-insert into book (title, author) values ('A Brief Collection of Remarkable Passages and Occurrences Relating to the Birth, Education, Life, Conversion, Travels, Services, and Deep Sufferings of that Ancient, Eminent, and Faithful Servant of the Lord, Margaret Fell, But By Her Second Marriage, Margaret Fox', 'Margaret Fell');
+--insert into book (title, author) values ('A Brief Collection of Remarkable Passages and Occurrences Relating to the Birth, Education, Life, Conversion, Travels, Services, and Deep Sufferings of that Ancient, Eminent, and Faithful Servant of the Lord, Margaret Fell, But By Her Second Marriage, Margaret Fox', 'Margaret Fell');
 insert into book (title, author) values ('A Brief Declaration and Vindication of the Doctrine of the Trinity', 'John Owen');
 insert into book (title, author) values ('A Brief Description of New-York', 'Daniel Denton');
 insert into book (title, author) values ('A Brief Description of New-York, Formerly Called New-Netherlands', 'Daniel Denton');
