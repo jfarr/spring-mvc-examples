@@ -18,6 +18,7 @@ public class Book {
 
     @Field(index=Index.TOKENIZED, store=Store.YES)
     private String title;
+    @Field(index=Index.TOKENIZED, store=Store.YES)
     private String author;
 
     @Id
