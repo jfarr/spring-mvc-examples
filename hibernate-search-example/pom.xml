@@ -9,7 +9,7 @@
     <spring.version>3.1.2.RELEASE</spring.version>
     <hibernate.version>3.5.0-Final</hibernate.version>
     <hibernate-search.version>3.4.0.Final</hibernate-search.version>
-    <hsqldb.version>1.8.0.10</hsqldb.version>
+    <hsqldb.version>2.2.8</hsqldb.version>
     <slf4j.version>1.6.1</slf4j.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -37,9 +37,9 @@
             <id>mkdirs</id>
             <phase>validate</phase>
             <configuration>
-            <target>
+              <target>
                 <mkdir dir="target/lucene/indexes" />
-            </target>
+              </target>
             </configuration>
             <goals>
               <goal>run</goal>
@@ -160,6 +160,11 @@
       <groupId>org.hsqldb</groupId>
       <artifactId>hsqldb</artifactId>
       <version>${hsqldb.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hsqldb</groupId>
+      <artifactId>sqltool-j5</artifactId>
+      <version>2.2.4</version>
     </dependency>
   </dependencies>
   <profiles>
