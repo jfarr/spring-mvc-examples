@@ -52,6 +52,8 @@ function onLoadList() {
             }
         });
     
+    $('#confirm-delete').hide();
+    
     listBooks();
 }
 
@@ -264,6 +266,41 @@ function renderNavLinks(bookList) {
 }
 
 function onLoadSearch() {
+
+    addDialog = $('#add-dialog')
+        .dialog({
+            autoOpen: false,
+            title: 'Add Book',
+            resizable: false,
+            modal: true,
+            buttons: {
+                "Save": function() {
+                    onAddDialogSubmit();
+                },
+                "Cancel": function() {
+                    closeAddDialog();
+                }
+            }
+        });
+
+    editDialog = $('#edit-dialog')
+        .dialog({
+            autoOpen: false,
+            title: 'Edit Book',
+            resizable: false,
+            modal: true,
+            buttons: {
+                "Save": function() {
+                    onEditDialogSubmit();
+                },
+                "Cancel": function() {
+                    closeEditDialog();
+                }
+            }
+        });
+    
+    $('#confirm-delete').hide();
+
     searchText = $('#title').attr('value');
     setTimeout(searchTimer, 1000);
     $('#title').autocomplete({
@@ -275,6 +312,7 @@ function onLoadSearch() {
     $('#prev').click(onClickPrevSearch);
     $('#last').click(onClickLastSearch);
     $('#search').click(onClickSearch);
+    $('#add-link').click(onClickAdd);
     
     renderSearchPage();
 }
