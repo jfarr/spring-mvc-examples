@@ -5,7 +5,7 @@
 var bookServiceUrl = 'http://localhost:8080/hibernate-search-example/library/books/';
 var searchText = '';
 var maxAutoComplete = 5;
-var confirmDialog;
+var confirmDeleteDialog;
 
 /*******************************************************************************
  * index.html / search.html functions
@@ -247,8 +247,7 @@ function onLoadEditForm() {
     $('#submitSave').click(onSubmitEdit);
     $('#submitDelete').click(onSubmitDelete);
 
-    confirmDialog = $('<div id="dialog-confirm"></div>')
-        .html('Are you sure you want to delete the book "<span id="confirm-title"></span>"?')
+    confirmDeleteDialog = $('#confirm-delete')
         .dialog({
             autoOpen: false,
             title: 'Confirm Delete',
@@ -259,7 +258,7 @@ function onLoadEditForm() {
                     onConfirmDelete();
                 },
                 "Cancel": function() {
-                    $('#dialog-confirm').dialog('close');
+                    $('#confirm-delete').dialog('close');
                 }
             }
         });
@@ -293,8 +292,8 @@ function onSubmitEdit() {
 }
 
 function onSubmitDelete() {
-    confirmDialog.find('#confirm-title').html($('#title').attr('value'));
-    confirmDialog.dialog('open');
+    confirmDeleteDialog.find('#confirm-title').html($('#title').attr('value'));
+    confirmDeleteDialog.dialog('open');
     return false;
 }
 
