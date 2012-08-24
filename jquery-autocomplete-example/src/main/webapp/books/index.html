@@ -7,6 +7,7 @@
 <script src="../js/books.js" /></script>
 <script src="../js/lib/jquery.js" /></script>
 <script src="../js/lib/jquery-ui.js" /></script>
+<script src="../js/lib/jquery.serialize-json.js" ></script>
 <script type="text/javascript">
 $(document).ready(onLoadList);
 </script>
@@ -30,7 +31,7 @@ book list&nbsp;<a href="search.html">search books</a>&nbsp;<a id="add-link" href
 		<tr id="book_0" style="display: none;">
 			<td class="bookTitle"><a href="view.html?bookId="></a></td>
 			<td class="bookAuthor"></td>
-			<td class="editBook"><a href="editForm.html?bookId=">edit</a></td>
+			<td><a class="edit-link" href="">edit</a>&nbsp;<a class="delete-link" href="">delete</a></td>
 		</tr>
 		<tr class="navRow">
 			<td colspan="2">&nbsp;</td>
@@ -56,6 +57,7 @@ book list&nbsp;<a href="search.html">search books</a>&nbsp;<a id="add-link" href
 <hr />
 book data:
 <span id="bookData" /></span>
+
 <div id="add-dialog">
 <form id="add-form">
 <table>
@@ -68,6 +70,26 @@ book data:
         <td><input type="text" name="author" /></td>
     </tr>
 </table>
+</form>
+</div>
+
+<div id="confirm-delete">Are you sure you want to delete the book "<span id="confirm-title"></span>"?</div>
+
+<div id="edit-dialog">
+<form id="edit-form">
+<div id="errors"></div>
+<table>
+    <tr>
+        <th>Title</th>
+        <td><input type="text" name="title" value="" /></td>
+    </tr>
+    <tr>
+        <th>Author</th>
+        <td><input type="text" name="author" value="" /></td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+</table>
+<input type="hidden" id="bookId" name="bookId" value="" />
 </form>
 </div>
 </body>

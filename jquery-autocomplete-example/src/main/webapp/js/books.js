@@ -6,6 +6,7 @@ var bookServiceUrl = 'http://localhost:8080/hibernate-search-example/library/boo
 var searchText = '';
 var maxAutoComplete = 5;
 var addDialog;
+var editDialog;
 var confirmDeleteDialog;
 
 /*******************************************************************************
@@ -31,6 +32,22 @@ function onLoadList() {
                 },
                 "Cancel": function() {
                     closeAddDialog();
+                }
+            }
+        });
+
+    editDialog = $('#edit-dialog')
+        .dialog({
+            autoOpen: false,
+            title: 'Edit Book',
+            resizable: false,
+            modal: true,
+            buttons: {
+                "Save": function() {
+                    onEditDialogSubmit();
+                },
+                "Cancel": function() {
+                    closeEditDialog();
                 }
             }
         });
@@ -80,6 +97,68 @@ function closeAddDialog() {
     $('#add-dialog').dialog('close');
 }
 
+function onClickEdit(book) {
+    $('#edit-form [name=title]').attr('value', book.title);
+    $('#edit-form [name=author]').attr('value', book.author);
+    $('#edit-form [name=bookId]').attr('value', book.bookId);
+    editDialog.dialog('open');
+    return false;
+}
+
+function onEditDialogSubmit() {
+    var bookId = $('#edit-form [name=bookId]').attr('value');
+    var book = $('#edit-form').serializeJSON();
+    $.ajax(bookServiceUrl + 'book/' + bookId, {
+        type : 'PUT',
+        contentType : 'application/json',
+        data : JSON.stringify(book),
+        processData : false,
+        success : listBooks 
+    });
+    closeEditDialog();
+    return false;
+}
+
+function closeEditDialog() {
+    $('#edit-form [name=title]').attr('value', '');
+    $('#edit-form [name=author]').attr('value', '');
+    $('#edit-dialog').dialog('close');
+}
+
+function onClickDelete(book) {
+    confirmDeleteDialog = $('#confirm-delete').dialog({
+        autoOpen: false,
+        title: 'Confirm Delete',
+        resizable: false,
+        modal: true,
+        buttons: {
+            "Delete": function() {
+                onConfirmDelete(book);
+            },
+            "Cancel": function() {
+                closeConfirmDelete();
+            }
+        }
+    });
+    confirmDeleteDialog.find('#confirm-title').html(book.title);
+    confirmDeleteDialog.dialog('open');
+    return false;
+}
+
+function onConfirmDelete(book) {
+    $.ajax(bookServiceUrl + 'book/' + book.bookId, {
+        type : 'DELETE',
+        success : function() {
+            closeConfirmDelete(); 
+            listBooks();
+        }
+    });
+}
+
+function closeConfirmDelete() {
+    $('#confirm-delete').dialog('close'); 
+}
+
 function renderBookList(bookList) {
     $('.bookRow').remove();
     if (bookList.books.length == 0) {
@@ -94,13 +173,19 @@ function renderBookList(bookList) {
         $.each(bookList.books, function(i, book) {
             var tr = $('#book_0').clone();
             tr.attr('class', 'bookRow');
-            tr.attr('id', 'book_' + (i + 1));
+            tr.attr('id', 'book_' + (i + 1));0
             var viewLink = tr.find('td.bookTitle').find('a');
             viewLink.attr('href', viewLink.attr('href') + book.bookId);
             viewLink.html(book.title);
             tr.find('td.bookAuthor').html(book.author);
-            var editLink = tr.find('td.editBook').find('a');
-            editLink.attr('href', editLink.attr('href') + book.bookId);
+            tr.find('a.edit-link').click(function () { 
+                onClickEdit(book); 
+                return false; 
+                });
+            tr.find('a.delete-link').click(function () { 
+                onClickDelete(book); 
+                return false; 
+                });
             prevSibling.after(tr);
             prevSibling = tr;
             tr.show();
@@ -267,74 +352,6 @@ function truncate(text, maxCapWords) {
         }
     });
     return words.join(' ');
-}
-
-/*******************************************************************************
- * editForm.html functions
- */
-
-function onLoadEditForm() {
-    $('#submitSave').click(onSubmitEdit);
-    $('#submitDelete').click(onSubmitDelete);
-
-    confirmDeleteDialog = $('#confirm-delete')
-        .dialog({
-            autoOpen: false,
-            title: 'Confirm Delete',
-            resizable: false,
-            modal: true,
-            buttons: {
-                "Delete": function() {
-                    onConfirmDelete();
-                },
-                "Cancel": function() {
-                    $('#confirm-delete').dialog('close');
-                }
-            }
-        });
-
-    var bookId = $.url().param('bookId');
-    if (bookId == null) {
-        $('#editForm').replaceWith('<p>Missing bookId.</p>');
-    } else {
-        $.getJSON(bookServiceUrl + 'book/' + bookId, function(book) {
-            $('#title').attr('value', book.title);
-            $('#author').attr('value', book.author);
-            $('#bookId').attr('value', book.bookId);
-            $('#bookData').html(JSON.stringify(book));
-        });
-    }
-}
-
-function onSubmitEdit() {
-    var book = $('form').serializeJSON();
-    delete book.submit;
-    $.ajax(bookServiceUrl + 'book/' + $('#bookId').attr('value'), {
-        type : 'PUT',
-        contentType : 'application/json',
-        data : JSON.stringify(book),
-        processData : false,
-        success : function() {
-            window.location = 'index.html';
-        }
-    });
-    return false;
-}
-
-function onSubmitDelete() {
-    confirmDeleteDialog.find('#confirm-title').html($('#title').attr('value'));
-    confirmDeleteDialog.dialog('open');
-    return false;
-}
-
-function onConfirmDelete() {
-    $.ajax(bookServiceUrl + 'book/' + $('#bookId').attr('value'), {
-        type : 'DELETE',
-        success : function() {
-            $('#dialog-confirm').dialog('close'); 
-            window.location = 'index.html';
-        }
-    });
 }
 
 /*******************************************************************************
