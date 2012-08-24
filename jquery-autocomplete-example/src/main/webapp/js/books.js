@@ -5,6 +5,7 @@
 var bookServiceUrl = 'http://localhost:8080/hibernate-search-example/library/books/';
 var searchText = '';
 var maxAutoComplete = 5;
+var addDialog;
 var confirmDeleteDialog;
 
 /*******************************************************************************
@@ -16,6 +17,28 @@ function onLoadList() {
     $('#next').click(onClickNextList);
     $('#prev').click(onClickPrevList);
     $('#last').click(onClickLastList);
+    $('#add-link').click(onClickAdd);
+
+    addDialog = $('#add-dialog')
+        .dialog({
+            autoOpen: false,
+            title: 'Add Book',
+            resizable: false,
+            modal: true,
+            buttons: {
+                "Save": function() {
+                    onAddDialogSubmit();
+                },
+                "Cancel": function() {
+                    closeAddDialog();
+                }
+            }
+        });
+    
+    listBooks();
+}
+
+function listBooks() {
     $.getJSON(bookServiceUrl, renderBookList);
 }
 
@@ -37,6 +60,24 @@ function onClickNextList() {
 function onClickLastList() {
     $.getJSON(bookServiceUrl + '?firstResult=' + $('#last').attr('idx'), renderBookList);
     return false;
+}
+
+function onClickAdd() {
+    addDialog.dialog('open');
+    return false;
+}
+
+function onAddDialogSubmit() {
+    $.post(bookServiceUrl, 
+            $('#add-form').serializeArray(),
+            listBooks,
+            'json');
+    closeAddDialog();
+    return false;
+}
+
+function closeAddDialog() {
+    $('#add-dialog').dialog('close');
 }
 
 function renderBookList(bookList) {
@@ -226,17 +267,6 @@ function truncate(text, maxCapWords) {
         }
     });
     return words.join(' ');
-}
-
-/*******************************************************************************
- * addForm.html functions
- */
-
-function onSubmitAdd() {
-    $.post(bookServiceUrl, $('form').serializeArray(), function() {
-        window.location = 'index.html';
-    }, 'json');
-    return false;
 }
 
 /*******************************************************************************

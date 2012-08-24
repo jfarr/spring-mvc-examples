@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="../css/ui-lightness/jquery-ui-1.8.22.custom.css" type="text/css" media="all" />
 <script src="../js/books.js" /></script>
 <script src="../js/lib/jquery.js" /></script>
+<script src="../js/lib/jquery-ui.js" /></script>
 <script type="text/javascript">
 $(document).ready(onLoadList);
 </script>
@@ -13,7 +14,7 @@ $(document).ready(onLoadList);
 </head>
 <body>
 <h2>Book List</h2>
-book list&nbsp;<a href="search.html">search books</a>&nbsp;<a href="addForm.html">add book</a>
+book list&nbsp;<a href="search.html">search books</a>&nbsp;<a id="add-link" href="">add book</a>
 <br />
 <br />
 <p id="bookCount"></p>
@@ -55,5 +56,19 @@ book list&nbsp;<a href="search.html">search books</a>&nbsp;<a href="addForm.html
 <hr />
 book data:
 <span id="bookData" /></span>
+<div id="add-dialog">
+<form id="add-form">
+<table>
+    <tr>
+        <th>Title</th>
+        <td><input type="text" name="title" /></td>
+    </tr>
+    <tr>
+        <th>Author</th>
+        <td><input type="text" name="author" /></td>
+    </tr>
+</table>
+</form>
+</div>
 </body>
 </html>
