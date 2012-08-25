@@ -9,15 +9,29 @@
 <script src="../js/lib/jquery-ui.js" /></script>
 <script src="../js/lib/jquery.serialize-json.js" ></script>
 <script type="text/javascript">
-$(document).ready(onLoadList);
+$(document).ready(onLoad);
 </script>
 <title>Book List</title>
 </head>
 <body>
 <h2>Book List</h2>
-book list&nbsp;<a href="search.html">search books</a>&nbsp;<a id="add-link" href="">add book</a>
+<a id="add-link" href="">add book</a>
 <br />
 <br />
+<form id="search-form" method="GET">
+<table>
+    <tr>
+        <th>Title</th>
+        <td class="ui-widget"><input type="text" id="title" name="title" /></td>
+    </tr>
+    <tr>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+        <td rowspan="2""><input type="submit" id="search" value="Search" /></td>
+    </tr>
+</table>
+</form>
 <p id="bookCount"></p>
 <table id="bookList">
 	<thead>
