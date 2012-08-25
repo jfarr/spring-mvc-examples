@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" media="all" />
 <link rel="stylesheet" href="../css/ui-lightness/jquery-ui-1.8.22.custom.css" type="text/css" media="all" />
 <script src="../js/books.js" /></script>
 <script src="../js/lib/jquery.js" /></script>
@@ -42,9 +42,9 @@ $(document).ready(onLoad);
 		</tr>
 	</thead>
 	<tbody id="bookListContent">
-		<tr id="book_0" style="display: none;">
-			<td class="bookTitle"><a href="view.html?bookId="></a></td>
-			<td class="bookAuthor"></td>
+		<tr id="book_0">
+			<td class="title"><a class="view-link" href=""></a></td>
+			<td class="author"></td>
 			<td><a class="edit-link" href="">edit</a>&nbsp;<a class="delete-link" href="">delete</a></td>
 		</tr>
 		<tr class="navRow">
@@ -87,7 +87,19 @@ book data:
 </form>
 </div>
 
-<div id="confirm-delete">Are you sure you want to delete the book "<span id="confirm-title"></span>"?</div>
+<div id="view-dialog">
+<table>
+    <tr>
+        <th valign="top">Title</th>
+        <td class="title"></td>
+    </tr>
+    <tr>
+        <th valign="top">Author</th>
+        <td class="author"></td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+</table>
+</div>
 
 <div id="edit-dialog">
 <form id="edit-form">
@@ -106,5 +118,8 @@ book data:
 <input type="hidden" id="bookId" name="bookId" value="" />
 </form>
 </div>
+
+<div id="confirm-delete">Are you sure you want to delete the book "<span id="confirm-title"></span>"?</div>
+
 </body>
 </html>
