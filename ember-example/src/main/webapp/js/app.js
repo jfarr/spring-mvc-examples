@@ -60,8 +60,6 @@ App.bookController = Ember.ArrayController.create({
         this.pushObject(App.Book.create({title: title, author: author}));
     },
     
-    viewDialog: null,
-    
     onLoad: function() {
         this.createDialogs();
         this.loadList();
@@ -199,7 +197,7 @@ App.bookController = Ember.ArrayController.create({
     },
     
     onClickFirst: function() {
-        this.loadList(this.get('startResult'));
+        this.loadList();
     },
     
     onClickPrev: function() {
