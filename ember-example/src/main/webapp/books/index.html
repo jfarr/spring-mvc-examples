@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>hello</title>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/ui-lightness/jquery-ui-1.8.22.custom.css" type="text/css" media="all" />
+</head>
+<body>
+<script src="../js/lib/jquery.js" /></script>
+<script src="../js/lib/jquery-ui.js" /></script>
+<script src="../js/lib/handlebars-1.0.0.beta.6.js"></script>
+<script src="../js/lib/ember-1.0.pre.js"></script>
+<script src="../js/app.js"></script>
+<script type="text/x-handlebars">
+<h2>Book List</h2>
+
+{{#view App.ListView controllerBinding="App.bookController"}}
+<p><a href="#" {{action "onClickAdd"}}>add book</a></p>
+
+{{#view App.SearchForm controllerBinding="App.bookController"}}
+<label for="searchField">Title</label>
+{{view Ember.TextField viewName="title" valueBinding="controller.inputTitle"}}
+<button {{action "submit"}}>Search</button>
+<button {{action "clear"}}>Clear</button>
+{{/view}}
+
+{{#with controller}}
+{{#if morePages}}
+<p>Displaying {{firstResult}} - {{lastResult}} of {{total}} books{{#if searchTitle}} containing '{{searchTitle}}'{{/if}}.</p>
+{{else}}
+<p>Displaying {{count}} of {{total}} books{{#if searchTitle}} containing '{{searchTitle}}'{{/if}}.</p>
+{{/if}}
+{{/with}}
+
+<table>
+    <thead>
+        <tr>
+            <th align="left">Title</th>
+            <th align="left">Author</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+{{#each controller}}
+        <tr>
+            <td><a href="#" {{action "onClickView"}} {{bindAttr bookId="bookId"}}>{{title}}</a></td>
+            <td>{{author}}</td>
+            <td>
+                <a href="#" {{action "onClickEdit"}} {{bindAttr bookId="bookId"}}>edit</a>&nbsp;<a href="#" {{action "onClickDelete"}} {{bindAttr bookId="bookId"}}>delete</a>
+            </td>
+        </tr>
+{{/each}}
+{{#with controller}}}
+{{#if morePages}}
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+            <table width="100%">
+                <tr>
+                    <td width="50%">
+                    {{#if hasPrevResult}}
+                        <a href="#" {{action "onClickFirst"}}>first {{maxResults}}</a>&nbsp;
+                        <a href="#" {{action "onClickPrev"}}>prev {{maxResults}}</a>
+                    {{else}}
+                        &nbsp;
+                    {{/if}}
+                    </td>
+                    <td width="50%" align="right">
+                    {{#if nextResult}}
+                       <a href="#" {{action "onClickNext"}}>next {{maxResults}}</a>&nbsp;
+                       <a href="#" {{action "onClickLast"}}>last {{maxResults}}</a>
+                    {{else}}
+                        &nbsp;
+                    {{/if}}
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+{{/if}}
+{{/with}}
+    </tbody>
+</table>
+{{/view}}
+</script>
+
+<div id="add-dialog">
+<script type="text/x-handlebars">
+{{#view App.AddForm controllerBinding="App.bookController"}}
+<table>
+    <tr>
+        <th>Title</th>
+        <td>{{view Ember.TextField viewName="title" valueBinding="controller.book.title" size="50"}}</td>
+    </tr>
+    <tr>
+        <th>Author</th>
+        <td>{{view Ember.TextField viewName="author" valueBinding="controller.book.author" size="50"}}</td>
+    </tr>
+</table>
+{{/view}}
+</script>
+</div>
+
+<div id="edit-dialog">
+<script type="text/x-handlebars">
+{{#view App.EditForm controllerBinding="App.bookController"}}
+<table>
+    <tr>
+        <th>Title</th>
+        <td>{{view Ember.TextField viewName="title" valueBinding="controller.book.title"}}</td>
+    </tr>
+    <tr>
+        <th>Author</th>
+        <td>{{view Ember.TextField viewName="author" valueBinding="controller.book.author"}}</td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+</table>
+{{/view}}
+</script>
+</div>
+
+<div id="view-dialog">
+<script type="text/x-handlebars">
+{{#view App.DetailView controllerBinding="App.bookController"}}
+{{#with book}}
+<table>
+    <tr>
+        <th valign="top">Title</th>
+        <td class="title">{{title}}</td>
+    </tr>
+    <tr>
+        <th valign="top">Author</th>
+        <td class="author">{{author}}</td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+</table>
+{{/with}}
+{{/view}}
+</script>
+</div>
+
+<div id="confirm-delete-dialog">
+<script type="text/x-handlebars">
+{{#view App.ConfirmDeleteDialog controllerBinding="App.bookController"}}
+Are you sure you want to delete the book {{controller.book.title}}?
+{{/view}}
+</script>
+</div>
+
+</body>
+</html>

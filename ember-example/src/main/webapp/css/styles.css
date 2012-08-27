@@ -1,0 +1,16 @@
+html {
+	font-family: Verdana, Arial, sans-serif /*{ffDefault}*/;
+	font-size: 1.1em /*{fsDefault}*/;
+}
+
+input,select,textarea,button {
+	font-family: Verdana, Arial, sans-serif /*{ffDefault}*/;
+	font-size: 1em;
+}
+
+#add-form [name=title],
+#add-form [name=author],
+#edit-form [name=title],
+#edit-form [name=author] {
+    width: 500px;
+}
