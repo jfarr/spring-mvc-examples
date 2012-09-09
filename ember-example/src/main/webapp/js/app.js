@@ -63,73 +63,8 @@ App.bookController = Em.ArrayController.create({
     }.property('prevResult'),
     
     onLoad: function() {
-        this.createDialogs();
         this.loadList();
         this.searchTimer();
-    },
-    
-    createDialogs: function() {
-        var self = this;
-        Ember.run.later(function() {
-            self.addDialog = $('#add-dialog').dialog({
-                autoOpen: false,
-                title: 'Add Book',
-                resizable: false,
-                modal: true,
-                width: 550,
-                buttons: {
-                    "Save": function() {
-                        self.addBook({
-                            title: self.get('book.title'), 
-                            author: self.get('book.author')
-                        });
-                        self.closeAddDialog();
-                    },
-                    "Cancel": function() {
-                        self.closeAddDialog();
-                    }
-                }
-            });
-            self.viewDialog = $('#view-dialog').dialog({
-                autoOpen: false,
-                title: 'View Book',
-                resizable: false,
-                modal: true,
-                width: 550
-            });
-            self.editDialog = $('#edit-dialog').dialog({
-                autoOpen: false,
-                title: 'Edit Book',
-                resizable: false,
-                modal: true,
-                width: 550,
-                buttons: {
-                    "Save": function() {
-                        self.updateBook(self.get('book'));
-                        self.closeEditDialog();
-                    },
-                    "Cancel": function() {
-                        self.closeEditDialog();
-                    }
-                }
-            });
-            self.confirmDeleteDialog = $('#confirm-delete-dialog').dialog({
-                autoOpen: false,
-                title: 'Confirm Delete',
-                resizable: false,
-                modal: true,
-                width: 550,
-                buttons: {
-                    "Delete": function() {
-                        self.deleteBook(self.get('book'));
-                        self.closeConfirmDeleteDialog();
-                    },
-                    "Cancel": function() {
-                        self.closeConfirmDeleteDialog();
-                    }
-                }
-            });
-        }, 100) ;  
     },
     
     loadList: function(firstResult) {
@@ -226,42 +161,37 @@ App.bookController = Em.ArrayController.create({
     
     onClickAdd: function() {
         this.set('book', {title: null, author: null});
-        this.addDialog.dialog('open');
+        $('#add-dialog').dialog('open');
     },
     
-    closeAddDialog: function() {
-        this.addDialog.dialog('close');
+    onSaveAdd: function() {
+        this.addBook(this.get('book'));
     },
     
     onClickView: function(bookId) {
-        var self = this;
         this.loadBook(bookId, function() {
-            self.viewDialog.dialog('open');
+            $('#view-dialog').dialog('open');
         });
     },
     
     onClickEdit: function(bookId) {
-        var self = this;
         this.loadBook(bookId, function() {
-            self.get('editDialog').dialog('open');
+            $('#edit-dialog').dialog('open');
         });
     },
     
-    closeEditDialog: function() {
-        this.get('editDialog').dialog('close');
+    onSaveEdit: function() {
+        this.updateBook(this.get('book'));
     },
     
     onClickDelete: function(bookId) {
-        var self = this;
         this.loadBook(bookId, function() {
-            self.loadBook(bookId, function() {
-                self.get('confirmDeleteDialog').dialog('open');
-            });
+            $('#confirm-delete-dialog').dialog('open');
         });
     },
     
-    closeConfirmDeleteDialog: function() {
-        this.get('confirmDeleteDialog').dialog('close');
+    onConfirmDelete: function() {
+        this.deleteBook(this.get('book'));
     },
 
     addBook: function(book) {
@@ -339,67 +269,110 @@ App.BookListView = Em.View.extend({
     templateName: 'book-list-template',
     
     onClickAdd: function(event) {
-        this.get('controller').onClickAdd();
+        this.controller.onClickAdd();
     },
     
     onClickView: function(event) {
         var bookId = event.target.attributes.getNamedItem('bookId').value;
-        this.get('controller').onClickView(bookId);
+        this.controller.onClickView(bookId);
     },
     
     onClickEdit: function(event) {
         var bookId = event.target.attributes.getNamedItem('bookId').value;
-        this.get('controller').onClickEdit(bookId);
+        this.controller.onClickEdit(bookId);
     },
     
     onClickDelete: function(event) {
         var bookId = event.target.attributes.getNamedItem('bookId').value;
-        this.get('controller').onClickDelete(bookId);
+        this.controller.onClickDelete(bookId);
     },
 
     onClickFirst: function(event) {
-        this.get('controller').onClickFirst();
+        this.controller.onClickFirst();
     },
     
     onClickPrev: function(event) {
-        this.get('controller').onClickPrev();
+        this.controller.onClickPrev();
     },
     
     onClickNext: function(event) {
-        this.get('controller').onClickNext();
+        this.controller.onClickNext();
     },
     
     onClickLast: function(event) {
-        this.get('controller').onClickLast();
+        this.controller.onClickLast();
     }
 });
 
-App.AddDialog = Ember.View.extend({
-    templateName: 'add-dialog-template'
+App.AddDialog = JQ.Dialog.extend({
+    controller: App.bookController,
+    elementId: 'add-dialog',
+    templateName: 'add-dialog-template',
+    autoOpen: false,
+    title: 'Add Book',
+    resizable: false,
+    modal: true,
+    width: 550,
+    buttons: {
+        "Save": function() {
+            App.bookController.onSaveAdd();
+            $('#add-dialog').dialog('close');
+        },
+        "Cancel": function() {
+            $('#add-dialog').dialog('close');
+        }
+    }
 });
 
-App.AddForm = Ember.View.extend({
-    tagName: 'form',
-    controller: App.bookController
-});
-
-App.ViewDialog = Em.View.extend({
+App.ViewDialog = JQ.Dialog.extend({
+    controller: App.bookController,
+    elementId: 'view-dialog',
     templateName: 'view-dialog-template',
-    controller: App.bookController
+    autoOpen: false,
+    title: 'View Book',
+    resizable: false,
+    modal: true,
+    width: 550
 });
 
-App.EditDialog = Ember.View.extend({
-    templateName: 'edit-dialog-template'
+App.EditDialog = JQ.Dialog.extend({
+    controller: App.bookController,
+    elementId: 'edit-dialog',
+    templateName: 'edit-dialog-template',
+    autoOpen: false,
+    title: 'Edit Book',
+    resizable: false,
+    modal: true,
+    width: 550,
+    buttons: {
+        "Save": function() {
+            App.bookController.onSaveEdit();
+            $('#edit-dialog').dialog('close');
+        },
+        "Cancel": function() {
+            $('#edit-dialog').dialog('close');
+        }
+    }
 });
 
-App.EditForm = Ember.View.extend({
-    tagName: 'form',
-    controller: App.bookController
-});
-
-App.ConfirmDeleteDialog = Ember.View.extend({
+App.ConfirmDeleteDialog = JQ.Dialog.extend({
+    controller: App.bookController,
+    elementId: 'confirm-delete-dialog',
     templateName: 'confirm-delete-dialog-template',
-    controller: App.bookController
+    autoOpen: false,
+    title: 'Confirm Delete',
+    resizable: false,
+    modal: true,
+    width: 550,
+    buttons: {
+        "Delete": function() {
+            App.bookController.onConfirmDelete();
+            $('#confirm-delete-dialog').dialog('close');
+        },
+        "Cancel": function() {
+            $('#confirm-delete-dialog').dialog('close');
+        }
+    }
 });
 
 App.BookListView.create().append();

@@ -51,6 +51,11 @@ JQ.Widget = Em.Mixin.create({
   }
 });
 
+JQ.Dialog = Ember.View.extend(JQ.Widget, {
+    uiType: 'dialog',
+    uiOptions: ['title','autoOpen','modal','width','height','resizable','buttons']
+});
+
 JQ.AutoComplete = Ember.TextField.extend(JQ.Widget, {
   uiType: 'autocomplete',
   uiOptions: ['disabled','autoFocus','delay','minLength','position','source']
