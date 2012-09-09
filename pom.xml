@@ -18,5 +18,6 @@
     <module>hibernate-example</module>
     <module>hibernate-search-example</module>
     <module>jquery-autocomplete-example</module>
+    <module>ember-example</module>
   </modules>
 </project>
