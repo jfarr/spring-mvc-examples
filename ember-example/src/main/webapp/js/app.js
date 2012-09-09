@@ -11,8 +11,6 @@ App.bookController = Em.ArrayController.create({
     
     content: [],
 
-    addDialog: null,
-    
     // search text input field current value
     inputTitle: null,
     // current search value
