@@ -17,6 +17,7 @@ import org.hibernate.criterion.Projections;
 import org.hibernate.search.FullTextQuery;
 import org.hibernate.search.FullTextSession;
 import org.hibernate.search.Search;
+import org.hibernate.search.SearchException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -79,6 +80,8 @@ public class Library {
             return getFullTextSession()
                 .createFullTextQuery(buildPhraseQuery(TITLE_INDEX, title), Book.class)
                 .getResultSize();
+        } catch (SearchException e) {
+            return 0L;
         } catch (HibernateException e) {
             throw new RuntimeException(e);
         }
@@ -96,6 +99,8 @@ public class Library {
                     firstResult,
                     maxResults)
                     .list();
+        } catch (SearchException e) {
+            return new ArrayList<Book>();
         } catch (HibernateException e) {
             throw new RuntimeException(e);
         }
