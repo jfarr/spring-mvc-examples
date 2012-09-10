@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="spring-mvc-example" version="2.5">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+  id="rest-app-example" version="2.5">
   <display-name>spring-mvc-example</display-name>
+  <filter>
+    <filter-name>AccessControlFilter</filter-name>
+    <filter-class>examples.filter.AccessControlFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AccessControlFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
   <servlet>
     <servlet-name>example</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
