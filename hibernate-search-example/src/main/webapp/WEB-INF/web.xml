@@ -7,6 +7,14 @@
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:applicationContext.xml</param-value>
   </context-param>
+  <filter>
+    <filter-name>AccessControlFilter</filter-name>
+    <filter-class>examples.filter.AccessControlFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AccessControlFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
