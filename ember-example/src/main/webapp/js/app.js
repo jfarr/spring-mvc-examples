@@ -63,6 +63,11 @@ App.bookController = Em.ArrayController.create({
     }.property('prevResult'),
     
     onLoad: function() {
+        App.BookListView.create().append();
+        App.AddDialog.create().append();
+        App.ViewDialog.create().append();
+        App.EditDialog.create().append();
+        App.ConfirmDeleteDialog.create().append();
         this.loadList();
         this.searchTimer();
     },
@@ -374,9 +379,3 @@ App.ConfirmDeleteDialog = JQ.Dialog.extend({
         }
     }
 });
-
-App.BookListView.create().append();
-App.AddDialog.create().append();
-App.ViewDialog.create().append();
-App.EditDialog.create().append();
-App.ConfirmDeleteDialog.create().append();
