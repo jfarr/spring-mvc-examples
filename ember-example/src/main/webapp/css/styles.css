@@ -1,16 +1,57 @@
 html {
-	font-family: Verdana, Arial, sans-serif /*{ffDefault}*/;
-	font-size: 1.1em /*{fsDefault}*/;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.1em;
 }
 
 input,select,textarea,button {
-	font-family: Verdana, Arial, sans-serif /*{ffDefault}*/;
+	font-family: Verdana, Arial, sans-serif;
 	font-size: 1em;
 }
 
-#add-form [name=title],
-#add-form [name=author],
-#edit-form [name=title],
-#edit-form [name=author] {
-    width: 500px;
+#list-view table {
+	margin: 1em 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#list-view table th, #list-view table td {
+	border: 1px solid #EEE;
+	padding: .6em 10px;
+	text-align: left;
+}
+
+#list-view table.nav-links td {
+    border: 0;  
+}
+
+#list-view table.nav-links td.prev-links {
+    text-align: left;
+    width: 50%;  
+}
+
+#list-view table.nav-links td.next-links {
+    text-align: right;
+    width: 50%;  
+}
+
+#list-view .commands {
+	width: 100px;
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+    margin-top: 25px;
+}
+
+.field + .field {
+    padding-top: 20px;	
+}
+
+label {
+    font-weight:bold;
+}
+
+input.text {
+    width: 95%;
 }

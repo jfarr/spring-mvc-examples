@@ -272,6 +272,7 @@ App.SearchTitleField = JQ.AutoComplete.extend({
 App.BookListView = Em.View.extend({
     controller: App.bookController,
     templateName: 'book-list-template',
+    elementId: ['list-view'],
     
     onClickAdd: function(event) {
         this.controller.onClickAdd();

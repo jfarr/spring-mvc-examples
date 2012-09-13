@@ -60,3 +60,7 @@ JQ.AutoComplete = Ember.TextField.extend(JQ.Widget, {
   uiType: 'autocomplete',
   uiOptions: ['disabled','autoFocus','delay','minLength','position','source']
 });
+
+JQ.TextField = Ember.TextField.extend({
+    classNames: 'text ui-widget-content ui-corner-all'
+});

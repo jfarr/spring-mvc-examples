@@ -25,12 +25,12 @@
 {{else}}
 <p>Displaying {{count}} of {{total}} books{{#if searchTitle}} containing '{{searchTitle}}'{{/if}}.</p>
 {{/if}}
-<table>
+<table class="ui-widget ui-widget-content">
     <thead>
-        <tr>
+        <tr class="ui-widget-header">
             <th align="left">Title</th>
             <th align="left">Author</th>
-            <th>&nbsp;</th>
+            <th class="commands">&nbsp;</th>
         </tr>
     </thead>
     <tbody>
@@ -38,43 +38,37 @@
         <tr>
             <td><a href="#" {{action "onClickView"}} {{bindAttr bookId="bookId"}}>{{title}}</a></td>
             <td>{{author}}</td>
-            <td>
+            <td class="commands">
                 <a href="#" {{action "onClickEdit"}} {{bindAttr bookId="bookId"}}>edit</a>&nbsp;<a href="#" {{action "onClickDelete"}} {{bindAttr bookId="bookId"}}>delete</a>
             </td>
         </tr>
 {{/each}}
-
-{{#if morePages}}
-        <tr>
-            <td colspan="3">&nbsp;</td>
-        </tr>
-        <tr>
-            <td colspan="3">
-            <table width="100%">
-                <tr>
-                    <td width="50%">
-                    {{#if hasPrevResult}}
-                        <a href="#" {{action "onClickFirst"}}>first {{maxResults}}</a>&nbsp;
-                        <a href="#" {{action "onClickPrev"}}>prev {{maxResults}}</a>
-                    {{else}}
-                        &nbsp;
-                    {{/if}}
-                    </td>
-                    <td width="50%" align="right">
-                    {{#if nextResult}}
-                       <a href="#" {{action "onClickNext"}}>next {{maxResults}}</a>&nbsp;
-                       <a href="#" {{action "onClickLast"}}>last {{maxResults}}</a>
-                    {{else}}
-                        &nbsp;
-                    {{/if}}
-                    </td>
-                </tr>
-            </table>
-            </td>
-        </tr>
-{{/if}}
     </tbody>
 </table>
+{{#if morePages}}
+<table class="nav-links">
+    <tbody>
+        <tr>
+            <td class="prev-links">
+            {{#if hasPrevResult}}
+                <a href="#" {{action "onClickFirst"}}>first {{maxResults}}</a>&nbsp;
+                <a href="#" {{action "onClickPrev"}}>prev {{maxResults}}</a>
+            {{else}}
+                &nbsp;
+            {{/if}}
+            </td>
+            <td class="next-links">
+            {{#if nextResult}}
+                <a href="#" {{action "onClickNext"}}>next {{maxResults}}</a>&nbsp;
+                <a href="#" {{action "onClickLast"}}>last {{maxResults}}</a>
+            {{else}}
+                &nbsp;
+            {{/if}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+{{/if}}
 {{else}}
 <p>No books{{#if searchTitle}} containing '{{searchTitle}}'{{/if}}.</p>
 {{/if}}
@@ -82,51 +76,47 @@
 
 <script type="text/x-handlebars" data-template-name="add-dialog-template">
 <form>
-<table>
-    <tr>
-        <th>Title</th>
-        <td>{{view Ember.TextField valueBinding="book.title" size="40"}}</td>
-    </tr>   
-    <tr>
-        <th>Author</th>
-        <td>{{view Ember.TextField valueBinding="book.author" size="40"}}</td>
-    </tr>
-</table>
+<fieldset>
+<div class="field">
+<label for="add-title">Title</label>
+{{view JQ.TextField elementId="add-title" valueBinding="book.title"}}
+</div>
+<div class="field">
+<label for="add-author">Author</label>
+{{view JQ.TextField elementId="add-author" valueBinding="book.author"}}
+</div>
+</fieldset>
 </form>
 </script>
 
 <script type="text/x-handlebars" data-template-name="view-dialog-template">
-<table>
-    <tr>
-        <th valign="top">Title</th>
-        <td class="title">{{book.title}}</td>
-    </tr>
-    <tr>
-        <th valign="top">Author</th>
-        <td class="author">{{book.author}}</td>
-    </tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
-</table>
+<p>
+<label>Title</label><br/>
+{{book.title}}
+</p>
+<p>
+<label>Author</label><br/>
+{{book.author}}
+</p>
 </script>
 
 <script type="text/x-handlebars" data-template-name="edit-dialog-template">
 <form>
-<table>
-    <tr>
-        <th>Title</th>
-        <td>{{view Ember.TextField viewName="title" valueBinding="book.title" size="40"}}</td>
-    </tr>
-    <tr>
-        <th>Author</th>
-        <td>{{view Ember.TextField viewName="author" valueBinding="book.author" size="40"}}</td>
-    </tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
-</table>
+<fieldset>
+<div class="field">
+<label for="edit-title">Title</label>
+{{view JQ.TextField elementId="edit-title" valueBinding="book.title"}}
+</div>
+<div class="field">
+<label for="edit-author">Author</label>
+{{view JQ.TextField elementId="edit-author" valueBinding="book.author"}}
+</div>
+</fieldset>
 </form>
 </script>
 
 <script type="text/x-handlebars" data-template-name="confirm-delete-dialog-template">
-Are you sure you want to delete the book {{book.title}}?
+<p>Are you sure you want to delete the book '{{book.title}}'?</p>
 </script>
 
 </head>
