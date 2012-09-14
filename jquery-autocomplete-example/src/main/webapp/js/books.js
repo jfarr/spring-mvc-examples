@@ -11,6 +11,7 @@ var viewDialog;
 var confirmDeleteDialog;
 
 function onLoad() {
+    $('#clear').click(onClearSearch);
     $('#first').click(onClickFirst);
     $('#next').click(onClickNext);
     $('#prev').click(onClickPrev);
@@ -62,9 +63,9 @@ function onLoad() {
     
     $('#confirm-delete').hide();
 
-    searchText = $('#title').attr('value');
+    searchText = $('#search-title').attr('value');
     setTimeout(searchTimer, 1000);
-    $('#title').autocomplete({
+    $('#search-title').autocomplete({
         source : autoComplete
     });
     
@@ -72,7 +73,7 @@ function onLoad() {
 }
 
 function renderSearchList() {
-    var title = $('#title').attr('value');
+    var title = $('#search-title').attr('value');
     if (title == "") {
         $.getJSON(bookServiceUrl, renderBookList);
     } else {
@@ -85,54 +86,56 @@ function renderBookList(bookList) {
     $('.bookRow').remove();
     $('#book_0').hide();
     if (bookList.books.length == 0) {
-        var title = $('#title').attr('value');
-        $('#bookCount').html('Library contains no books' + (title ? ' containing \'' + title + '\'' : ''));
+        var title = $('#search-title').attr('value');
+        $('#bookCount').html('Library contains no books' + (title ? ' containing \'' + title + '\'' : '') + '.');
         $('#bookList').hide();
     } else {
         renderBookCount(bookList);
-
-        var morePages = (bookList.nextResult != null || bookList.prevResult != null);
-        var prevSibling = $('#book_0');
-        $.each(bookList.books, function(i, book) {
-            var tr = $('#book_0').clone();
-            tr.attr('id', 'book_' + (i + 1));
-            tr.attr('class', 'bookRow');
-            tr.find('a.view-link').html(book.title);
-            tr.find('a.view-link').click(function() {
-                onClickView(book);
-                return false;
-            });
-            tr.find('td.author').html(book.author);
-            tr.find('a.edit-link').click(function() { 
-                onClickEdit(book); 
-                return false; 
-                });
-            tr.find('a.delete-link').click(function() { 
-                onClickDelete(book); 
-                return false; 
-                });
-            prevSibling.after(tr);
-            prevSibling = tr;
-            tr.show();
-        });
+        renderBooks(bookList);
         renderNavLinks(bookList);
         $('#bookData').html(JSON.stringify(bookList));
         $('#bookList').show();
     }
 }
 
+function renderBooks(bookList) {
+    var prevSibling = $('#book_0');
+    $.each(bookList.books, function(i, book) {
+        var tr = $('#book_0').clone();
+        tr.attr('id', 'book_' + (i + 1));
+        tr.attr('class', 'bookRow');
+        tr.find('a.view-link').html(book.title);
+        tr.find('a.view-link').click(function() {
+            onClickView(book);
+            return false;
+        });
+        tr.find('td.author').html(book.author);
+        tr.find('a.edit-link').click(function() { 
+            onClickEdit(book); 
+            return false; 
+            });
+        tr.find('a.delete-link').click(function() { 
+            onClickDelete(book); 
+            return false; 
+            });
+        prevSibling.after(tr);
+        prevSibling = tr;
+        tr.show();
+    });
+}
+
 function renderBookCount(bookList) {
-    var title = $('#title').attr('value');
+    var title = $('#search-title').attr('value');
     var morePages = (bookList.nextResult != null || bookList.prevResult != null);
     if (morePages) {
         $('#bookCount').html(
                 'Displaying ' + (bookList.firstResult + 1) + ' - '
                         + (bookList.firstResult + bookList.count) + ' of '
-                        + bookList.total + ' books' + (title ? ' containing \'' + title.trim() + '\'' : ''));
+                        + bookList.total + ' books' + (title ? ' containing \'' + title.trim() + '\'' : '') + '.');
     } else {
         $('#bookCount').html(
                 'Displaying ' + bookList.count + ' of ' + bookList.total
-                        + ' books' + (title ? ' containing \'' + title.trim() + '\'' : ''));
+                        + ' books' + (title ? ' containing \'' + title.trim() + '\'' : '') + '.');
     }
     $('#bookCount').show();
 }
@@ -157,9 +160,9 @@ function renderNavLinks(bookList) {
             } else {
                 prevLink.hide();
             }
-            $('#first-prev').show();
+            $('.prev-links').show();
         } else {
-            $('#first-prev').hide();
+            $('.prev-links').hide();
         }
         if (bookList.nextResult != null || bookList.lastResult != null) {
             var nextLink = $('#next');
@@ -178,67 +181,62 @@ function renderNavLinks(bookList) {
             } else {
                 lastLink.hide();
             }
-            $('#next-last').show();
+            $('.next-links').show();
         } else {
-            $('#next-last').hide();
+            $('.next-links').hide();
         }
-        $('.navRow').show();
+        $('.nav-links').show();
     } else {
-        $('.navRow').hide();
+        $('.nav-links').hide();
     }
 }
 
-function onClickSearch() {
-    renderSearchList();
-    return false;
-}
-
 function onClickFirst() {
-    var title = $('#title').attr('value');
+    var title = $('#search-title').attr('value');
     if (title == '') {
         $.getJSON(bookServiceUrl + '?firstResult=' + $('#first').attr('idx'), renderBookList);
     } else {
-        $.getJSON(bookServiceUrl + 'search?contains=' + $('#title').attr('value') + '&firstResult='
+        $.getJSON(bookServiceUrl + 'search?contains=' + $('#search-title').attr('value') + '&firstResult='
                 + $('#first').attr('idx'), renderBookList);
     }
     return false;
 }
 
 function onClickPrev() {
-    var title = $('#title').attr('value');
+    var title = $('#search-title').attr('value');
     if (title == '') {
         $.getJSON(bookServiceUrl + '?firstResult=' + $('#prev').attr('idx'), renderBookList);
     } else {
-        $.getJSON(bookServiceUrl + 'search?contains=' + $('#title').attr('value') + '&firstResult='
+        $.getJSON(bookServiceUrl + 'search?contains=' + $('#search-title').attr('value') + '&firstResult='
                 + $('#prev').attr('idx'), renderBookList);
     }
     return false;
 }
 
 function onClickNext() {
-    var title = $('#title').attr('value');
+    var title = $('#search-title').attr('value');
     if (title == '') {
         $.getJSON(bookServiceUrl + '?firstResult=' + $('#next').attr('idx'), renderBookList);
     } else {
-        $.getJSON(bookServiceUrl + 'search?contains=' + $('#title').attr('value') + '&firstResult='
+        $.getJSON(bookServiceUrl + 'search?contains=' + $('#search-title').attr('value') + '&firstResult='
                 + $('#next').attr('idx'), renderBookList);
     }
     return false;
 }
 
 function onClickLast() {
-    var title = $('#title').attr('value');
+    var title = $('#search-title').attr('value');
     if (title == '') {
         $.getJSON(bookServiceUrl + '?firstResult=' + $('#last').attr('idx'), renderBookList);
     } else {
-        $.getJSON(bookServiceUrl + 'search?contains=' + $('#title').attr('value') + '&firstResult='
+        $.getJSON(bookServiceUrl + 'search?contains=' + $('#search-title').attr('value') + '&firstResult='
                 + $('#last').attr('idx'), renderBookList);
     }
     return false;
 }
 
 function searchTimer() {
-    var currentText = $('#title').attr('value');
+    var currentText = $('#search-title').attr('value');
     if (currentText != searchText) {
         searchText = currentText;
         renderSearchList();
@@ -269,6 +267,13 @@ function truncate(text, maxCapWords) {
         }
     });
     return words.join(' ');
+}
+
+function onClearSearch() {
+    searchText = '';
+    $('#search-title').attr('value', '');
+    renderSearchList();
+    return false;
 }
 
 function onClickView(book) {

@@ -14,112 +14,96 @@ $(document).ready(onLoad);
 <title>Book List</title>
 </head>
 <body>
+<div id="list-view">
 <h2>Book List</h2>
-<a id="add-link" href="">add book</a>
+<a id="add-link" href="#">add book</a>
 <br />
 <br />
-<form id="search-form" method="GET">
-<table>
-    <tr>
-        <th>Title</th>
-        <td class="ui-widget"><input type="text" id="title" name="title" /></td>
-    </tr>
-    <tr>
-        <td colspan="2">&nbsp;</td>
-    </tr>
-    <tr>
-        <td rowspan="2""><input type="submit" id="search" value="Search" /></td>
-    </tr>
-</table>
+<form>
+<label for="search-title">Title</label>
+<input type="text" id="search-title" name="title" class="ui-widget" />
+<button id="clear">Clear</button>
 </form>
 <p id="bookCount"></p>
-<table id="bookList">
-	<thead>
-		<tr>
-			<th>Title</th>
-			<th>Author</th>
-			<th>&nbsp;</th>
-		</tr>
-	</thead>
+<table id="bookList" class="ui-widget ui-widget-content">
+    <thead>
+        <tr class="ui-widget-header">
+            <th align="left">Title</th>
+            <th align="left">Author</th>
+            <th class="commands">&nbsp;</th>
+        </tr>
+    </thead>
 	<tbody id="bookListContent">
 		<tr id="book_0">
 			<td class="title"><a class="view-link" href=""></a></td>
 			<td class="author"></td>
-			<td><a class="edit-link" href="">edit</a>&nbsp;<a class="delete-link" href="">delete</a></td>
-		</tr>
-		<tr class="navRow">
-			<td colspan="2">&nbsp;</td>
-		</tr>
-		<tr class="navRow">
-			<td colspan="3">
-			<table width="100%">
-				<tr>
-					<td id="first-prev" width="50%">
-					   <a id="first" href=""></a>
-                       <a id="prev" href=""></a>
-					</td>
-					<td id="next-last" width="50%" align="right">
-					   <a id="next" href=""></a>
-                       <a id="last" href=""></a>
-					</td>
-				</tr>
-			</table>
-			</td>
+			<td><a class="edit-link" href="#">edit</a>&nbsp;<a class="delete-link" href="#">delete</a></td>
 		</tr>
 	</tbody>
 </table>
+<table class="nav-links">
+    <tbody>
+        <tr>
+            <td class="prev-links">
+               <a id="first" href="#"></a>
+               <a id="prev" href="#"></a>
+            </td>
+            <td class="next-links">
+               <a id="next" href="#"></a>
+               <a id="last" href="#"></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 <hr />
 book data:
 <span id="bookData" /></span>
+</div>
 
 <div id="add-dialog">
 <form id="add-form">
-<table>
-    <tr>
-        <th>Title</th>
-        <td><input type="text" name="title" /></td>
-    </tr>
-    <tr>
-        <th>Author</th>
-        <td><input type="text" name="author" /></td>
-    </tr>
-</table>
+<fieldset>
+<div class="field">
+<label for="add-title">Title</label>
+<input id="add-title" type="text" class="text ui-widget-content ui-corner-all" name="title" />
+</div>
+<div class="field">
+<label for="add-author">Author</label>
+<input id="add-title" type="text" class="text ui-widget-content ui-corner-all" name="author" />
+</div>
+</fieldset>
 </form>
 </div>
 
 <div id="view-dialog">
-<table>
-    <tr>
-        <th valign="top">Title</th>
-        <td class="title"></td>
-    </tr>
-    <tr>
-        <th valign="top">Author</th>
-        <td class="author"></td>
-    </tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
-</table>
+<p>
+<label>Title</label><br/>
+<span class="title"></span>
+</p>
+<p>
+<label>Author</label><br/>
+<span class="author"></span>
+</p>
 </div>
 
 <div id="edit-dialog">
 <form id="edit-form">
-<div id="errors"></div>
-<table>
-    <tr>
-        <th>Title</th>
-        <td><input type="text" name="title" value="" /></td>
-    </tr>
-    <tr>
-        <th>Author</th>
-        <td><input type="text" name="author" value="" /></td>
-    </tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
-</table>
-<input type="hidden" id="bookId" name="bookId" value="" />
+<fieldset>
+<div class="field">
+<label for="edit-title">Title</label>
+<input id="edit-title" type="text" class="text ui-widget-content ui-corner-all" name="title" />
+</div>
+<div class="field">
+<label for="edit-author">Author</label>
+<input id="edit-author" type="text" class="text ui-widget-content ui-corner-all" name="author" />
+</div>
+</fieldset>
+<input type="hidden" id="bookId" name="bookId" />
 </form>
 </div>
 
-<div id="confirm-delete">Are you sure you want to delete the book "<span id="confirm-title"></span>"?</div>
+<div id="confirm-delete">Are you sure you want to delete the book '<span id="confirm-title"></span>'?</div>
 
 </body>
 </html>
