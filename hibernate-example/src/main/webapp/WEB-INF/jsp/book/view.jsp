@@ -10,8 +10,9 @@
 <body>
 <c:url var="listUrl" value="/library/books/" />
 <c:url var="editUrl" value="/library/books/book/${book.bookId}/editForm" />
+<c:url var="addUrl" value="/library/books/addForm"/>
 <h2>View Book</h2>
-<p><a href="${listUrl}">list</a></p>
+<p><a href="${listUrl}">book list</a>&nbsp;<a href="${addUrl}">add book</a></p>
 <table>
 	<tr>
 		<th>Title</th>

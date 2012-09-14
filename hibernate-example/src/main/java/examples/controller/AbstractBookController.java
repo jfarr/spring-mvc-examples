@@ -1,6 +1,8 @@
 package examples.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,10 +14,16 @@ import examples.data.Library;
 public abstract class AbstractBookController {
 
     private Library library;
+    private Paginator paginator;
 
     @Autowired
     public void setLibrary(Library library) {
         this.library = library;
+    }
+
+    @Autowired
+    public void setPaginator(Paginator paginator) {
+        this.paginator = paginator;
     }
 
     @ResponseStatus(HttpStatus.NOT_FOUND)
@@ -23,8 +31,26 @@ public abstract class AbstractBookController {
     public class NotFoundException extends Exception {
     }
 
-    protected List<Book> getBooks() {
-        return library.getBooks();
+    protected Map<String, Object> getBooks(Integer firstResult, Integer maxResults) {
+        long total = library.countBooks();
+        Page page = paginator.getPage(firstResult, maxResults, total);
+        return buildListModel(
+                library.getBooks(page.getFirstResult(), page.getMaxResults()),
+                page);
+    }
+
+    private Map<String, Object> buildListModel(List<Book> books, Page page) {
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("books", books);
+        model.put("count", books.size());
+        model.put("total", page.getTotal());
+        model.put("firstResult", page.getFirstResult());
+        model.put("maxResults", page.getMaxResults());
+        model.put("nextResult", page.getNextResult());
+        model.put("prevResult", page.getPrevResult());
+        model.put("startResult", page.getStartResult());
+        model.put("lastResult", page.getLastResult());
+        return model;
     }
 
     protected Book getBook(int bookId) throws NotFoundException {
@@ -37,5 +63,9 @@ public abstract class AbstractBookController {
 
     protected void saveBook(Book book) {
         library.saveBook(book);
+    }
+
+    protected void deleteBook(int bookId) {
+        library.deleteBook(bookId);
     }
 }
