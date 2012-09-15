@@ -40,7 +40,7 @@
             <td><a href="#" {{action "onClickView"}} {{bindAttr bookId="bookId"}}>{{title}}</a></td>
             <td>{{author}}</td>
             <td class="commands">
-                <a href="#" {{action "onClickEdit"}} {{bindAttr bookId="bookId"}}>edit</a>&nbsp;<a href="#" {{action "onClickDelete"}} {{bindAttr bookId="bookId"}}>delete</a>
+                <a href="#" {{action "onClickEdit"}} {{bindAttr bookId="bookId"}}>edit</a>&nbsp;<a href="#" {{action "onClickDelete"}} {{bindAttr bookId="bookId"}}>delete</a>&nbsp;<img id="spinner_{{unbound bookId}}" src="../images/spinner.gif" width="16" height="16" style="display: none" />
             </td>
         </tr>
 {{/each}}

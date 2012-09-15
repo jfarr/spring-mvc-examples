@@ -233,9 +233,15 @@ App.bookController = Em.ArrayController.create({
                 author: book.author
             }),
             processData : false,
+            beforeSend: function() {
+                $('#spinner_' + book.bookId).show();
+            },
             success : function() { 
                  self.loadList(self.get('firstIndex'));
-            } 
+            }, 
+            complete: function() {
+                $('#spinner_' + book.bookId).hide();
+            }
         });
     },
     
@@ -243,9 +249,15 @@ App.bookController = Em.ArrayController.create({
         var self = this;
         $.ajax(this.get('bookServiceUrl') + 'book/' + book.bookId, {
             type : 'DELETE',
+            beforeSend: function() {
+                $('#spinner_' + book.bookId).show();
+            },
             success : function() { 
                  self.loadList(self.get('firstIndex'));
-            } 
+            }, 
+            complete: function() {
+                $('#spinner_' + book.bookId).hide();
+            }
         });
     }
 });
