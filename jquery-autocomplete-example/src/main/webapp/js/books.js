@@ -11,6 +11,7 @@ var viewDialog;
 var confirmDeleteDialog;
 
 function onLoad() {
+    $('#clear').button();
     $('#clear').click(onClearSearch);
     $('#first').click(onClickFirst);
     $('#next').click(onClickNext);

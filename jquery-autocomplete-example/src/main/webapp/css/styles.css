@@ -1,11 +1,10 @@
-html {
-	font-family: Verdana, Arial, sans-serif /*{ffDefault}*/;
-	font-size: 1.1em /*{fsDefault}*/;
+
+body {
+    font-family: Verdana, Arial, sans-serif;
 }
 
-input,select,textarea,button {
-	font-family: Verdana, Arial, sans-serif /*{ffDefault}*/;
-	font-size: 1em;
+body, body .ui-widget, body .ui-widget .ui-widget {
+    font-size: 90%;
 }
 
 #list-view table {
@@ -14,7 +13,11 @@ input,select,textarea,button {
     width: 100%;
 }
 
-#list-view table th, #list-view table td {
+#list-view .ui-widget-header {
+    padding: 0px;   
+}
+
+#list-view table td {
     border: 1px solid #EEE;
     padding: .6em 10px;
     text-align: left;
@@ -54,4 +57,9 @@ label {
 
 input.text {
     width: 95%;
+}
+
+#clear .ui-button-text {
+    font-size: .9em;
+    padding: .1em 1em;
 }
