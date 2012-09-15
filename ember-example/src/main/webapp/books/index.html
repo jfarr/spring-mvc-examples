@@ -5,19 +5,19 @@
 
 <title>Book List</title>
 
-<link rel="stylesheet" href="../css/styles.css" type="text/css" media="all" />
 <link rel="stylesheet" href="../css/jquery-ui-1.9pre.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" media="all" />
 
 <script type="text/x-handlebars" data-template-name="book-list-template">
 <h2>Book List</h2>
 
 <p><a href="#" {{action "onClickAdd"}}>add book</a></p>
 
-{{#view App.SearchForm}}
+<form>
 <label for="searchTitle">Title</label>
 {{view App.SearchTitleField}}
-<button {{action "clear"}}>Clear</button>
-{{/view}}
+{{view App.ClearButton label="Clear"}}
+</form>
 
 {{#if content}}
 {{#if morePages}}
@@ -25,6 +25,7 @@
 {{else}}
 <p>Displaying {{count}} of {{total}} books{{#if searchTitle}} containing '{{searchTitle}}'{{/if}}.</p>
 {{/if}}
+<div class="ui-widget">
 <table class="ui-widget ui-widget-content">
     <thead>
         <tr class="ui-widget-header">
@@ -68,6 +69,7 @@
         </tr>
     </tbody>
 </table>
+</div>
 {{/if}}
 {{else}}
 <p>No books{{#if searchTitle}} containing '{{searchTitle}}'{{/if}}.</p>

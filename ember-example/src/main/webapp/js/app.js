@@ -250,16 +250,6 @@ App.bookController = Em.ArrayController.create({
     }
 });
 
-App.SearchForm = Ember.View.extend({
-    tagName: 'form',
-    controller: App.bookController,
-    
-    clear: function(event) {
-        event.preventDefault();
-        this.get('controller').clearSearch();
-    }
-});
-
 App.SearchTitleField = JQ.AutoComplete.extend({
     source: function(request, response) {
         App.bookController.autoCompleteTitle(request, response);
@@ -267,6 +257,14 @@ App.SearchTitleField = JQ.AutoComplete.extend({
     attributeBindings: ['name'],
     name: 'searchTitle',
     valueBinding: 'App.bookController.inputTitle'
+});
+
+App.ClearButton = JQ.Button.extend({
+    elementId: ['clear-button'],
+    click : function() {
+        event.preventDefault(event);
+        App.bookController.clearSearch();
+    }
 });
 
 App.BookListView = Em.View.extend({
@@ -338,7 +336,12 @@ App.ViewDialog = JQ.Dialog.extend({
     title: 'View Book',
     resizable: false,
     modal: true,
-    width: 550
+    width: 550,
+    buttons: {
+        "Close": function() {
+            $('#view-dialog').dialog('close');
+        }
+    }
 });
 
 App.EditDialog = JQ.Dialog.extend({
