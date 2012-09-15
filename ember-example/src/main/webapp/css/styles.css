@@ -1,15 +1,15 @@
-html {
+body {
 	font-family: Verdana, Arial, sans-serif;
 	font-size: 1.1em;
-}
-
-body {
-	font-size: 75%;
 }
 
 input,select,textarea,button {
 	font-family: Verdana, Arial, sans-serif;
 	font-size: 1em;
+}
+
+body, body .ui-widget, body .ui-widget .ui-widget {
+    font-size: 90%;
 }
 
 #list-view table {
@@ -18,8 +18,12 @@ input,select,textarea,button {
 	width: 100%;
 }
 
-#list-view table th, #list-view table td {
-	border: 1px solid #EEE;
+#list-view .ui-widget-header {
+    padding: 0px;	
+}
+
+#list-view table td {
+    border: 1px solid #EEE;
 	padding: .6em 10px;
 	text-align: left;
 }
