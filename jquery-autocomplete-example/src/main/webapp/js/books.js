@@ -2,7 +2,11 @@
  * global variables
  */
 
-var bookServiceUrl = 'http://localhost:8080/hibernate-search-example/library/books/';
+var bookServiceUrl = 'http://hibernate-example.cloudfoundry.com/library/books/';
+var bookServiceUrlList = [
+    'http://hibernate-example.cloudfoundry.com/library/books/',
+    'http://localhost:8080/hibernate-example/library/books/'
+];
 var searchText = '';
 var maxAutoComplete = 5;
 var addDialog;
@@ -18,6 +22,7 @@ function onLoad() {
     $('#prev').click(onClickPrev);
     $('#last').click(onClickLast);
     $('#add-link').click(onClickAdd);
+    $('#bookServiceUrl').change(onChangeUrl);
 
     addDialog = $('#add-dialog')
         .dialog({
@@ -70,6 +75,23 @@ function onLoad() {
         source : autoComplete
     });
     
+    renderBookServiceUrlSelect();
+    renderSearchList();
+}
+
+function renderBookServiceUrlSelect() {
+    $('#bookServiceUrl').html('');
+    $.each(bookServiceUrlList, function(i, url) {
+        var option = document.createElement('option');
+        $(option).attr('value', url);
+        var text = document.createTextNode(url);
+        option.appendChild(text);
+        $(option).appendTo('#bookServiceUrl');
+    });
+}
+
+function onChangeUrl(event) {
+    bookServiceUrl = $('#bookServiceUrl option:selected')[0].value;
     renderSearchList();
 }
 
