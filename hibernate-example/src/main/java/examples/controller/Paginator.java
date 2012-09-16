@@ -50,8 +50,11 @@ public class Paginator {
     }
     
     private Integer getLastResult(int firstResult, int maxResults, long total) {
-        long remaining = total % maxResults;
-        int lastResult = (int) (remaining == 0 ? (total - maxResults) : (total - remaining));
-        return firstResult == lastResult ? null : lastResult;
+        if (total > maxResults) {
+            int lastResult = (int) (total / maxResults) * maxResults;
+            return (lastResult > firstResult) ? lastResult : null;
+        } else {
+            return null;
+        }
     }
 }
