@@ -58,7 +58,8 @@ JQ.Dialog = Ember.View.extend(JQ.Widget, {
 
 JQ.AutoComplete = Ember.TextField.extend(JQ.Widget, {
     uiType: 'autocomplete',
-    uiOptions: ['disabled','autoFocus','delay','minLength','position','source']
+    uiOptions: ['disabled','autoFocus','delay','minLength','position','source'],
+    uiEvents: ['select']
 });
 
 JQ.TextField = Ember.TextField.extend({
