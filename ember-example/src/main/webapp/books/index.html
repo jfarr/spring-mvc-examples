@@ -11,6 +11,11 @@
 <script type="text/x-handlebars" data-template-name="book-list-template">
 <h2>Book List</h2>
 
+<form>
+<label for="bookServiceUrl">Book Service URL</label>
+{{view Ember.Select elementId="bookServiceUrl" contentBinding="bookServiceUrlList" valueBinding="bookServiceUrl"}}
+</form>
+
 <p><a href="#" {{action "onClickAdd"}}>add book</a></p>
 
 <form>

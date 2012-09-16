@@ -7,8 +7,17 @@ App = Em.Application.create({
 
 App.bookController = Em.ArrayController.create({
     
-    bookServiceUrl: 'http://localhost:8080/hibernate-search-example/library/books/',
+    bookServiceUrl: 'http://localhost:8080/hibernate-example/library/books/',
     
+    bookServiceUrlList: [
+        'http://localhost:8080/hibernate-example/library/books/',
+        'http://hibernate-example.cloudfoundry.com/library/books/'
+    ],
+    
+    bookServiceUrlChanged: function() {
+        this.loadList();
+    }.observes('bookServiceUrl'),
+
     content: [],
 
     // search text input field current value
