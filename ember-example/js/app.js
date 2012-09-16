@@ -7,11 +7,11 @@ App = Em.Application.create({
 
 App.bookController = Em.ArrayController.create({
     
-    bookServiceUrl: 'http://localhost:8080/hibernate-example/library/books/',
+    bookServiceUrl: 'http://hibernate-example.cloudfoundry.com/library/books/',
     
     bookServiceUrlList: [
-        'http://localhost:8080/hibernate-example/library/books/',
-        'http://hibernate-example.cloudfoundry.com/library/books/'
+        'http://hibernate-example.cloudfoundry.com/library/books/',
+        'http://localhost:8080/hibernate-example/library/books/'
     ],
     
     bookServiceUrlChanged: function() {
