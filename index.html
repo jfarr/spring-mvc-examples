@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>spring-mvc-examples by jfarr</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>spring-mvc-examples</h1>
+        <p>Spring-MVC Examples</p>
+
+        <p class="view"><a href="https://github.com/jfarr/spring-mvc-examples">View the Project on GitHub <small>jfarr/spring-mvc-examples</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/jfarr/spring-mvc-examples/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/jfarr/spring-mvc-examples/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/jfarr/spring-mvc-examples">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Spring-MVC Examples</h1>
+
+<p>Simple examples demonstrating the basic features of Spring-MVC using both pre-2.0 XML based configuration style and the latest Spring 3.x annotation-driven style.</p>
+
+<p>Also demonstrates basic JSON enabled web services using both a pre-RESTful query parameter-based style with Spring 1.2.x and a RESTful web services style with Spring 3.x.</p>
+
+<h3>Examples</h3>
+
+<ul>
+<li>
+<a href="https://github.com/jfarr/spring-mvc-examples/tree/master/hello-spring-mvc">hello-spring-mvc</a> - Bare minimum Spring MVC application using a JSP view with JSTL support.</li>
+<li>
+<a href="https://github.com/jfarr/spring-mvc-examples/tree/master/multi-action-controller-example">multi-action-controller-example</a> - Simple web application using MultiActonController.</li>
+<li>
+<a href="https://github.com/jfarr/spring-mvc-examples/tree/master/json-view-example">json-view-example</a> - Render JSON responses using a Jackson-based JSON marshalling view.</li>
+<li>
+<a href="https://github.com/jfarr/spring-mvc-examples/tree/master/json-binding-example">json-binding-example</a> - Bind HTTP POST data to model objects using a JSON HTTP request reader.</li>
+<li>
+<a href="https://github.com/jfarr/spring-mvc-examples/tree/master/spring3-example">spring3-example</a> - A modern Spring-MVC application using autowiring and MVC annotations (@Controller, @RequestMapping, etc.)</li>
+<li>
+<a href="https://github.com/jfarr/spring-mvc-examples/tree/master/spring3-json-example">spring3-json-example</a> - Example web application and RESTful JSON web service built using the built-in Jackson object mapping support in Spring 3.</li>
+<li>
+<a href="https://github.com/jfarr/spring-mvc-examples/tree/master/rest-app-example">rest-app-example</a> - A more elaborate example of exposing web applications as HTML or JSON services that builds on the previous examples.</li>
+<li>
+<a href="https://github.com/jfarr/spring-mvc-examples/tree/master/json-ajax-example">json-ajax-example</a> - A pure Javascript / Ajax application that consumes the JSON services provided by <a href="https://github.com/jfarr/spring-mvc-examples/tree/master/rest-app-example">rest-app-example</a>.<br>
+</li>
+<li>
+<a href="https://github.com/jfarr/spring-mvc-examples/tree/master/jquery-ajax-example">jquery-ajax-example</a> - Simplified version of the RESTful JSON application client from <a href="https://github.com/jfarr/spring-mvc-examples/tree/master/json-ajax-example">json-ajax-example</a> using <a href="http://jquery.com/">jQuery</a>.<br>
+</li>
+<li>
+<a href="https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-example">hibernate-example</a> - Example HTML / JSON application with an HSQL database back-end using <a href="http://www.hibernate.org/">Hibernate</a> and JPA annotations.</li>
+<li>
+<a href="https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-search-example">hibernate-search-example</a> - Example HTML / JSON application using <a href="http://www.hibernate.org/subprojects/search.html">Hibernate Search</a> and <a href="http://lucene.apache.org/">Lucene</a> for automatic fast full-text search and indexing.</li>
+<li>
+<a href="https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-search-example">jquery-autocomplete-example</a> - Example single-page Ajax application using <a href="http://jqueryui.com/">JQuery UI</a> and the JSON services provided by the <a href="https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-search-example">hibernate-search-example</a> to implement auto-complete search functionality. </li>
+<li>
+<a href="https://github.com/jfarr/spring-mvc-examples/tree/master/ember-example">ember-example</a> - Example application building on jquery-autocomplete-example that uses the <a href="http://emberjs.com/">ember.js</a> framework to implement a front-end RESTful MVC architecture.</li>
+</ul><h3>The Example Application</h3>
+
+<p>The examples are based on a simple library application that can add then edit a single book.</p>
+
+<p><img src="https://github.com/jfarr/spring-mvc-examples/raw/master/src/site/library_state_diagram.png" alt="Library State Diagram"></p>
+
+<p><strong>Figure 1: Library Application State Diagram</strong></p>
+
+<h3>Testing the JSON Examples</h3>
+
+<p>The JSON examples include sample <a href="http://code.google.com/p/rest-client/">RESTClient</a> requests in the src/test/resources folder that can be used to test sending JSON data to and retrieving data from the JSON web service. The sample requests assume that the application server is running on port 8080, so may need to be modified for your development environment.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/jfarr">jfarr</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
