@@ -102,6 +102,12 @@ App.bookController = Em.ArrayController.create({
         return url;
     },
     
+    search: function(title) {
+        this.set('inputTitle', title);
+        this.set('searchTitle', title);
+        this.loadList(this.get('firstIndex'));
+    },
+    
     update: function(bookList) {
         this.set('content', bookList.books);
         this.set('firstIndex', bookList.firstResult);
@@ -272,12 +278,16 @@ App.bookController = Em.ArrayController.create({
 });
 
 App.SearchTitleField = JQ.AutoComplete.extend({
+    elementId: 'searchTitle',
+    valueBinding: 'App.bookController.inputTitle',
+    
     source: function(request, response) {
         App.bookController.autoCompleteTitle(request, response);
     },
-    attributeBindings: ['name'],
-    name: 'searchTitle',
-    valueBinding: 'App.bookController.inputTitle'
+    
+    select: function(event, ui) {
+        App.bookController.search(ui.item.value);
+    }
 });
 
 App.ClearButton = JQ.Button.extend({
