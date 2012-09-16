@@ -2,6 +2,9 @@
 	pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<c:url var="addUrl" value="/library/books/addForm"/>
+<c:url var="listUrl" value="/library/books/"/>
+<c:url var="uploadUrl" value="/library/books/uploadForm"/>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -9,7 +12,7 @@
 </head>
 <body>
 <h2>Search Books</h2>
-<a href="<c:url value="."/>">book list</a>&nbsp;search books&nbsp;<a href="<c:url value="addForm"/>">add book</a>
+<a href="${listUrl}">book&nbsp;list</a>&nbsp;search&nbsp;books&nbsp;<a href="${addUrl}">add&nbsp;book</a>&nbsp<a href="${uploadUrl}">upload&nbsp;books</a>
 <br />
 <br />
 <c:url var="action" value="/library/books/search" />

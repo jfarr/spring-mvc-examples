@@ -1,5 +1,7 @@
 package examples.controller;
 
+import java.io.IOException;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -24,9 +26,9 @@ public class HtmlBookController extends AbstractBookController {
     }
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
-    public ModelAndView save(@ModelAttribute("book") Book book) {
+    public String save(@ModelAttribute("book") Book book) {
         saveBook(book);
-        return new ModelAndView("redirect:/library/books/");
+        return "redirect:/library/books/";
     }
 
     @RequestMapping("/addForm")
@@ -40,13 +42,13 @@ public class HtmlBookController extends AbstractBookController {
     }
 
     @RequestMapping(value = "/book/{bookId}", method = RequestMethod.POST)
-    public ModelAndView delete(@PathVariable int bookId, @RequestParam String submit, @RequestParam String action) 
+    public ModelAndView delete(@PathVariable int bookId, @RequestParam String submit, @RequestParam String action)
             throws NotFoundException, InvalidActionException {
-        
+
         if (action.equals("confirmDelete")) {
             return new ModelAndView("book/delete", "book", getBook(bookId));
-            
-        } else if (action.equals("delete"))  {
+
+        } else if (action.equals("delete")) {
             if (submit.equals("Cancel")) {
                 return new ModelAndView("redirect:/library/books/book/" + bookId + "/editForm");
             } else {
@@ -78,5 +80,16 @@ public class HtmlBookController extends AbstractBookController {
             @RequestParam(required = false) Integer firstResult,
             @RequestParam(required = false) Integer maxResults) {
         return new ModelAndView("book/list", searchBooksByTitle(title, firstResult, maxResults));
+    }
+
+    @RequestMapping("/uploadForm")
+    public ModelAndView uploadForm() {
+        return new ModelAndView("book/upload", "uploadFile", new UploadFile());
+    }
+
+    @RequestMapping(value = "upload", method = RequestMethod.POST)
+    public String upload(UploadFile uploadFile) throws IOException {
+        importBooksAsCsv(uploadFile.getInputStream());
+        return "redirect:/library/books/";
     }
 }

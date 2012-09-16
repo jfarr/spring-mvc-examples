@@ -1,5 +1,7 @@
 package examples.controller;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -75,5 +77,9 @@ public abstract class AbstractBookController {
         return buildListModel(
                 library.searchBooksByTitle(title, page.getFirstResult(), page.getMaxResults()),
                 page);
+    }
+    
+    protected void importBooksAsCsv(InputStream inputStream) throws IOException {
+        library.importBooksAsCsv(inputStream);
     }
 }

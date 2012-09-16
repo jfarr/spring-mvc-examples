@@ -11,6 +11,7 @@
 <c:url var="listUrl" value="/library/books/"/>
 <c:url var="searchUrl" value="/library/books/searchForm"/>
 <c:url var="addUrl" value="/library/books/addForm"/>
+<c:url var="uploadUrl" value="/library/books/uploadForm"/>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -18,7 +19,7 @@
 </head>
 <body>
 <h2><c:out value="${title}" /></h2>
-<c:choose><c:when test="${isSearchPage}"><a href="${listUrl}">book&nbsp;list</a></c:when><c:otherwise>book&nbsp;list</c:otherwise></c:choose>&nbsp;<c:choose><c:when test="${isSearchPage}">search&nbsp;books</c:when><c:otherwise><a href="${searchUrl}">search&nbsp;books</a></c:otherwise></c:choose>&nbsp;<a href="${addUrl}">add&nbsp;book</a>
+<c:choose><c:when test="${isSearchPage}"><a href="${listUrl}">book&nbsp;list</a></c:when><c:otherwise>book&nbsp;list</c:otherwise></c:choose>&nbsp;<c:choose><c:when test="${isSearchPage}">search&nbsp;books</c:when><c:otherwise><a href="${searchUrl}">search&nbsp;books</a></c:otherwise></c:choose>&nbsp;<a href="${addUrl}">add&nbsp;book</a>&nbsp;<a href="${uploadUrl}">upload&nbsp;books</a>
 <c:choose>
     <c:when test="${empty(books)}">
         <p>Library has no books<c:if test="${isSearchPage}"> containing '<c:out value="${param.title}" />'</c:if>.</p>

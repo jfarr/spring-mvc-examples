@@ -4,9 +4,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <c:set var="isEditing" value="${book.bookId != null}" />
 <c:set var="title" value="${isEditing ? 'Edit Book' : 'Add Book'}" />
+<c:url var="addUrl" value="/library/books/addForm"/>
 <c:url var="listUrl" value="/library/books/"/>
 <c:url var="searchUrl" value="/library/books/searchForm"/>
-<c:url var="addUrl" value="/library/books/addForm"/>
+<c:url var="uploadUrl" value="/library/books/uploadForm"/>
 <c:url var="editUrl" value="/library/books/"/>
 <c:url var="deleteUrl" value="/library/books/book/${book.bookId}"/>
 <html>
@@ -16,7 +17,7 @@
 </head>
 <body>
 <h2><c:out value="${title}" /></h2>
-<a href="${listUrl}">book list</a>&nbsp;<a href="${searchUrl}">search books</a>&nbsp;<c:choose><c:when test="${isEditing}"><a href="${addUrl}">add book</a></c:when><c:otherwise>add book</c:otherwise></c:choose>
+<a href="${listUrl}">book list</a>&nbsp;<a href="${searchUrl}">search books</a>&nbsp;<c:choose><c:when test="${isEditing}"><a href="${addUrl}">add book</a></c:when><c:otherwise>add book</c:otherwise></c:choose>&nbsp;<a href="${uploadUrl}">upload&nbsp;books</a>
 <br/><br/>
 <form action="${editUrl}" method="POST">
 <table>

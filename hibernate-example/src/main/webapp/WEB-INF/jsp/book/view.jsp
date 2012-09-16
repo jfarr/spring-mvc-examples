@@ -8,10 +8,11 @@
 <title>View Book</title>
 </head>
 <body>
+<c:url var="addUrl" value="/library/books/addForm"/>
 <c:url var="listUrl" value="/library/books/" />
 <c:url var="editUrl" value="/library/books/book/${book.bookId}/editForm" />
 <c:url var="searchUrl" value="/library/books/searchForm"/>
-<c:url var="addUrl" value="/library/books/addForm"/>
+<c:url var="uploadUrl" value="/library/books/uploadForm"/>
 <h2>View Book</h2>
 <p><a href="${listUrl}">book list</a>&nbsp;<a href="${searchUrl}">search books</a>&nbsp;<a href="${addUrl}">add book</a></p>
 <table>

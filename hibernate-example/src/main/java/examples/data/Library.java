@@ -1,5 +1,8 @@
 package examples.data;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.Charset;
 import java.util.List;
 
 import org.hibernate.Criteria;
@@ -12,10 +15,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.csvreader.CsvReader;
+
 @Repository
 @Transactional
 public class Library {
 
+    private final static int MAX_LEN = 255;
+    
     private SessionFactory sessionFactory;
 
     @Autowired
@@ -81,6 +88,21 @@ public class Library {
         return (Long) getSearchByTitleCriteria(title)
                 .setProjection(Projections.rowCount())
                 .uniqueResult();
+    }
+
+    public void importBooksAsCsv(InputStream inputStream) throws IOException {
+        CsvReader reader = new CsvReader(inputStream, Charset.forName("UTF-8"));
+        while (reader.readRecord()) {
+            saveBook(createBook(reader.get(0), reader.get(1)));
+        }
+    }
+
+    private Book createBook(String title, String author) {
+        return new Book(truncate(title), truncate(author));
+    }
+
+    private String truncate(String field) {
+        return field.length() > MAX_LEN ? field.substring(0, MAX_LEN) : field;
     }
 
     private Session getCurrentSession() {
