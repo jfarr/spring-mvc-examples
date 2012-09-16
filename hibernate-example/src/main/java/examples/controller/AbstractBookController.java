@@ -78,6 +78,14 @@ public abstract class AbstractBookController {
                 library.searchBooksByTitle(title, page.getFirstResult(), page.getMaxResults()),
                 page);
     }
+
+    protected Map<String, Object> searchBooksByTitlePrefix(String title, Integer firstResult, Integer maxResults) {
+        long total = library.countBooksByTitlePrefix(title);
+        Page page = paginator.getPage(firstResult, maxResults, total);
+        return buildListModel(
+                library.searchBooksByTitlePrefix(title, page.getFirstResult(), page.getMaxResults()),
+                page);
+    }
     
     protected void importBooksAsCsv(InputStream inputStream) throws IOException {
         library.importBooksAsCsv(inputStream);

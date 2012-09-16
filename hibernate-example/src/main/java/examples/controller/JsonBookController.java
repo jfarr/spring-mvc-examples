@@ -1,5 +1,7 @@
 package examples.controller;
 
+import java.util.ArrayList;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -45,5 +47,19 @@ public class JsonBookController extends AbstractBookController {
     @RequestMapping(value = "/book/{bookId}", method = RequestMethod.GET, headers = "Accept=application/json")
     public ModelAndView view(@PathVariable int bookId) throws NotFoundException {
         return new ModelAndView("book/view-json", "book", getBook(bookId));
+    }
+
+    @RequestMapping(value = "/search", headers = "Accept=application/json")
+    public ModelAndView search(
+            @RequestParam(required = false) String contains,
+            @RequestParam(required = false) String prefix,
+            @RequestParam(required = false) Integer firstResult,
+            @RequestParam(required = false) Integer maxResults) {
+        if (contains != null) {
+            return new ModelAndView("book/list-json", searchBooksByTitle(contains, firstResult, maxResults));
+        } else if (prefix != null) {
+            return new ModelAndView("book/list-json", searchBooksByTitlePrefix(prefix, firstResult, maxResults));
+        }
+        return new ModelAndView("book/list-json", "books", new ArrayList<Book>());
     }
 }

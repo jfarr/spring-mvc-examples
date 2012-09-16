@@ -134,6 +134,8 @@ request:
 <c:out value="${nextResult}" />
 <br /> prevResult:
 <c:out value="${prevResult}" />
+<br /> lastResult:
+<c:out value="${lastResult}" />
 <br /> maxResults:
 <c:out value="${maxResults}" />
 </body>

@@ -89,6 +89,25 @@ public class Library {
                 .setProjection(Projections.rowCount())
                 .uniqueResult();
     }
+    
+    @SuppressWarnings("unchecked")
+    public List<Book> searchBooksByTitlePrefix(String title, int firstResult, int maxResults) {
+        return getSearchByTitlePrefixCriteria(title)
+                .addOrder(Order.asc("title"))
+                .list();
+    }
+
+    private Criteria getSearchByTitlePrefixCriteria(String title) {
+        return getCurrentSession()
+                .createCriteria(Book.class)
+                .add(Restrictions.ilike("title", title + "%"));
+    }
+
+    public long countBooksByTitlePrefix(String title) {
+        return (Long) getSearchByTitlePrefixCriteria(title)
+                .setProjection(Projections.rowCount())
+                .uniqueResult();
+    }
 
     public void importBooksAsCsv(InputStream inputStream) throws IOException {
         CsvReader reader = new CsvReader(inputStream, Charset.forName("UTF-8"));

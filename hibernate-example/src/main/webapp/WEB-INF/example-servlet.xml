@@ -25,10 +25,7 @@
     <property name="modelKey" value="book" />
   </bean>
 
-  <bean name="book/list-json" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
-    <property name="extractValueFromSingleKeyModel" value="true"></property>
-    <property name="modelKey" value="books" />
-  </bean>
+  <bean name="book/list-json" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" />
 
   <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
     <property name="maxUploadSize" value="1000000" />
