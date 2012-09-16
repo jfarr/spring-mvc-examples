@@ -94,6 +94,8 @@ public class Library {
     public List<Book> searchBooksByTitlePrefix(String title, int firstResult, int maxResults) {
         return getSearchByTitlePrefixCriteria(title)
                 .addOrder(Order.asc("title"))
+                .setFirstResult(firstResult)
+                .setMaxResults(maxResults)
                 .list();
     }
 
