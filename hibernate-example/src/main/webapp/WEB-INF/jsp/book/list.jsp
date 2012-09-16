@@ -59,8 +59,8 @@
         <p />
 		<table width="100%">
 			<tr>
-				<th>Title</th>
-				<th>Author</th>
+				<th align="left">Title</th>
+				<th align="left">Author</th>
 				<th width="50px" align="right">&nbsp;</th>
 			</tr>
 			<c:forEach items="${books}" var="book">
