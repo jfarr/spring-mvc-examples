@@ -68,4 +68,12 @@ public abstract class AbstractBookController {
     protected void deleteBook(int bookId) {
         library.deleteBook(bookId);
     }
+
+    protected Map<String, Object> searchBooksByTitle(String title, Integer firstResult, Integer maxResults) {
+        long total = library.countBooksByTitle(title);
+        Page page = paginator.getPage(firstResult, maxResults, total);
+        return buildListModel(
+                library.searchBooksByTitle(title, page.getFirstResult(), page.getMaxResults()),
+                page);
+    }
 }

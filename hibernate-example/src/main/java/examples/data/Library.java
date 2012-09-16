@@ -2,10 +2,12 @@ package examples.data;
 
 import java.util.List;
 
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Projections;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -49,6 +51,34 @@ public class Library {
     public long countBooks() {
         return (Long) getCurrentSession()
                 .createCriteria(Book.class)
+                .setProjection(Projections.rowCount())
+                .uniqueResult();
+    }
+    
+    @SuppressWarnings("unchecked")
+    public List<Book> searchBooksByTitle(String title, int firstResult, int maxResults) {
+        return getSearchByTitleCriteria(title)
+                .addOrder(Order.asc("title"))
+                .setFirstResult(firstResult)
+                .setMaxResults(maxResults)
+                .list();
+    }
+
+    private Criteria getSearchByTitleCriteria(String title) {
+        return getCurrentSession()
+                .createCriteria(Book.class)
+                .add(Restrictions.or(
+                        Restrictions.or(
+                                Restrictions.ilike("title", title),
+                                Restrictions.ilike("title", "% " + title + " %")),
+                        Restrictions.or(
+                                Restrictions.ilike("title", "% " + title),
+                                Restrictions.ilike("title", title + " %"))
+                ));
+    }
+
+    public long countBooksByTitle(String title) {
+        return (Long) getSearchByTitleCriteria(title)
                 .setProjection(Projections.rowCount())
                 .uniqueResult();
     }

@@ -66,4 +66,17 @@ public class HtmlBookController extends AbstractBookController {
     public ModelAndView editForm(@PathVariable int bookId) throws NotFoundException {
         return new ModelAndView("book/edit", "book", getBook(bookId));
     }
+
+    @RequestMapping("/searchForm")
+    public ModelAndView searchForm() {
+        return new ModelAndView("book/search");
+    }
+
+    @RequestMapping("/search")
+    public ModelAndView search(
+            @RequestParam String title,
+            @RequestParam(required = false) Integer firstResult,
+            @RequestParam(required = false) Integer maxResults) {
+        return new ModelAndView("book/list", searchBooksByTitle(title, firstResult, maxResults));
+    }
 }

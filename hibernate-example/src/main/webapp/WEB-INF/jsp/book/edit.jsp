@@ -4,11 +4,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <c:set var="isEditing" value="${book.bookId != null}" />
 <c:set var="title" value="${isEditing ? 'Edit Book' : 'Add Book'}" />
-<c:url var="listAction" value="/library/books/"/>
-<c:url var="searchAction" value="/library/books/searchForm"/>
-<c:url var="addAction" value="/library/books/addForm"/>
-<c:url var="editAction" value="/library/books/"/>
-<c:url var="deleteAction" value="/library/books/book/${book.bookId}"/>
+<c:url var="listUrl" value="/library/books/"/>
+<c:url var="searchUrl" value="/library/books/searchForm"/>
+<c:url var="addUrl" value="/library/books/addForm"/>
+<c:url var="editUrl" value="/library/books/"/>
+<c:url var="deleteUrl" value="/library/books/book/${book.bookId}"/>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -16,18 +16,9 @@
 </head>
 <body>
 <h2><c:out value="${title}" /></h2>
-<a href="${listAction}">book list</a>
-&nbsp;
-<c:choose>
-    <c:when test="${isEditing}">
-        <a href="${addAction}">add book</a>
-    </c:when>
-    <c:otherwise>
-        add book
-    </c:otherwise>
-</c:choose>
+<a href="${listUrl}">book list</a>&nbsp;<a href="${searchUrl}">search books</a>&nbsp;<c:choose><c:when test="${isEditing}"><a href="${addUrl}">add book</a></c:when><c:otherwise>add book</c:otherwise></c:choose>
 <br/><br/>
-<form action="${editAction}" method="POST">
+<form action="${editUrl}" method="POST">
 <table>
 	<tr>
 		<th>Title</th>
@@ -47,7 +38,7 @@
 </c:if>
 </form>
 <c:if test="${isEditing}">
-<form action="${deleteAction}" method="POST">
+<form action="${deleteUrl}" method="POST">
     <input type="submit" name="submit" value="Delete" />
     <input type="hidden" name="action" value="confirmDelete" />
     <input type="hidden" name="bookId" value="<c:out value="${book.bookId}"/>" />
