@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Book List</title>
+
+<link rel="stylesheet" href="../css/jquery-ui-1.9pre.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" media="all" />
+
+<script type="text/x-handlebars" data-template-name="book-list-template">
+<h2>Book List</h2>
+
+<form>
+<label for="bookServiceUrl">Book Service URL</label>
+{{view Ember.Select elementId="bookServiceUrl" contentBinding="bookServiceUrlList" valueBinding="bookServiceUrl"}}
+</form>
+
+<p><a href="#" {{action "onClickAdd"}}>add book</a></p>
+
+<form>
+<label for="searchTitle">Title</label>
+{{view App.SearchTitleField}}
+{{view App.ClearButton label="Clear"}}
+</form>
+
+{{#if content}}
+{{#if morePages}}
+<p>Displaying {{firstResult}} - {{lastResult}} of {{total}} books{{#if searchTitle}} containing '{{searchTitle}}'{{/if}}.</p>
+{{else}}
+<p>Displaying {{count}} of {{total}} books{{#if searchTitle}} containing '{{searchTitle}}'{{/if}}.</p>
+{{/if}}
+<div class="ui-widget">
+<table class="ui-widget ui-widget-content">
+    <thead>
+        <tr class="ui-widget-header">
+            <th align="left">Title</th>
+            <th align="left">Author</th>
+            <th class="commands">&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+{{#each controller}}
+        <tr>
+            <td><a href="#" {{action "onClickView"}} {{bindAttr bookId="bookId"}}>{{title}}</a></td>
+            <td>{{author}}</td>
+            <td class="commands">
+                <a href="#" {{action "onClickEdit"}} {{bindAttr bookId="bookId"}}>edit</a>&nbsp;<a href="#" {{action "onClickDelete"}} {{bindAttr bookId="bookId"}}>delete</a>&nbsp;<img id="spinner_{{unbound bookId}}" src="../images/spinner.gif" width="16" height="16" style="display: none" />
+            </td>
+        </tr>
+{{/each}}
+    </tbody>
+</table>
+{{#if morePages}}
+<table class="nav-links">
+    <tbody>
+        <tr>
+            <td class="prev-links">
+            {{#if hasPrevResult}}
+                <a href="#" {{action "onClickFirst"}}>first {{maxResults}}</a>&nbsp;
+                <a href="#" {{action "onClickPrev"}}>prev {{maxResults}}</a>
+            {{else}}
+                &nbsp;
+            {{/if}}
+            </td>
+            <td class="next-links">
+            {{#if nextResult}}
+                <a href="#" {{action "onClickNext"}}>next {{maxResults}}</a>&nbsp;
+                <a href="#" {{action "onClickLast"}}>last {{maxResults}}</a>
+            {{else}}
+                &nbsp;
+            {{/if}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+{{/if}}
+{{else}}
+<p>No books{{#if searchTitle}} containing '{{searchTitle}}'{{/if}}.</p>
+{{/if}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="add-dialog-template">
+<form>
+<fieldset>
+<div class="field">
+<label for="add-title">Title</label>
+{{view JQ.TextField elementId="add-title" valueBinding="book.title"}}
+</div>
+<div class="field">
+<label for="add-author">Author</label>
+{{view JQ.TextField elementId="add-author" valueBinding="book.author"}}
+</div>
+</fieldset>
+</form>
+</script>
+
+<script type="text/x-handlebars" data-template-name="view-dialog-template">
+<p>
+<label>Title</label><br/>
+{{book.title}}
+</p>
+<p>
+<label>Author</label><br/>
+{{book.author}}
+</p>
+</script>
+
+<script type="text/x-handlebars" data-template-name="edit-dialog-template">
+<form>
+<fieldset>
+<div class="field">
+<label for="edit-title">Title</label>
+{{view JQ.TextField elementId="edit-title" valueBinding="book.title"}}
+</div>
+<div class="field">
+<label for="edit-author">Author</label>
+{{view JQ.TextField elementId="edit-author" valueBinding="book.author"}}
+</div>
+</fieldset>
+</form>
+</script>
+
+<script type="text/x-handlebars" data-template-name="confirm-delete-dialog-template">
+<p>Are you sure you want to delete the book '{{book.title}}'?</p>
+</script>
+
+</head>
+<body>
+<script src="../js/libs/jquery-1.8.0.min.js"></script>
+<script src="../js/libs/jquery-ui-1.9pre.js"></script>
+<script src="../js/libs/handlebars-1.0.0.beta.6.js"></script>
+<script src="../js/libs/ember-1.0.pre.min.js"></script>
+<script src="../js/ember-jquery-ui-mixin.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>
