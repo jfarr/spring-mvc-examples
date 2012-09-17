@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
 <title>Hello</title>
 </head>
 <body>
