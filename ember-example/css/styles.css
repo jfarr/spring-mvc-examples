@@ -13,8 +13,8 @@ body, body .ui-widget, body .ui-widget .ui-widget {
 	width: 100%;
 }
 
-#list-view .ui-widget-header {
-    padding: 0px;	
+#list-view .ui-widget-header th {
+    padding: 2px 0px 2px 10px;
 }
 
 #list-view table td {
