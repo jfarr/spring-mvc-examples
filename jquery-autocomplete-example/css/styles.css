@@ -1,0 +1,65 @@
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+body, body .ui-widget, body .ui-widget .ui-widget {
+    font-size: 90%;
+}
+
+#list-view table {
+    margin: 1em 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#list-view .ui-widget-header {
+    padding: 0px;   
+}
+
+#list-view table td {
+    border: 1px solid #EEE;
+    padding: .6em 10px;
+    text-align: left;
+}
+
+#list-view table.nav-links td {
+    border: 0;  
+}
+
+#list-view table.nav-links td.prev-links {
+    text-align: left;
+    width: 50%;  
+}
+
+#list-view table.nav-links td.next-links {
+    text-align: right;
+    width: 50%;  
+}
+
+#list-view .commands {
+    width: 100px;
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+    margin-top: 25px;
+}
+
+.field + .field {
+    padding-top: 20px;  
+}
+
+label {
+    font-weight:bold;
+}
+
+input.text {
+    width: 95%;
+}
+
+#clear .ui-button-text {
+    font-size: .9em;
+    padding: .1em 1em;
+}

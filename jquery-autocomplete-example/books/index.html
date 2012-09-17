@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../css/styles.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/ui-lightness/jquery-ui-1.8.22.custom.css" type="text/css" media="all" />
+<script src="../js/books.js" /></script>
+<script src="../js/lib/jquery.js" /></script>
+<script src="../js/lib/jquery-ui.js" /></script>
+<script src="../js/lib/jquery.serialize-json.js" ></script>
+<script type="text/javascript">
+$(document).ready(onLoad);
+</script>
+<title>Book List</title>
+</head>
+<body>
+<div id="list-view">
+<h2>Book List</h2>
+<form>
+<label for="bookServiceUrl">Book Service URL</label>
+<select id="bookServiceUrl"></select>
+</form>
+<p><a id="add-link" href="#">add book</a></p>
+<br />
+<form>
+<label for="search-title">Title</label>
+<input type="text" id="search-title" name="title" class="ui-widget" />
+<button id="clear">Clear</button>
+</form>
+<p id="bookCount"></p>
+<table id="bookList" class="ui-widget ui-widget-content">
+    <thead>
+        <tr class="ui-widget-header">
+            <th align="left">Title</th>
+            <th align="left">Author</th>
+            <th class="commands">&nbsp;</th>
+        </tr>
+    </thead>
+	<tbody id="bookListContent">
+		<tr id="book_0">
+			<td class="title"><a class="view-link" href=""></a></td>
+			<td class="author"></td>
+			<td><a class="edit-link" href="#">edit</a>&nbsp;<a class="delete-link" href="#">delete</a></td>
+		</tr>
+	</tbody>
+</table>
+<table class="nav-links">
+    <tbody>
+        <tr>
+            <td class="prev-links">
+               <a id="first" href="#"></a>
+               <a id="prev" href="#"></a>
+            </td>
+            <td class="next-links">
+               <a id="next" href="#"></a>
+               <a id="last" href="#"></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<hr />
+book data:
+<span id="bookData" /></span>
+</div>
+
+<div id="add-dialog">
+<form id="add-form">
+<fieldset>
+<div class="field">
+<label for="add-title">Title</label>
+<input id="add-title" type="text" class="text ui-widget-content ui-corner-all" name="title" />
+</div>
+<div class="field">
+<label for="add-author">Author</label>
+<input id="add-title" type="text" class="text ui-widget-content ui-corner-all" name="author" />
+</div>
+</fieldset>
+</form>
+</div>
+
+<div id="view-dialog">
+<p>
+<label>Title</label><br/>
+<span class="title"></span>
+</p>
+<p>
+<label>Author</label><br/>
+<span class="author"></span>
+</p>
+</div>
+
+<div id="edit-dialog">
+<form id="edit-form">
+<fieldset>
+<div class="field">
+<label for="edit-title">Title</label>
+<input id="edit-title" type="text" class="text ui-widget-content ui-corner-all" name="title" />
+</div>
+<div class="field">
+<label for="edit-author">Author</label>
+<input id="edit-author" type="text" class="text ui-widget-content ui-corner-all" name="author" />
+</div>
+</fieldset>
+<input type="hidden" id="bookId" name="bookId" />
+</form>
+</div>
+
+<div id="confirm-delete">Are you sure you want to delete the book '<span id="confirm-title"></span>'?</div>
+
+</body>
+</html>
