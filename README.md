@@ -5,7 +5,11 @@ Simple examples demonstrating the basic features of Spring-MVC using both pre-2.
 and the latest Spring 3.x annotation-driven style.
 
 Also demonstrates basic JSON enabled web services using both a pre-RESTful query parameter-based style with Spring 1.2.x 
-and a RESTful web services style with Spring 3.x.
+and a RESTful web services style with Spring 3.x, as well as backing a RESTful web service with an ORM persistence
+layer using Hibernate and adding fast full-text search using Hibernate Search and Lucene.
+
+Finally, demonstrates pure static HTML / Ajax client applications that consume these RESTful web services using raw XmlHttpRequest,
+jQuery, jQuery UI, and ember.js frameworks.
 
 ### Examples
 
@@ -20,7 +24,7 @@ and a RESTful web services style with Spring 3.x.
 * [jquery-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/jquery-ajax-example) - Simplified version of the RESTful JSON application client from [json-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-ajax-example) using [jQuery](http://jquery.com/).    
 * [hibernate-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-example) - [\[demo\]](http://hibernate-example.cloudfoundry.com/) - Example HTML / JSON application with an HSQL database back-end using [Hibernate](http://www.hibernate.org/) and JPA annotations.
 * [hibernate-search-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-search-example) - Example HTML / JSON application using [Hibernate Search](http://www.hibernate.org/subprojects/search.html) and [Lucene](http://lucene.apache.org/) for automatic fast full-text search and indexing.
-* [jquery-autocomplete-example](https://github.com/jfarr/spring-mvc-examples/tree/master/jquery-autocomplete-example) - Example Ajax application using [JQuery UI](http://jqueryui.com/) and the JSON services provided by the [hibernate-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-search-example) to implement auto-complete search functionality. 
+* [jquery-autocomplete-example](https://github.com/jfarr/spring-mvc-examples/tree/master/jquery-autocomplete-example) - An example single-page Ajax application using [JQuery UI](http://jqueryui.com/) and the JSON services provided by the [hibernate-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-search-example) to implement auto-complete search functionality. 
 * [ember-example](https://github.com/jfarr/spring-mvc-examples/tree/master/ember-example) - [\[demo\]](http://jfarr.github.com/spring-mvc-examples/ember-example/books/index.html) - Example application building on jquery-autocomplete-example that uses the [ember.js](http://emberjs.com/) framework to implement a front-end RESTful MVC architecture.
 
 ### The Example Application
