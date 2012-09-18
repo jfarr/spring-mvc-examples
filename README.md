@@ -1,17 +1,13 @@
 Spring-MVC Examples
 ===================
 
-Simple examples demonstrating the basic features of Spring-MVC using both pre-2.0 XML based configuration style
+### Examples
+
+These simple examples demonstrate the basic features of Spring-MVC using both pre-2.0 XML based configuration style
 and the latest Spring 3.x annotation-driven style.
 
-Also demonstrates basic JSON enabled web services using both a pre-RESTful query parameter-based style with Spring 1.2.x 
-and a RESTful web services style with Spring 3.x, as well as backing a RESTful web service with an ORM persistence
-layer using Hibernate and adding fast full-text search using Hibernate Search and Lucene.
-
-Finally, demonstrates pure static HTML / Ajax client applications that consume these RESTful web services using raw XmlHttpRequest,
-jQuery, jQuery UI, and ember.js frameworks.
-
-### Examples
+This section also demonstrates basic JSON enabled web services using both a pre-RESTful query parameter-based style with Spring 1.2.x 
+and a RESTful web services style with Spring 3.x.
 
 * [hello-spring-mvc](https://github.com/jfarr/spring-mvc-examples/tree/master/hello-spring-mvc) - Bare minimum Spring MVC application using a JSP view with JSTL support.
 * [multi-action-controller-example](https://github.com/jfarr/spring-mvc-examples/tree/master/multi-action-controller-example) - Simple web application using MultiActonController.
@@ -19,6 +15,16 @@ jQuery, jQuery UI, and ember.js frameworks.
 * [json-binding-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-binding-example) - Bind HTTP POST data to model objects using a JSON HTTP request reader.
 * [spring3-example](https://github.com/jfarr/spring-mvc-examples/tree/master/spring3-example) - A modern Spring-MVC application using autowiring and MVC annotations (@Controller, @RequestMapping, etc.)
 * [spring3-json-example](https://github.com/jfarr/spring-mvc-examples/tree/master/spring3-json-example) - Example web application and RESTful JSON web service built using the built-in Jackson object mapping support in Spring 3.
+
+### Advanced Examples
+
+These more advanced examples demonstrate backing a RESTful web service with an ORM persistence layer using Hibernate and 
+adding fast full-text search using Hibernate Search and Lucene.
+
+This section also demonstrates pure static HTML / Ajax client applications that consume these RESTful web services using raw XmlHttpRequest as well as
+the jQuery, jQuery UI, and ember.js frameworks.
+
+
 * [rest-app-example](https://github.com/jfarr/spring-mvc-examples/tree/master/rest-app-example) - [\[demo\]](http://rest-app-example.cloudfoundry.com/) - A more elaborate example of exposing web applications as HTML or JSON services that builds on the previous examples.
 * [json-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-ajax-example) - A pure Javascript / Ajax application that consumes the JSON services provided by [rest-app-example](https://github.com/jfarr/spring-mvc-examples/tree/master/rest-app-example).  
 * [jquery-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/jquery-ajax-example) - Simplified version of the RESTful JSON application client from [json-ajax-example](https://github.com/jfarr/spring-mvc-examples/tree/master/json-ajax-example) using [jQuery](http://jquery.com/).    
