@@ -16,6 +16,20 @@ and a RESTful web services style with Spring 3.x.
 * [spring3-example](https://github.com/jfarr/spring-mvc-examples/tree/master/spring3-example) - A modern Spring-MVC application using autowiring and MVC annotations (@Controller, @RequestMapping, etc.)
 * [spring3-json-example](https://github.com/jfarr/spring-mvc-examples/tree/master/spring3-json-example) - Example web application and RESTful JSON web service built using the built-in Jackson object mapping support in Spring 3.
 
+### The Example Application
+
+The examples are based on a simple library application that can add then edit a single book.
+
+![Library State Diagram](https://github.com/jfarr/spring-mvc-examples/raw/master/src/site/library_state_diagram.png)
+
+**Figure 1: Library Application State Diagram**
+
+### Testing the JSON Examples
+
+The JSON examples include sample [RESTClient](http://code.google.com/p/rest-client/) requests in the src/test/resources 
+folder that can be used to test sending JSON data to and retrieving data from the JSON web service. The sample requests
+assume that the application server is running on port 8080, so may need to be modified for your development environment.
+
 ### Advanced Examples
 
 These more advanced examples demonstrate backing a RESTful web service with an ORM persistence layer using Hibernate and 
@@ -32,17 +46,3 @@ the jQuery, jQuery UI, and ember.js frameworks.
 * [hibernate-search-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-search-example) - Example HTML / JSON application using [Hibernate Search](http://www.hibernate.org/subprojects/search.html) and [Lucene](http://lucene.apache.org/) for automatic fast full-text search and indexing.
 * [jquery-autocomplete-example](https://github.com/jfarr/spring-mvc-examples/tree/master/jquery-autocomplete-example) - An example single-page Ajax application using [JQuery UI](http://jqueryui.com/) and the JSON services provided by the [hibernate-example](https://github.com/jfarr/spring-mvc-examples/tree/master/hibernate-search-example) to implement auto-complete search functionality. 
 * [ember-example](https://github.com/jfarr/spring-mvc-examples/tree/master/ember-example) - [\[demo\]](http://jfarr.github.com/spring-mvc-examples/ember-example/books/index.html) - Example application building on jquery-autocomplete-example that uses the [ember.js](http://emberjs.com/) framework to implement a front-end RESTful MVC architecture.
-
-### The Example Application
-
-The examples are based on a simple library application that can add then edit a single book.
-
-![Library State Diagram](https://github.com/jfarr/spring-mvc-examples/raw/master/src/site/library_state_diagram.png)
-
-**Figure 1: Library Application State Diagram**
-
-### Testing the JSON Examples
-
-The JSON examples include sample [RESTClient](http://code.google.com/p/rest-client/) requests in the src/test/resources 
-folder that can be used to test sending JSON data to and retrieving data from the JSON web service. The sample requests
-assume that the application server is running on port 8080, so may need to be modified for your development environment.
