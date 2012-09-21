@@ -23,14 +23,4 @@
     <property name="suffix" value=".jsp" />
   </bean>
 
-  <!-- 
-    Application-specific components
-   -->
-
-  <!-- views -->
-  <bean name="book/view-json" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
-    <property name="extractValueFromSingleKeyModel" value="true" />
-    <property name="modelKey" value="book" />
-  </bean>
-
 </beans>
