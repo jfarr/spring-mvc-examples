@@ -1,0 +1,23 @@
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 90%;
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+    margin-top: 25px;
+}
+
+.field + .field {
+    padding-top: 5px;	
+}
+
+label {
+    font-weight:bold;
+}
+
+input[type=text] {
+    width: 450px;
+}
