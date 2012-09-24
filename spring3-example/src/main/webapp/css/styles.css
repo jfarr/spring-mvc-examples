@@ -21,3 +21,8 @@ label {
 input[type=text] {
     width: 450px;
 }
+
+input[type=submit] {
+	border: 1px outset;
+	width: 50px;
+}
