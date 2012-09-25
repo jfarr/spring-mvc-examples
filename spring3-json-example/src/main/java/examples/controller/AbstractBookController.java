@@ -13,7 +13,7 @@ import examples.data.Library;
 @RequestMapping("/books")
 public abstract class AbstractBookController {
 
-    private Library library;
+    protected Library library;
 
     @Autowired
     public void setLibrary(Library library) {

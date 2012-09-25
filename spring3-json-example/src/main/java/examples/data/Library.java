@@ -23,4 +23,8 @@ public class Library {
 		}
 		books.put(bookId, book);
 	}
+
+    public Map<Integer, Book> getBooks() {
+        return books;
+    }
 }
