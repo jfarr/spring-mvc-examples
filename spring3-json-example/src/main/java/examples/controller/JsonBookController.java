@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import examples.data.Book;
 
@@ -14,20 +14,20 @@ import examples.data.Book;
 public class JsonBookController extends AbstractBookController {
 
     @RequestMapping(value = "/", method = RequestMethod.POST, headers = "Content-type=application/json")
-    public ModelAndView addJson(@RequestBody Book book) throws Exception {
+    public @ResponseBody Book add(@RequestBody Book book) {
         saveBook(book);
-        return new ModelAndView("book/view-json", "book", book);
+        return book;
     }
 
     @RequestMapping(value = "/book/{bookId}", method = RequestMethod.PUT, headers = "Content-type=application/json")
-    public ModelAndView updateJson(@PathVariable int bookId, @RequestBody Book book) throws Exception {
+    public @ResponseBody Book update(@PathVariable int bookId, @RequestBody Book book) {
         book.setBookId(bookId);
         saveBook(book);
-        return new ModelAndView("book/view-json", "book", book);
+        return book;
     }
 
     @RequestMapping(value = "/book/{bookId}", method = RequestMethod.GET, headers = "Accept=application/json")
-    public ModelAndView viewJson(@PathVariable int bookId) throws NotFoundException {
-        return new ModelAndView("book/view-json", "book", getBook(bookId));
+    public @ResponseBody Book view(@PathVariable int bookId) throws NotFoundException {
+        return getBook(bookId);
     }
 }

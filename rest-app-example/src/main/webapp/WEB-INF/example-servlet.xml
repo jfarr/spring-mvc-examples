@@ -6,37 +6,11 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
   <context:component-scan base-package="examples" />
-
-  <!-- 
-    Spring-framework components
-   -->
-  
   <mvc:annotation-driven />
-
-  <!-- view resolvers -->
-  <bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
-    <property name="order" value="1" />
-  </bean>
 
   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     <property name="prefix" value="/WEB-INF/jsp/" />
     <property name="suffix" value=".jsp" />
-  </bean>
-
-  <!-- 
-    Application-specific components
-   -->
-
-  <!-- views -->
-  <bean name="book/view-json" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
-    <property name="extractValueFromSingleKeyModel" value="true" />
-    <property name="modelKey" value="book" />
-  </bean>
-
-  <!-- views -->
-  <bean name="book/list-json" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
-    <property name="extractValueFromSingleKeyModel" value="true"></property>
-    <property name="modelKey" value="books" />
   </bean>
 
 </beans>
