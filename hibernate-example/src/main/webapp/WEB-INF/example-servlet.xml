@@ -11,21 +11,10 @@
 
   <mvc:annotation-driven />
 
-  <bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
-    <property name="order" value="1" />
-  </bean>
-
   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     <property name="prefix" value="/WEB-INF/jsp/" />
     <property name="suffix" value=".jsp" />
   </bean>
-
-  <bean name="book/view-json" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
-    <property name="extractValueFromSingleKeyModel" value="true" />
-    <property name="modelKey" value="book" />
-  </bean>
-
-  <bean name="book/list-json" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" />
 
   <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
     <property name="maxUploadSize" value="1000000" />
