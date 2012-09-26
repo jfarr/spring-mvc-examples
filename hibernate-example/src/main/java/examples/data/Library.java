@@ -42,10 +42,14 @@ public class Library {
     }
 
     public void saveBook(Book book) throws MissingBookException {
-        if (book.getBookId() != null && getBook(book.getBookId()) == null) {
-            throw new MissingBookException("no book with id " + book.getBookId());
+        Integer bookId = book.getBookId();
+        if (bookId == null) {
+            getCurrentSession().save(book);
+        } else if (getBook(bookId) == null) {
+            throw new MissingBookException("no book with id " + bookId);
+        } else {
+            getCurrentSession().merge(book);
         }
-        getCurrentSession().saveOrUpdate(book);
     }
 
     @SuppressWarnings("unchecked")
