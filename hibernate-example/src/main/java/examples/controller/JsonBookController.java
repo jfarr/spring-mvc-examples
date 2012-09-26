@@ -27,12 +27,16 @@ public class JsonBookController extends AbstractBookController {
 
     @RequestMapping(value = "/", method = RequestMethod.POST, headers = "Content-type=application/json")
     public @ResponseBody Book add(@RequestBody Book book) {
-        saveBook(book);
+        book.setBookId(null);
+        try {
+            saveBook(book);
+        } catch (NotFoundException e) {
+        }
         return book;
     }
 
     @RequestMapping(value = "/book/{bookId}", method = RequestMethod.PUT, headers = "Content-type=application/json")
-    public @ResponseBody Book update(@PathVariable int bookId, @RequestBody Book book) {
+    public @ResponseBody Book update(@PathVariable int bookId, @RequestBody Book book) throws NotFoundException {
         book.setBookId(bookId);
         saveBook(book);
         return book;

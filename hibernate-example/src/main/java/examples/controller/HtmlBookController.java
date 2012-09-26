@@ -26,7 +26,7 @@ public class HtmlBookController extends AbstractBookController {
     }
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
-    public String save(@ModelAttribute("book") Book book) {
+    public String save(@ModelAttribute("book") Book book) throws NotFoundException {
         saveBook(book);
         return "redirect:/library/books/";
     }

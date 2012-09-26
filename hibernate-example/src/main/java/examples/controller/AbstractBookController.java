@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import examples.data.Book;
 import examples.data.Library;
+import examples.data.MissingBookException;
 
 public abstract class AbstractBookController {
 
@@ -63,8 +64,12 @@ public abstract class AbstractBookController {
         return book;
     }
 
-    protected void saveBook(Book book) {
-        library.saveBook(book);
+    protected void saveBook(Book book) throws NotFoundException {
+        try {
+            library.saveBook(book);
+        } catch (MissingBookException e) {
+            throw new NotFoundException();
+        }
     }
 
     protected void deleteBook(int bookId) {

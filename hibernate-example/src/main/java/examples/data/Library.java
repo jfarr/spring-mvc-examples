@@ -41,7 +41,10 @@ public class Library {
         }
     }
 
-    public void saveBook(Book book) {
+    public void saveBook(Book book) throws MissingBookException {
+        if (book.getBookId() != null && getBook(book.getBookId()) == null) {
+            throw new MissingBookException("no book with id " + book.getBookId());
+        }
         getCurrentSession().saveOrUpdate(book);
     }
 
@@ -114,7 +117,10 @@ public class Library {
     public void importBooksAsCsv(InputStream inputStream) throws IOException {
         CsvReader reader = new CsvReader(inputStream, Charset.forName("UTF-8"));
         while (reader.readRecord()) {
-            saveBook(createBook(reader.get(0), reader.get(1)));
+            try {
+                saveBook(createBook(reader.get(0), reader.get(1)));
+            } catch (MissingBookException e) {
+            }
         }
     }
 
