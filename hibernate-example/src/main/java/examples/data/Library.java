@@ -76,6 +76,12 @@ public class Library {
                 .list();
     }
 
+    public long countBooksByTitle(String title) {
+        return (Long) getSearchByTitleCriteria(title)
+                .setProjection(Projections.rowCount())
+                .uniqueResult();
+    }
+
     private Criteria getSearchByTitleCriteria(String title) {
         return getCurrentSession()
                 .createCriteria(Book.class)
@@ -88,12 +94,6 @@ public class Library {
                                 Restrictions.ilike("title", title + " %"))
                 ));
     }
-
-    public long countBooksByTitle(String title) {
-        return (Long) getSearchByTitleCriteria(title)
-                .setProjection(Projections.rowCount())
-                .uniqueResult();
-    }
     
     @SuppressWarnings("unchecked")
     public List<Book> searchBooksByTitlePrefix(String title, int firstResult, int maxResults) {
@@ -104,16 +104,16 @@ public class Library {
                 .list();
     }
 
-    private Criteria getSearchByTitlePrefixCriteria(String title) {
-        return getCurrentSession()
-                .createCriteria(Book.class)
-                .add(Restrictions.ilike("title", title + "%"));
-    }
-
     public long countBooksByTitlePrefix(String title) {
         return (Long) getSearchByTitlePrefixCriteria(title)
                 .setProjection(Projections.rowCount())
                 .uniqueResult();
+    }
+
+    private Criteria getSearchByTitlePrefixCriteria(String title) {
+        return getCurrentSession()
+                .createCriteria(Book.class)
+                .add(Restrictions.ilike("title", title + "%"));
     }
 
     public void importBooksAsCsv(InputStream inputStream) throws IOException {
