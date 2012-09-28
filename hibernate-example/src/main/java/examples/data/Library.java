@@ -43,9 +43,7 @@ public class Library {
 
     public void saveBook(Book book) throws MissingBookException {
         Integer bookId = book.getBookId();
-        if (bookId == null) {
-            getCurrentSession().save(book);
-        } else if (getBook(bookId) == null) {
+        if (bookId != null && getBook(bookId) == null) {
             throw new MissingBookException("no book with id " + bookId);
         } else {
             getCurrentSession().merge(book);
