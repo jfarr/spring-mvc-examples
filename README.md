@@ -1,6 +1,8 @@
 Spring-MVC Examples
 ===================
 
+**NOTE:** This project has been archive sinced the examples contained here are so old and out of date. They may be interesting from a historical perspective but I suggest looking into [Spring Boot](https://spring.io/projects/spring-boot) for a more modern way of quickly bootstrapping Spring applications.
+
 ### Examples
 
 These simple examples demonstrate the basic features of Spring-MVC using both pre-2.0 XML based configuration style
